@@ -1,0 +1,12 @@
+mixin service(icon, title, text, animation)
+  .col-md-4(class=[animation])
+    i.icon-3x(class=[icon])
+    h3.service-title= title
+    p.service-info= text
+    
+mixin culture(icon, title, text, animation)
+  .col-md-4(class=[animation])
+    .culture-box
+      i.icon-3x(class=[icon])
+      h3.culture-title= title
+      p.culture-info= text

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Задание 3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<h2>Формы</h2>
+		<form name="test" method="post" action="#">
+			<label for="name">Name</label><br />
+			<input type="text" id="name"><br /><br />
+			
+			<label for="email">Email</label><br />
+			<input type="text" id="email">
+			<br /><br />
+	
+			<label>Sex<br />
+				<input type="radio" name="sex" value="male">Male
+				<input type="radio"  name="sex" value="female">Female
+			</label><br /><br />
+
+			<label>Current status<br />
+				<input type="checkbox" name="student">Student<br/>
+				<input type="checkbox" name="employed">Employed<br/>
+				<input type="checkbox" name="unemployed">Unemployed<br/>
+			</label><br /><br />
+
+			<label>Month and Year of birth<br />
+				<select>
+					<option value="0">January</option>
+					<option value="1">February</option>
+					<option value="2">March</option>
+				</select>
+				<select>
+					<option value="0">1984</option>
+					<option value="1">1985</option>
+					<option value="2">1986</option>
+				</select>
+			</label><br /><br />
+
+			<label>Skill and Technologies<br />
+				<select size="10" multiple="skills[]">
+					<optgroup label="Tech skills">
+						<option value="0">HTML</option>
+						<option value="1">CSS</option>
+						<option value="2">JavaScript</option>
+						<option value="3">git</option>
+					</optgroup>
+					<optgroup label="Soft skills">
+						<option value="0">Time management</option>
+						<option value="1">Proactivity</option>
+						<option value="2">Teamwork</option>
+						<option value="3">Leadership</option>
+					</optgroup>
+				</select>
+			</label><br /><br />
+
+			<label>Photo<br />
+				<input type="file">
+			</label><br /><br />
+
+			<label for="textarea">Comments<br />
+				<textarea id="textarea" rows="4" name="text"></textarea><br /><br />
+				<input type="submit">
+			</label>
+		</form>
+		<hr>
+	</body>
+</html>

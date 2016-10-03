@@ -1,0 +1,67 @@
+.block-price {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 890px;
+    min-height: 540px;
+}
+
+.price-title {
+    color: #40525c;
+    font: 700 30px / 25px 'Trebuchet MS';
+    text-transform: uppercase;
+    margin-bottom: 60px;	
+}
+.pay-block {
+	display: inline-block;
+}
+.pay-block-standard, .pay-block-ultimate {
+	height: 440px;   
+	border: 0;
+}
+.h63 {
+	height: 63px;
+}
+.pay-block-standard, .pay-block-ultimate  {
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+    box-shadow: 0px 0px 2px 0.13px #0874b2;
+}
+
+.standard {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    border-top-right-radius: 0
+}
+.ultimate {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    border-top-left-radius: 0
+}
+.best {
+    position: absolute;
+    left: 294px;
+    z-index: 1;
+}
+.title-pay-block {
+    width: 293px;
+}
+.border-top-left-radius {
+	border-top-left-radius:5px;
+}
+.border-top-right-radius {
+	border-top-right-radius:5px;
+}
+a.btn-blue {
+	background-color: #3371a6;
+    box-shadow: 0px 3px 0px 0.00px #16436a;
+}
+.bagr-standart {
+    background-color: #37c2d3;
+}
+.bagr-ultimate {
+    background-color: #1cb79a;
+}

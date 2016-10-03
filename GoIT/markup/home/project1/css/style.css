@@ -1,0 +1,324 @@
+html {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+body {
+    margin: 0 auto;
+    font-family: DroidSans;
+    overflow-x: hidden; 
+}
+/* font-family: "FuturaRegular"; */
+@font-face {
+    font-family: "FuturaRegular";
+    src: url("../fonts/FuturaRegular/FuturaRegular.eot");
+    src: url("../fonts/FuturaRegular/FuturaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/FuturaRegular/FuturaRegular.woff") format("woff"),
+    url("../fonts/FuturaRegular/FuturaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "FuturaBold"; */
+@font-face {
+    font-family: "FuturaBold";
+    src: url("../fonts/FuturaBold/FuturaBold.eot");
+    src: url("../fonts/FuturaBold/FuturaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/FuturaBold/FuturaBold.woff") format("woff"),
+    url("../fonts/FuturaBold/FuturaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+#header {
+    min-height: 100px;
+}
+.navbar {
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+    border:0;
+
+}
+.navbar-inner {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 1px 0px 0.00px rgba(255, 255, 255, 0.2);
+    min-height: 100px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1025px;
+    text-align: center;
+}
+.logo {
+    float: left;
+    display: block;
+    padding: 35px 20px 10px;
+    /*margin-left: -20px;*/
+    font-size: 20px;
+    font-weight: 200;
+    color: #777777;
+    text-shadow: 0 1px 0 #ffffff;
+    margin-left: -45px;
+}
+.header-nav-menu {
+    position: relative;
+    height: auto !important;
+    overflow: visible !important;
+    min-height: 100px;
+}
+.nav {
+    list-style: none;
+    position: relative;
+    left: 0;
+    display: block;
+    float: right;
+    margin: 0px 0px 0 0;
+}
+.nav>li {
+    float: left;
+    line-height: 14px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    float: none;
+    color: #989898;
+    padding: 41px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #3070a8;
+    border-bottom: 4px solid #3070a8;
+    outline: 0;
+}
+.wrapper {
+    min-height: 315px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 0;
+}
+.bg-header {
+    background: url(images/bg-h.png) no-repeat;   
+    min-height: 585px;
+    width: 100%;
+    background-size: cover;
+}
+.head-title {
+    color: #ffffff;
+    width: 875px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+
+}
+.head-title h2 {
+    font: 300 36px FuturaBT;
+    margin-bottom: 0;
+}
+.head-title h1 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font: 700 48px FuturaBT;
+    text-transform: uppercase;
+}
+.head-content {
+    color: #ffffff;
+    font: italic 20px / 30px Calibri; 
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.26);
+    width: 576px;
+    margin: 0 auto 65px;
+}
+.btn-head {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 24px 64px;
+    font: 600 16px OpenSans;
+    text-transform: uppercase;
+}
+.btn-head:hover {
+    color: #2e5176;
+    background-color: #fff;
+    border-color: #2e5176;
+}
+.title-blok2 {
+    color: #40525c;
+    font: 700 30px / 25px 'Trebuchet MS';
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+.row-conteiner .span4 {
+    display: inline-block;
+    width: 305px;
+    margin: 15px;
+}
+.title-small-block {
+    color: #3070a8;
+    font: 300 30.06px FuturaBT;
+    text-transform: uppercase;
+    transform: scale(0.999,0.998);
+    
+}
+.content-small-block {
+    color: #999999;
+    font: 400 14px / 25px OpenSans;
+}
+
+.bd-block3 {
+    background: url(images/bg-b3.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    min-height: 577px;
+}
+.block3 {
+    width: 730px;
+    text-align: left;
+}
+.block3-title h1 {
+    color: #ee8129;
+    font: 300 26px / 48px FuturaBT;
+    text-transform: uppercase;
+}
+.block3-title h2 {
+    color: #ffffff;
+    font: italic 19px / 30px OpenSans;
+    margin-bottom: 45px;
+}
+
+.block3 ul {
+    width: 535px; 
+    list-style: none; 
+}
+.block3 ul li{
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.block3 ul li a{
+    font: 400 14px / 30px OpenSans;
+    display:block;
+    text-decoration:none;
+    color:#9d9d9d;
+}
+.block3 ul li a:hover{
+color:#3070a8;
+}
+.block3 ul li a:active{
+color:#3070a8;
+}
+.block3 ul li a span{
+    margin: 10px 0px 0 -35px;
+    display:inline;
+    float:left;
+    background-color: #9d9d9d;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+}
+.block3 ul li a:hover span {
+    display:block;
+    background:#3070a8;
+}
+.block3 ul li a:active span {
+    display:block;
+    background:#3070a8;
+}
+.padd0{
+    padding: 0 !important;
+}
+.block6 img {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 380px;
+    width: 704px;
+}
+.contacts {
+    text-align: left;
+    margin-top: 40px;
+    width: 46%;
+}
+.contacts h4 {
+    color: #666666;
+    font: 600 14px / 40px OpenSans;
+    margin: 0 0 0 50px;
+    position: relative;
+}
+.fa.fa-img1 {
+    background: url(images/Layer-97.png);
+    height: 31px;
+    width: 23px;
+    position: absolute;    
+    left: -47px;
+    top: 5px;
+}
+.fa.fa-img2 {
+    background: url(images/Vector-Smart-Object.png);
+    height: 26px;
+    width: 18px;
+    position: absolute;    
+    left: -47px;
+    top: 5px;
+}
+.fa.fa-img3 {
+    position: absolute;    
+    left: -50px;
+    top: 11px; 
+    background: url(images/mail.png);
+    height: 16px;
+    width: 23px;
+}
+
+.fb {
+    background: url(images/fb.png);
+    height: 49px;
+    width: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tw {
+    background: url(images/tw.png);
+    height: 49px;
+    width: 49px;
+    position: absolute;
+}
+.in {
+    background: url(images/in.png);
+    height: 46px;
+    width: 46px;
+    position: absolute;
+}
+.social {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.social a {
+    position: relative;
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+    margin-right: 20px;
+}
+.footer {
+    background-color: #3070a8;
+    min-height: 55px;
+    padding: 30px;
+}
+.footer-title {
+    color: #ffffff;
+    font: 400 14px / 30px OpenSans;
+    margin: 0;
+}
+.footer-title span {
+    color: #1d1b1b;
+    font: 700 14px / 30px OpenSans;
+}

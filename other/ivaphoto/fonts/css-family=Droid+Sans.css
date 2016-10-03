@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciFQlYEbsez9cZjKsNMjLOwM.eot"/*tpa=http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciFQlYEbsez9cZjKsNMjLOwM.eot*/);
+  src: local('Droid Sans'), local('DroidSans'), url("../themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciFQlYEbsez9cZjKsNMjLOwM.eot"/*tpa=http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciFQlYEbsez9cZjKsNMjLOwM.eot*/) format('embedded-opentype'), url("../themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff"/*tpa=http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff*/) format('woff');
+}

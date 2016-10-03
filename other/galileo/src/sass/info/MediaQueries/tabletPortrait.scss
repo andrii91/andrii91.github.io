@@ -1,0 +1,37 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+		.speaker-container {
+        margin-left: 35%;
+      }
+      .speaker-title, speaker-name {
+        text-align: left;
+      }
+      .reviews-inl {
+        width: 62%;
+        text-align: left;
+      }
+      .rules-list li .step-info {
+          font: 700 17px / 1 Roboto;
+          width: 51%;
+        text-align: left;
+      }
+      .rules-list li {
+          margin-bottom: 10px;
+          &:nth-child(2), {
+            margin-left:10%;
+          }
+          &:nth-child(3) {
+            margin-left: 20%;
+          }
+        }
+      .rules-list {
+        text-align: center;
+      }
+      .registration {
+          background-position-x: 24%;
+      }
+	}
+}

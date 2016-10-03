@@ -1,0 +1,169 @@
+& {
+  .head-phone {
+	  float:none;
+	  position: relative;
+  }
+  .head-title {
+  	margin-top: 60px;
+  }
+  .order-btn.yellow {
+  	margin-top: 20px;
+  }
+  .head {
+  	padding-bottom: 60px;
+  }
+  .brand-title {
+  	margin-top: 0;
+  	text-align: center;
+  }
+  .brand-img {
+  	margin-left: 0;
+  	img {
+  		width: 100%;
+  	}
+  }
+  .brand-logo {
+  	margin-bottom: 30px;
+  }
+  .sng-img {
+  	img {
+  		width: 100%;
+  	}
+  	.check-box {
+  		display: none;
+  	}
+  }
+  .brand {
+  	padding: 30px 0;
+  }
+  .sng {
+  	padding: 30px 0 50px;
+  	text-align: center;
+  }
+  .brand-list li {
+  	text-align: left;
+  }
+  .program_info-img {
+  	text-align: center;
+  	img {
+  		width: 100%;
+  		max-width: 290px;
+  		position: static;
+  		&.program_info-img_2 {
+  			position: static;
+  		}
+  	}
+  }
+  .mar-top110 {
+  	margin-top: 0;
+  }
+  .what_get-info {
+  	margin-bottom: 40px;
+  }
+  .mental-img {
+  	text-align: center;
+  	img {
+  		width: 100%;
+  		position: static;
+  	}
+  }
+  .mental {
+    padding: 69px 0 50px;
+	}
+	.ucmas-info {
+		font-size: 20px;
+	}
+	.calc-title {
+		text-align: center;
+	}
+	.calc-box {
+		display: none;
+	}
+	.result-title {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.result-video {
+		margin-bottom: 30px;
+		iframe {
+			height: 170px;
+		}
+	}
+	.registration-title {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 35px;
+		margin-top: 0;
+	}
+	br {
+		display: none;
+	}
+	.what_get-box-title {
+		margin-left: 0;
+	}
+	.what_get-list {
+		padding-left: 50px;
+	}
+	.what_get.large .what_get-info, .what_get.large .what_get-info.mirror {
+		background-size: cover;
+		padding: 10px;
+	}
+	.what_get.large .what_get-info.mirror {
+		background-position: right;
+	}
+	.mar-top180,.mar-top-105 {
+		margin-top: 20px;
+	}
+	.mar-left75 {
+		margin-left: 0;
+	}
+	.questions-title {
+		margin-top: 80px;
+	}
+	.questions-list {
+		padding-right: 0;
+	}
+	.history .carousel-control .glyphicon-chevron-left, .history .carousel-control .glyphicon-chevron-right, .history .carousel-control .icon-next, .history .carousel-control .icon-prev {
+		top: -57px;
+	}
+	.programs-title {
+	    font: 900 26px/1 DINRoundPro-B;
+	}
+	.programs-img img {
+	    -moz-filter: grayscale(0);
+	    -ms-filter: grayscale(0);
+	    -o-filter: grayscale(0);
+	    filter: 0;
+	    -webkit-filter: grayscale(0);
+
+	}
+	.programs-content {
+		text-align: center;
+	}
+	.masonry-list li {
+		height: auto !important;
+	}
+	.masonry .red {
+		margin-right: 0;
+	}
+	.registration-bg3 .registration-title {
+    font: 900 42px/1 DINRoundPro-B;
+	}
+	.head-logo-info {
+		display: none;
+	}
+	.cell {
+		float: none;
+	}
+	.mob {
+		display: none;
+		.order-btn.red {
+			margin-top: 20px;
+		}
+	}
+	.mob-btn {
+		display: block;
+		float: right;
+		font-size: 35px;
+	}
+}

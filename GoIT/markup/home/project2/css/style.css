@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+}
+.wrapper {
+    min-height: 315px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 0;
+}
+.container {
+	margin: 0 auto;
+	text-align: center;
+}
+.bg-photo {
+    background-color: #f6f9f9;   
+}
+.photo-title-block h1{
+    font: 400 41px 'Lato', sans-serif;
+    color: #2d3950;
+    margin: 0;
+}
+.photo-title-block h6 {
+    color: #909090;
+    font: 400 15px / 23px 'Lato', sans-serif;
+    margin: 0;
+}
+.photo-block {
+    max-width: 1190px;
+    min-width: 530px;
+    margin: 80px auto;
+}
+.photo-box { 
+    height: 260px;
+    width: 360px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.photo-box img {
+    height: 260px;
+    width: 360px;
+}
+.photo-box:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	background-color: rgba(37, 166, 247, 0.9);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.photo-box:hover:after {
+    opacity: 0.9;
+}
+a.btn-icon {
+    background-color: #25a6f7;
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 7px;
+    border: 1px solid #fff;
+}
+a.btn-icon:hover {
+	background-color: transparent;
+	border-color: transparent;
+}
+.fa-link {
+    background: url(images/2.png);
+	display: table;
+    position: absolute;
+    /*top: 14px;
+    left: 14px;*/
+    height: 14px;
+    width: 14px;
+    margin: 13px;
+}
+.fa-increase {
+    background: url(images/1.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    display: table;
+    position: absolute;
+    margin: 13px;
+    /*top: 14px;
+    left: 14px;*/
+}
+.btn-group-photo {
+    left: 0;
+    top: 50%;
+    z-index: 3;
+    content: '';
+    width: 100%;
+    position: absolute;
+    margin-top: -15px;
+
+}
+.btn-content-photo {
+    opacity: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.photo-box:hover .btn-content-photo {
+    opacity: 1;
+}
+
+.burqa {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+}
+.modals {
+    z-index: 2;
+    display: none;
+
+}
+.active {
+    display: block;
+}
+.increase-img {
+    position: absolute;
+    top: -3px;
+    z-index: 2;
+    height: 550px;
+    border: 3px solid #999;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.increase-img img{
+    width: 100%;
+    height: 100%;
+}
+.increase-img img{
+    display: none;
+}
+.increase-img img.active {
+    display: block;
+} 
+.close {
+    background: url(images/normal.png);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 9999;
+    top: -22px;
+    right: 22px;
+}
+.close:hover {
+    background: url(images/close.png);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 9999;
+}
+.photo-block {
+    padding-bottom: 105px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}

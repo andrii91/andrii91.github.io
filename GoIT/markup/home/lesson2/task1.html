@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Задание 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<hr>
+		<h2>Тег del</h2>
+		<del><p>Неверная информация</p></del>
+		<hr>
+
+		<h2>Тег ins</h2>
+		<ins><p>Новая информация</p></ins>
+		<hr>
+
+		<h2>Тег dfn</h2>
+		<dfn>термин, впервые определяемый в документе</dfn>
+		<hr>
+
+		<h2>Тег code</h2>
+		<code>
+			<pre>
+				<h4>программный код или его фрагмент</h4>
+				&lt;script type="text/javascript"&gt;
+					var $form = $(this);
+					$.ajax({
+						type: 'POST',
+						url: '/task1.php',
+						dataType: 'json',
+						data: $form.serialize(),
+						success: function(response) {
+							console.info(response);
+							if (response.status == 'success') {
+								$.ajax({
+									type: 'POST',
+									url: '/sample-task1.php',
+									dataType: 'json',
+									data: $form.serialize(),
+								})
+								$form.hide();
+								$form.html('<b>Спасибо!</b>').show();
+								yaCounter31190221.reachGoal('order');
+							}
+						}
+					})
+				&lt;/script&gt;
+			</pre>
+		</code>
+		<hr>
+
+		<h2>Тег samp</h2>
+		<samp>результат вывода компьютерной программы или скрипта</samp>
+		<hr>
+
+		<h2>Тег kbd</h2>
+		<p><kbd>название клавиш или набираемого на клавиатуре текста<br /> &lt;Alt&gt;, &lt;Backspace&gt;, &lt;Alt&gt;, &lt;Delete&gt;,
+    &lt;Ctrl&gt;, &lt;Backspace&gt;,
+    &lt;Ctrl&gt;, &lt;Delete&gt;</kbd>.</p>
+    <hr>
+
+    <h2>Тег var</h2>
+    <var>переменная (математическая или компьютерной программы)</var><br />
+	  <hr>
+
+	  <h2>Тег cite</h2>
+    <cite>цитата или сноска на другой материал</cite>
+    <hr>
+
+    <h2>Тег address</h2>
+  	<address align=center>
+			<h4>Контактная информация</h4>	    
+    	<p><strong>Офис:</strong> iHUB, ул. Рыбальская, 22, Киев, Украина</p>
+    </address>
+    <hr>
+
+    <h2>Теги q и blockquote </h2>
+    <p>Станислав Лец утверждал: <q  cite="http://htmlbook.ru/html/q">Чаще всего выход там, где был 
+    вход</q>.</p>
+    <blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+			sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat 
+			volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper 
+			suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+	  </blockquote>
+    <hr>
+
+    <h2> Тег abbr</h2>
+    <p><abbr title="Федеральное бюро расследований">ФБР</abbr> - [фэ-бэ-эр]  </p>
+    <hr>
+	  <article>
+	    <h2> Тег mark</h2>
+	    История о том, как возле столовой появились загадочные розовые
+	    следы с <mark>шестью пальцами</mark>, и почему это случилось.
+	  </article>
+    <hr>
+	</body>
+</html>

@@ -1,0 +1,222 @@
+& {
+ 	.mob-btn {
+ 		display: block;
+ 	}
+ 	.header_fixed {
+ 		.mob-btn {
+ 			color: #000;
+ 		}
+ 	}
+ 	.academy-box {display: none;}
+ 	.menu-list {
+ 		display: none;
+ 		float: none;
+ 		.menu-item {
+ 			display: block;
+ 			margin: 10px 0 0;
+ 			.menu-link {
+ 				display: block;
+ 				color: #000;
+ 			}
+ 		}
+ 	}
+ 	.white-bg {
+ 		.mob-btn {
+ 			&:before {
+ 				color: #000;
+ 			}
+	 	}
+ 	}
+ 	.head-title {
+    font: 900 54px / 1 DINRoundPro-B;
+	}
+	.head-info {
+    font: 700 26px / 1 DINRoundPro-B;
+	}
+	.head {
+		text-align: center;
+	}
+	.insert-btn {
+		width: 100%;
+	}
+	.btn-box {
+		padding-left: 0;
+		text-align: left;
+	}
+	.university {
+    margin-top: 60px;
+	}
+	.university-title {
+		width: 100%;
+	}
+	.university-logo {display: inline-block;margin-left: 5px;}
+	.ucmas-info-img, .video-block {
+		img {
+			width: 100%;
+		}
+	}
+	.ucmas-info-title {
+		margin-top: 10px;
+	}
+	.intelligence-title, .result-title, .methods-title, .how-title , .program-info-title,
+	.ucmas_block-title, .structure-title, .academy-title, .history-title, .competition-title ,
+	.ucmas_it-title, .ucmas_block_one-title {
+    font: 700 31px / 1 DINRoundPro-M;
+	}
+	.intelligence-info {
+		text-align: center;
+	}
+	.padd-top32, .padd-left32, .padd-right32 {
+		padding: 0;
+	}
+	.xs-100, .registr-form {
+		width: 100%;
+	}      
+	.registr-form:before {
+		display: none;
+	}
+	.methods-title font {
+    font: 700 18px / 1 DINRoundPro-M;
+  }
+  .methods-box.left, .methods-box {
+  	float: none;
+  	width: 100%;
+  	border-radius: 28px;
+    padding: 15px 19px;
+  }
+  .methods-block {
+  	width: 100%;
+  }
+  .yellow-info {
+  	text-align: center;
+  }
+  .how-info {
+    font: 700 18px / 1 DINRoundPro-M;
+    width: 100%;
+    margin: 0 auto 30px;
+	}
+	.how .panel-title > a, .how .panel-title > small, .how .panel-title > .small, .how .panel-title > small > a, .how .panel-title > .small > a {
+    font: 700 17px / 1 DINRoundPro-M;
+	}
+	.program-info-img img {
+		width: 100%;
+	}
+	.ucmas_it-title:before {
+		display: none;
+	}
+	.ucmas_it {
+		background-size: cover;
+	}
+	.ucmas_block_one-img img, .competition-video img, .history-img img {
+		width: 100%;
+	}
+	.records-box {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.result-box {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 30px;
+		margin-right: 0;
+	}
+	.program-info {
+		padding: 0;
+	}
+	.ucmas_block {
+		padding: 40px 0;
+	}
+	.ucmas_block-info {
+		width: 100%;
+		padding: 0;
+		&:before {
+			display:none;
+		}
+	}
+	.ucmas_block-box {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.structure .carousel-inner {
+		width: 100%;
+	}
+	.structure-box .carousel-control.left {
+		left: 21%;
+	}
+	.structure-box .carousel-control.right {
+		right: 21%;
+	}
+  .academy {
+    /*background: url(images/academy-bg.png) no-repeat center;*/
+  }
+	.academy-info_small {
+		width: 100%;
+	}
+	.records-img {
+		min-height: auto;
+		margin-bottom: 15px;
+	}
+	.records {
+		padding: 40px 0;
+	}
+	.ucmas_it-title {
+		background: #ffc527;
+		border-radius: 20px;
+		padding: 12px;
+	}
+	.ucmas_block_one-title {
+		margin-bottom: 30px;
+	}
+	.ucmas_block_one-info {
+    font: 700 22px / 1 DINRoundPro-M;
+    text-align: center;
+	}
+	.mar-top144 {
+		margin-top: 20px;
+	}
+	.ucmas_block_one-content {
+		text-align: center;
+	}
+	.intelligence .col-md-10 , .intelligence .col-md-2 {
+    padding-right: 15px;
+    padding-left: 15px;
+	}
+	.intelligence-img {
+		img {
+			width: 100%;
+		}
+	}
+	.result {
+		.col-md-5 {
+			.row {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+	.intelligence {
+		.col-md-4 {
+			.row {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+	.methods-box.left:before {
+		display: none;
+	}
+	#myModal1 {
+	  .modal-content, .modal-dialog {
+	    width: 100%;
+	    max-width: 320px;
+	  }
+	}
+	.video-block.video_2 iframe {
+		width: 100%;
+	}
+	.policy {
+		float: none;
+		display: block;
+	}
+}

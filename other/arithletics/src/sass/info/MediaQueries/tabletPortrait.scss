@@ -1,0 +1,42 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+      .head .head-title {
+        font: 400 56px FredokaOne;
+      }
+      .head .head-info, .about-title, .partners-title, .arithletic-title, .genius-title, .registration-title, .testimonials-title, .message-title, .contact-title {
+      	font-size: 36px;
+      }
+      .about {
+      	.col-sm-4 {
+		    min-height: 230px;
+      	}
+      }
+      .detsils .nav-tabs > li.active > a, .detsils .nav-tabs > li.active > a:hover, .detsils .nav-tabs > li.active > a:focus, .detsils .nav > li > a:hover, .detsils .nav > li > a:focus {
+		    border: 0;
+		    color: #3c55a5;
+		    font: 700 20px Roboto;
+		}
+		.arithletic-logo img {
+			max-width: 720px;
+		}
+		.arithletic-list-img {
+			max-width: 310px;
+		}
+		.reg-box {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.contact-block .input, .contact-block .select, .contact-block .textarea {
+			max-width: 516px;
+		}
+		.contact {
+			background-position: right; 
+		}
+		.contact-map-form {
+			min-height: 768px;
+		}
+	}
+}

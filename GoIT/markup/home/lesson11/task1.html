@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lesson11</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../lesson10/css/style.css">
+</head>
+<body>
+	<section class="wrapper bg-photo">
+		<div class="container">
+			<hgroup class="photo-title-block">
+				<h1>Showcase your work like a pro.</h1>
+				<h6>Contact me if you like my work</h6>
+			</hgroup>
+			<div class="photo-block">
+				<div class="photo-box">
+					<img src="../lesson10/images/ph1.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img1" class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+				
+				<div class="photo-box">
+					<img src="../lesson10/images/Layer-31.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img2" class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+				<div class="photo-box">
+					<img src="../lesson10/images/Layer-32.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img3" class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+				<div class="photo-box">
+					<img src="../lesson10/images/Layer-33.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img4" class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+				<div class="photo-box">
+					<img src="../lesson10/images/Layer-34.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img5" class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+				<div class="photo-box">
+					<img src="../lesson10/images/Layer-35.png">
+					<div class="btn-group-photo">
+						<div class="btn-content-photo">
+							<a id="increase-img6"class="btn-icon" href="#"><i class="fa-increase"></i></a>							
+							<a class="btn-icon" href="#"><i class="fa-link"></i></a>	
+						</div>						
+					</div>
+				</div>
+
+
+				<div class="modals">
+					<div class="increase-img">
+						<img id="img1" src="../lesson10/images/ph1.png">
+						<img id="img2" src="../lesson10/images/Layer-31.png">
+						<img id="img3" src="../lesson10/images/Layer-32.png">
+						<img id="img4" src="../lesson10/images/Layer-33.png">
+						<img id="img5" src="../lesson10/images/Layer-34.png">
+						<img id="img6" src="../lesson10/images/Layer-35.png">
+					</div>
+					<div class="burqa"></div>
+					<a href="#" class="close"></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	    $('#increase-img1').click(function() {
+		        $('#img1').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('#increase-img2').click(function() {
+		        $('#img2').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('#increase-img3').click(function() {
+		        $('#img3').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('#increase-img4').click(function() {
+		        $('#img4').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('#increase-img5').click(function() {
+		        $('#img5').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('#increase-img6').click(function() {
+		        $('#img6').addClass('active');
+		        $('.modals').show();
+		    });
+
+		    $('.close').click(function() {
+		        $('.increase-img img').removeClass('active');
+		        $('.modals').hide();
+		    });
+		});
+	</script>
+</body>
+</html>

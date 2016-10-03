@@ -1,0 +1,127 @@
+& {
+  .mob-btn {
+  	display: inline-block;
+  	float: right;
+  	color: #000;
+  	font-size: 30px;
+  }
+  .menu-top {
+  	.menu-logo {
+	    width: 185px;
+	    margin-top: 10px;
+	    background-size: 100%;
+	    margin-right: 0;
+  	}
+  	.menu {
+	  	display: none;
+	  	.menu-item {
+	  		display: block;
+	  		float: none;
+	  		text-align: left;
+	  		border-bottom: 1px solid #dadada;
+	  		.menu-link {
+	  			display: block;
+	  			text-align: left;
+	  		}
+	  		&.phone {
+	  			float: none;
+	  			display: block;
+	  			text-align: left;
+	  			border-bottom: 0;
+	  		}
+	  	}
+	  }
+	}
+	.head {
+	    padding-top: 100px;
+	    text-align: center;
+	} 
+	.head .head-title {
+		font-size: 40px;
+	}
+	.head .head-info,.about-title, .partners-title, 
+	.arithletic-title,.genius-title, .registration-title,
+	.testimonials-title, .message-title, .contact-title {
+		font-size: 28px;
+		text-align: center;
+	}
+	.arithletic-logo {
+		img {
+			width: 100%;
+		}
+	}
+	.detsils .nav-tabs {
+		width: 100%;
+		margin-left: 0;
+	}
+	br {
+		display: none;
+	}
+	.about-img {
+		min-height: auto;
+	}
+	.about-info {
+		margin-bottom: 30px;
+	}
+	.detsils .nav-tabs > li.active > a, .detsils .nav-tabs > li.active > a:hover, .detsils .nav-tabs > li.active > a:focus, .detsils .nav > li > a:hover, .detsils .nav > li > a:focus {
+		box-shadow: 0 6px 16px rgba(40, 42, 47, 0.18);
+		background: none;
+		font-size: 17px;
+	}
+	.detsils .nav-tabs > li > a {
+		padding: 5px;
+		font-size: 17px;
+	}
+	.partners {
+		text-align: center;
+		padding: 30px 0;
+	}
+	.arithletic-info {
+		font-size: 14px;
+	}
+	.genius-title {
+		margin-bottom: 20px;
+	}
+	.genius-info {
+		font-size: 16px;
+		text-align: center;
+	}
+	.registration-title {
+		margin-bottom: 25px;
+	}
+	.registration-title.small {
+		margin-top: 10px;
+		text-align: center;
+		font-size: 24px;
+	}
+	.reg-list li {
+	    font: 400 16px / 1 Roboto;
+	}
+	.testimonials-title {
+		margin-bottom: 30px;
+	}
+	.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+		top: 0;
+	}
+	.testimonials, .contact,.message {
+		padding: 40px 0;
+	}
+	.input, .select, .textarea, .contact-block .input, .contact-block .select, .contact-block .textarea {
+		max-width: 250px;
+	}
+	.contact-block {
+		form, .contact-form-info {
+			text-align: center;
+		}
+	}
+	.contact-map-box {
+		position: static;
+	}
+	.contact-map-form {
+		padding: 0;
+		text-align: center;
+	}
+	.contact-map-box:before,.detsils .nav-tabs > li > a:before {
+		display: none;
+	}
+}

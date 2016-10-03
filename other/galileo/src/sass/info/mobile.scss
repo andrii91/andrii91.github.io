@@ -1,0 +1,185 @@
+& {
+  .head {
+    background-size: cover;
+    height: auto;
+    padding: 24px 0;
+    text-align: center;
+  }
+  .nav-top .nav-phone {
+    font-size: 16px;
+  }
+  .head-img {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .head-info {
+    max-width: 260px;
+    text-align: center;
+    margin: 0 auto 27px;
+    &:after {
+      left: -15px;
+    }
+    &:before {
+      right: -15px;
+    }
+  }
+  .start {
+    padding: 0;
+  }
+  .where:before {
+    width: 100%;
+  }
+  .order-btn:before {
+    width: 100%;
+    background-size: 100%;
+  }
+  .item-container, .what-container, .speaker-container {
+    margin: 0;
+  }
+  .block-item-title:before {
+    display: none;
+  }
+  .block-item-title {
+    padding: 0;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+  }
+  .item-list li {
+    width: 100%;
+    &:before {
+      left: -25px;
+    }
+  }
+  .communication-info {
+    background: none;
+    text-align: center;
+    padding: 5px;
+  }
+  .communication-title.small {
+    margin-top: 45px;
+    text-align: center;
+  }
+  .communication-title {
+    line-height: 1;
+  }
+  .rules {
+    padding: 30px 0;
+  }
+  .stages-list {
+    padding: 0;
+  }
+  .stages-list li .number {
+    margin-right: 10px;
+  }
+  .stages-list li .number-info {
+    width: 80%;
+    font-size: 13px;
+  }
+  .stages-list li:nth-child(2), .stages-list li:nth-child(3) {
+    margin-left: 0;
+  }
+  .communication-img  {
+    img {
+      width: 100%;
+      
+    }
+  }
+  .communication .paranja p {
+    text-align: center;
+  }
+  .border-block:after, .border-block:before {
+    display: none;
+  }
+  .border-block p {
+    width: 98%;
+  }
+  .what-title {
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+  .what-list li:before {
+    left: -25px;
+  }
+  .what-info {
+    margin-top: 35px;
+  }
+  .what-img {
+    float: none;
+  }
+  
+  .speaker-name {
+    font: 700 28px / 1 Open Sans;
+    text-align: center;
+  }
+  .speaker-title {
+    font: 700 40px / 1 Open Sans;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .speaker {
+    background-position-x: right;
+  }
+  .reviews-title, .rules-title,.contacts-title {
+    font: 700 25px Open Sans;
+  }
+  .rules-title {
+    margin-bottom: 20px;
+  }
+  .reviews-img {
+    margin-right: 0;
+  }
+  .reviews-box {
+    text-align: center;
+  }
+  .rules-list li .step {
+    font: 700 25px / 24px Roboto;
+    margin-right: 10px;
+  }
+  .rules-list li .step-info {
+    font: 700 17px / 1 Roboto;
+    width: 100%;
+  }
+  .rules-list li {
+    margin-bottom: 10px;
+    &:nth-child(2), &:nth-child(3) {
+      margin-left: 0;
+    }
+  }
+  br {
+        display: none;
+      }
+  .what {
+    text-align: center;
+  }
+  .contacts {
+    background-position-x: left; 
+    padding: 20px 0;
+    min-height: auto;
+  }
+  .registration-title {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .registration:before {
+    top: 60px;
+  }
+  .reg-form {
+    width: 100%;
+  }
+  .input, button.order-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .block-item {
+    padding: 30px 0;
+  }
+  .video-block {
+    text-align: center;
+    iframe {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+	max-width: 600px;
+    margin: 0 auto;
+}
+
+article p:nth-child(2) {
+	font-size: larger;
+}
+
+article p:last-child {
+	color: #999;
+}

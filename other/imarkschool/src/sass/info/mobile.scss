@@ -1,0 +1,241 @@
+& {
+  .mobile-btn  {
+    display: block;
+    float: right;
+    font-size: 25px;
+  }
+  .top-menu-social {
+    margin-left: 5px;
+  }
+  .menu {
+    margin: 0;
+    display: block;
+    display: none;
+    .menu-item {
+      display: block;
+      float: none;
+      text-align: left;
+      margin: 10px 0 0;
+      border-bottom: 1px solid #ebebeb;
+      &.contact {
+        border: 0;
+      }
+    }
+  }
+  .head-title, .why-title, .training-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .head-bg {
+    background:  rgba(0, 0, 0, 0.8);
+  }
+  .head-info, .why-info {
+    font-size: 20px;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+  .head-box {
+    border: 0;
+  }
+  .why-info {
+    margin-bottom: 20px;
+  }
+  .why-info.small {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .why:before {
+    max-width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
+  .why-info.large {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .mt100 {
+    margin-top: 0;
+  }
+  .why-last .why-img {
+    margin-bottom: 0;
+  }
+  .why-last .why-info {
+    margin-bottom: 5px;
+  }
+  .why-last .why-info.small {
+    margin-bottom: 20px;
+  }
+  .registration_1-form-info:before, .registration_2-form-info:before {
+    display: none;
+  }
+  .registration_1-name {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .registration_1-title {
+    text-align: center;
+  }
+  .registration_1-form-info {
+    padding: 0;
+    text-align: center;
+  }
+  .training-title {
+    margin-bottom: 0;
+  }
+  .training-info {
+    margin-bottom: 20px;
+  }
+  .training-title.small {
+    text-align: center;
+  }
+  .training-img.additionally.img_2 {
+    margin-left: 0;
+  }
+  .xs-center {
+    text-align: center;
+  }
+  .bonus-title, .reviews_organizers-title, .city-title, .statistics-title, .training_info-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bonus-img {
+    img {
+      width: 100%;
+    }
+  }
+  .registration_2 {
+    background-position: right;
+    text-align: center;
+  }
+  .reg-box-title {
+    font-size: 18px;
+  }
+  .tab-block .nav-tabs > li > a {
+    margin-right: 0;
+    max-width: 320px;
+    
+  }
+  .tab-block .nav-tabs {
+    display: none;
+  }
+  .nav-tabs > li {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider {
+    text-align: center;
+    /*height: 186px;*/
+  }
+  .slide-img {
+    margin-right: 0;
+  }
+  .tab-city-title {
+    font-size: 24px;
+  }
+  .statistics-box-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .statistics-list li span {
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 6px;
+    display: inline-block;
+  }
+  .statistics-list li {
+    margin-bottom: 20px;
+    &:before {
+      display: none;
+    }
+  }
+  .line1 span {
+  background: #f84f4f;
+  }
+  .line2 span {
+  background: #1565bf;
+  }
+  .line3 span {
+  background: #4397b4;
+  }
+  .line4 span {
+  background: #f84f4f;
+  }
+  .line5 span {
+  background: #1565bf;
+  }
+  .statistics, .history {
+    padding: 40px 0;
+  }
+  .history-title {
+    font-size: 30px;
+  }
+  .history-info {
+    font-size: 18px;
+  }
+  .history-box {
+    img {
+      width: 100%;
+    }
+  }
+  .box-fon h6 {
+    font-size: 18px;
+  }
+  .box-fon p {
+    font-size: 14px;
+  }
+  .history-video {
+    img, iframe {
+      width: 100%;
+    }
+  }
+  .training_info-info {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .training_info-img {
+    img {
+      width: 100%;
+    }
+  }
+  .row {
+    .row {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .green-tab .tab-content, .green-tab .nav-tabs {
+    border-radius: 40px;
+  }
+  .green-tab .nav-tabs > li > a, .green-tab .nav-tabs > li.active > a, .green-tab .nav-tabs > li.active > a:hover, .green-tab .nav-tabs > li.active > a:focus{
+    border-radius: 0;
+    display: block;
+  }
+  .green-tab .nav-tabs {
+    text-align: center;
+  }
+  .green-tab-title {
+    font-size: 30px;
+  }
+  .why-logo {
+    max-width: 130px;
+    img {
+      width: 100%;
+    }
+  }
+  .statistics-img {
+    img {
+          transform: rotate(0deg);
+    }
+  }
+  .slider-box .owl-theme .owl-controls .owl-buttons .owl-next  {
+    right: 0;
+  }
+  .slider-box .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 0;
+  }
+}

@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-size: 18px;
+}
+.card-box {
+  width: 515px;
+  margin: 5px auto 50px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.86);
+  -moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.86);
+  box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.86);
+  padding: 52px;
+  background-color: #fff;
+}
+.card-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+.card-img {
+  text-align: center;
+}
+.card-img img {
+  border: 0;
+  border-radius: 10%;
+}
+.card-info {
+  border-bottom: 1px solid #7b7b7b;
+  padding-bottom: 10px;
+  text-indent: 20px;
+}
+.card-info ul li {
+  text-indent: 0px;
+  margin-bottom: 10px;
+}
+.phone, .vk {
+  padding-left: 20px;
+}
+.phone {
+  margin-bottom: 40px;
+}
+.phone p {
+  margin-bottom: 0;
+  text-indent: 0px;
+}
+.phone a {
+  text-decoration: none;
+  color: #000;
+}
+.vk p {
+  margin-bottom: 0;
+  text-indent: 0px;
+}
+.feedback {
+  padding-left: 20px;
+}
+.feedback p {
+  margin-bottom: 10px;
+}

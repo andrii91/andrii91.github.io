@@ -1,0 +1,118 @@
+@import "_normalize";
+@import "_animate";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic);
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.clearfix:before,
+.clearfix:after {
+ content: " ";
+ display: table;
+}
+ 
+.clearfix:after {
+ clear: both;
+}
+ 
+.clearfix {
+ *zoom: 1;
+}
+ .container {
+   margin: 0 auto;
+   max-width: 48rem;
+   width: 94%;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col {
+   float: left;
+   padding-left: 1rem;
+   padding-right: 1rem;
+ }
+.col-12 {
+  width: 100%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-4 {
+  width: 33.3%;
+}
+.col-3 {
+  width: 25%;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+.nav__item {
+  float: left;
+  margin-left: 4.625rem;
+  margin-top: 32px;
+}
+.nav__item:last-child {
+  margin-right: 4.6875rem;
+  margin-left: 0;
+  float: right;
+}
+.nav__link {
+  color: #ffffff;
+  font: 700 14px/0 Montserrat;
+}
+.nav__link-border {
+  padding: 10px 17px 8px;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+}
+.head {
+  background: url(images/head_bg.png) no-repeat;
+  background-size: cover;
+  min-height: 540px;
+  text-align: center
+}
+.head__logo {
+  color: #ffffff;
+  font: 700 20px Montserrat;
+  text-align: center;
+  padding-top: 171px;
+  text-transform: uppercase;
+}
+.head__title {
+  color: #ffffff;
+  font: 700 30.01px/1 Montserrat;
+  transform: scale(1.001,1);
+  margin: 38px auto 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.head__subtitle {
+  color: #ffffff;
+  font: 300 18.01px Roboto;
+  transform: scale(1.001,1);
+  width: 217px;
+  margin: 0 auto;
+  text-align: center;
+}
+.head__btn {
+  color: #ffffff;
+  font: 700 14px Montserrat;
+  transform: scale(1,1);
+  background-color: #ff4e50;
+  border-radius: 20px;
+  height: 40px;
+  width: 280px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 19px;
+}

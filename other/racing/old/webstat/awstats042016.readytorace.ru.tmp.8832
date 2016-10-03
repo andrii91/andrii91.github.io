@@ -1,0 +1,258 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201604 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.readytorace.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL                     
+POS_TIME                     
+POS_VISITOR                     
+POS_DAY                     
+POS_DOMAIN                     
+POS_LOGIN                     
+POS_ROBOT                     
+POS_WORMS                     
+POS_EMAILSENDER                     
+POS_EMAILRECEIVER                     
+POS_SESSION                     
+POS_SIDER                     
+POS_FILETYPES                     
+POS_DOWNLOADS                     
+POS_OS                     
+POS_BROWSER                     
+POS_SCREENSIZE                     
+POS_UNKNOWNREFERER                     
+POS_UNKNOWNREFERERBROWSER                     
+POS_ORIGIN                     
+POS_SEREFERRALS                     
+POS_PAGEREFS                     
+POS_SEARCHWORDS                     
+POS_KEYWORDS                     
+POS_MISC                     
+POS_ERRORS                     
+POS_CLUSTER                     
+POS_SIDER_404                     
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160422175731 477 93011 45984285637
+FirstTime 20160414184137
+LastTime 20160422014231
+LastUpdate 20160422180105 19 0 19 0 0
+TotalVisits                     
+TotalUnique                     
+MonthHostsKnown                     
+MonthHostsUnknown                     
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 3 4 3394 174 277 123659
+1 1 1 990 219 256 115330
+2 2 2 1947 220 273 122558
+3 1 1 990 509 550 262675
+4 3 3 2904 178 245 107685
+5 1 1 990 444 471 236088
+6 2 2 1947 143 174 80946
+7 2 2 1980 165 207 96251
+8 3 6 227902 161 210 94976
+9 1 1 990 163 201 99224
+10 0 0 0 473 510 253130
+11 0 0 0 660 708 362900
+12 1 1 990 190 272 112984
+13 0 0 0 178 221 98449
+14 1 1 990 210 278 246880
+15 17 61 245290 938 1006 434301
+16 2 2 1947 184 251 118413
+17 1 3 127139 137 182 80813
+18 19 43 271830 138 204 87570
+19 1 1 990 159 202 89404
+20 9 12 10281 198 269 118515
+21 7 12 357912 238 279 122352
+22 2 5 226879 660 731 276553
+23 0 0 0 182 212 93366
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 79 164 1488282
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 11
+yandex 912 889020 20160422173250 0
+baiduspider 104 101008 20160422164353 0
+googlebot 39 158723 20160422151942 0
+bot[\s_+:,\.\;\/\\-] 36 35112 20160422131241 0
+mj12bot 20 19470 20160422044311 0
+no_user_agent 8 7722 20160422151855 0
+robot 4 3218 20160421015608 0
+java\/[0-9] 2 1947 20160419005315 0
+ng\/1\. 2 957 20160416121246 0
+exabot 1 990 20160418155722 0
+mail\.ru 1 957 20160417122611 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 4
+css 40 9378 0 0
+png 18 378480 0 0
+html 79 77532 0 0
+jpg 27 1022892 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 9
+macosx 103
+winunknown 1
+winxp 2
+win2003 2
+winnt 11
+Unknown 4
+winvista 8
+linux 3
+win7 30
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 29
+safari7.0 12
+msie6.0 1
+chrome37.0.2062.124 2
+chrome44.0.2403.125 1
+firefox44.0 1
+chrome49.0.2623.87 10
+chrome49.0.2623.110 1
+chrome48.0.2564.116 1
+chrome40.0.2214.111 2
+firefox21.0 1
+chrome48.0.2564.82 1
+chrome39.0.2171.95 1
+curl 1
+opera9.80 1
+nokia 3
+safari9.0 1
+mozilla 4
+chrome45.0.2454.93 1
+firefox43.0 1
+chrome48.0.2564.109 1
+chrome47.0.2526.111 2
+msie7.0 3
+chrome37.0.2062.120 2
+firefox41.0 2
+chrome48.0.2564.103 1
+chrome41.0.2228.0 2
+chrome49.0.2623.112 102
+Unknown 2
+chrome48.0.2564.97 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Mozilla/5.0_(compatible;_SiteExplorer/1.0b;__http://siteexplorer.info/) 20160421212534
+}__test|O:21:\ 20160419205911
+GuzzleHttp/6.1.0_curl/7.35.0_PHP/5.5.9-1ubuntu4.14 20160421122611
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+}__test|O:21:\ 20160419205911
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 61 62
+From1 1 1
+From2 1 1
+From3 6 6
+From4 10 94
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 4
+http://hostx.ru 2 2
+http://hundejo.com 2 2
+http://oesseo.ru/redirect/ 1 1
+http://www.webviki.ru/readytorace.ru 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 7039 2615898
+END_ERRORS

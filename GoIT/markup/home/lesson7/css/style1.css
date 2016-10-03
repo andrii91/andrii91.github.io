@@ -1,0 +1,69 @@
+.table-eye {
+    width: 400px;
+	margin: 0 auto;
+	font-family: sans-serif;
+    color: transparent;
+    text-shadow: 0 0 5px #635e5e;
+    line-height: 0.7;
+}
+hr {
+	border: 1px solid red;
+    width: 400px;
+    margin-left: -4px;
+}
+.table-eye p {
+	text-align: justify;
+	text-transform: uppercase;
+}
+.table-eye p:nth-child(1) {
+    font-size: 106px;
+    letter-spacing: 235px;
+}
+.table-eye p:nth-child(2) {
+    font-size: 90px;
+    letter-spacing: 100px;
+}
+.table-eye p:nth-child(3) {
+    font-size: 80px;
+    letter-spacing: 45px;
+}
+.table-eye p:nth-child(4) {
+    font-size: 74px;
+    letter-spacing: 32px;	
+}
+.table-eye p:nth-child(5) {
+	font-size: 65px;
+    letter-spacing: 37px;   
+}
+.table-eye p:nth-child(6) {
+    font-size: 53px;
+    letter-spacing: 32px;
+}
+.table-eye p:nth-child(7) {
+    font-size: 41px;
+    letter-spacing: 43px
+}
+.table-eye p:nth-child(8) {
+    font-size: 32px;
+    letter-spacing: 38px;
+}
+.table-eye p:nth-child(9) {
+    font-size: 20px;
+    letter-spacing: 48.2px;
+    line-height: 1.5;
+}
+.table-eye p:nth-child(10) {
+    font-size: 15px;
+    letter-spacing: 43.5px;
+    line-height: 2;
+}
+.table-eye p:nth-child(12) {
+	font-size: 10px;
+	letter-spacing: 47.6px;
+    line-height: 4;
+}
+.table-eye p:nth-child(13) {
+	font-size: 7px;
+	letter-spacing: 50px;
+}
+

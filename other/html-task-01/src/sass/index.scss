@@ -1,0 +1,595 @@
+@import "_bootstrap";
+@import "_fontello";
+@import "_animate";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+* {
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+}
+.mar-top60 {
+  margin-top: 60px;
+}
+.mar-bottom45 {
+  margin-bottom: 45px !important;
+}
+.mar-top80 {
+  margin-top: 80px;
+}
+.mar-bottom25 {
+  margin-bottom: 25px !important;
+}
+.mar-left45 {
+  margin-left: 45px;
+}
+.mar-right45 {
+  margin-right: 45px;
+}
+/*HEADER NAV*/
+.header {
+  min-height: 115px;
+  padding: 38px 0 0;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.menu {
+  overflow: hidden;
+}
+.menu-logo {
+  float: left;
+  color: #555555;
+  font: 700 18px / 41px Montserrat;
+  position: relative;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+.menu-logo:hover {
+  color: #555555;
+  text-decoration: none;
+}
+.menu-logo .menu-circle {
+  background-color: #7cc576;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -35px;
+  top: 4px;
+}
+.menu-logo .icon-leaf {
+  color: #fff;
+  position: relative;
+  top: -4px;
+  left: 2px;
+}
+.menu-main {
+  float: right;
+  list-style: none;
+}
+.menu-item {
+  display: inline-block;
+  margin-left: 35px;
+}
+.menu-link {
+  color: #777777;
+  font: 400 14px / 41px Montserrat;
+  text-transform: uppercase;
+}
+.menu-link:hover {
+  text-decoration: none;
+  color: #7cc576;
+}
+/*END HEADER NAV*/
+
+/*CREATIVE DIGITAL SOLUTIONS*/
+.section {
+  padding: 100px 0;
+}
+.visual {
+  background: url(images/visual-img.png) no-repeat;
+  background-size: cover;
+  min-height: 530px;
+}
+.visual-title {
+  color: #ffffff;
+  font: 700 60px / 65px Montserrat;
+  width: 52%;
+  margin: 19px auto 41px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.visual-title_small {
+  color: #cccccc;
+  font: 400 20px Roboto Slab;
+  margin-bottom: 79px;
+  text-align: center;
+}
+.visual-btn {
+  color: #ffffff;
+  font: 700 14.84px / 0px Montserrat;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  transform: scaleY(1.078);
+  background: #7cc576;
+  border-radius: 100px;
+  padding: 23px 36px 25px;
+  text-transform: uppercase;
+}
+.visual-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #07a856;
+  background: -moz-linear-gradient(top, #07a856 0%, #07a856 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #07a856), color-stop(100%, #07a856));
+  background: -webkit-linear-gradient(top, #07a856 0%, #07a856 100%);
+  background: -o-linear-gradient(top, #07a856 0%, #07a856 100%);
+  background: -ms-linear-gradient(top, #07a856 0%, #07a856 100%);
+  background: linear-gradient(to bottom, #07a856 0%, #07a856 100%);
+
+}
+/*END CREATIVE DIGITAL SOLUTIONS*/
+
+/*PROFESSIONAL SERVICES*/
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-white-title {
+  color: #222222;
+  font: 700 40px / 34px Montserrat;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.bg-white-title_small {
+  color: #777777;
+  font: 400 20px Roboto Slab;
+}
+.service-title {
+  color: #222222;
+  font: 700 18px / 20px Montserrat;
+  text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 15px;
+}
+.service-info {
+  color: #777777;
+  font: 400 14px Roboto Slab;
+  width: 83%;
+  margin: 0 auto;
+} 
+/*END PROFESSIONAL SERVICES*/
+
+/*JUST RELAX & LET US DO THE HEAVY LIFTING*/
+.relax {
+  background-color: #e9e9e9;
+  background-size: cover;
+  min-height: 616px;
+  position: relative;
+}
+.icon-cog:before {
+//    font-size: 416px;
+//    color: #FFF;
+    content: "";
+    background: url(images/gear-2.png) no-repeat;
+    height: 416px;
+    width: 389px;
+    position: absolute;
+    left: 135px;
+    top: 100px;
+}
+.relax-block {
+  background: url(images/relax-bg.png) no-repeat;
+  background-size: cover;
+  height: 616px;
+  position: absolute;
+  right: -135px;
+  top: 0;
+  padding: 100px;
+  overflow: hidden;
+  width: 970px;
+
+}
+.relax-title {
+  color: #ffffff;
+  font: 700 40px Montserrat;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.relax-title span {
+  color: #7cc576;
+}
+.relax-info {
+  color: #cccccc;
+  font: 400 16px Roboto Slab;
+  margin-bottom: 30px;
+}
+.relax-list {
+  list-style: none;
+  padding-left: 0;
+}
+.relax-item {
+  color: #cccccc;
+  font: 400 16px Roboto Slab;
+  margin-left: 53px;
+  margin-bottom: 26px;
+  position: relative;
+}
+.relax-item:before {
+  content: "\e809";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: -48px;
+  top: 2px;
+}
+.relax-item:after {
+  content: "";
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  left: -53px;
+  top: -6px;
+}
+/*END JUST RELAX & LET US DO THE HEAVY LIFTING*/
+
+/*LATEST PROJECT*/
+.progress {
+  text-align: left;
+}
+.progress-title {
+  color: #222222;
+  font: 700 18px / 0px Montserrat;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.progress-info {
+  color: #777777;
+  font: 400 16px Roboto Slab;
+  margin-bottom: 43px;
+}
+.progress-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 34px;
+}
+.progress-item {
+  position: relative;
+  margin-bottom: 51px;
+  margin-left: 88px;
+}
+.progress-item:last-child {
+  margin-bottom: 0;
+}
+.progress-item:before {
+  font-size: 40px;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 4px;
+  left: -81px;
+}
+.progress-item:nth-child(1):before {
+  content: '\e816';
+}
+.progress-item:nth-child(2):before {
+  content: '\e817';
+}
+.progress-item:nth-child(3):before {
+  content: '\e818';
+}
+.progress-item:after {
+  content: "";
+  border-radius: 50%;
+  height: 68px;
+  width: 68px;
+  border: 2px solid #222222;
+  position: absolute;
+  top: -10px;
+  left: -88px;
+}
+.left-11:after {
+  left: -11px !important;
+}
+.progress-item h4 {
+  color: #222222;
+  font: 700 18px / 21px Montserrat;
+  margin-bottom: 0;
+  
+}
+.progress-item p {
+  color: #777777;
+  font: 400 16px Roboto Slab;
+}
+.progress-link {
+  color: #7cc576;
+  font: 700 16px Montserrat;
+  position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+}
+.progress-link .icon-right:before {
+  content: '\e810';
+  font-size: 25px;
+  position: absolute;
+  top: -3px;
+  left: 95px;
+}
+.progress-img {
+  height: 599px;
+  width: 681px;
+  position: absolute;
+  right: -90px;
+  top: 0;
+}
+/*END LATEST PROJECT*/
+
+/*CULTURE & VALUES*/
+.bg-grey {
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 560px;
+}
+.culture-box .icon-circle {
+  position: relative;
+}
+.culture-box {
+  color: #777777;
+  position: relative;
+  margin-top: 89px;
+}
+.culture-box .icon-circle:after {
+  content: "";
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  border: 2px solid #777777;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -13px;
+}
+.culture-title {
+  color: #222222;
+  font: 700 18px / 21px Montserrat;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+.culture-info {
+  color: #777777;
+  font: 400 14px Roboto Slab;
+  width: 82%;
+  margin: 0 auto;
+}
+.culture-box:before {
+  content: "";
+  border: 1px solid #777777;
+  position: absolute;
+  width: 229px;
+  left: 261px;
+  top: 28px;
+}
+.col-md-4:last-child .culture-box:before {
+  border: 0;
+}
+/*END CULTURE & VALUES*/
+
+/*OUR AWESOME CLIENTS*/
+.reviews {
+  margin: 85px auto 0;
+}
+.reviews-box {
+  margin-bottom: 62px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.reviews-img {
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+  vertical-align: top;
+
+    img {
+      border-radius: 50%;
+      background-color: #f9f9f9;
+      width: 221px;
+      height: 221px;
+    }
+}
+.reviews-content {
+  display: inline-block;
+  background-color: #f9f9f9;
+  height: 173px;
+  width: 64%;
+  vertical-align: top;
+  margin-top: 29px;
+  position: relative;
+  padding: 41px 46px;
+  text-align: left;
+}
+.reviews-box:nth-child(2n+1) .reviews-content:before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: -32px;
+  border: 13px solid transparent;
+  border-right: 22px solid #f9f9f9;
+}
+.reviews-box:nth-child(2n) .reviews-content:before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  right: -32px;
+  border: 13px solid transparent;
+  border-left: 22px solid #f9f9f9;
+}
+.reviews-content p {
+  color: #777777;
+  font: 400 22px / 25px Roboto Slab;
+  margin-bottom: 18px;
+}
+.author {
+  color: #7cc576;
+  font: 400 18px / 36px Roboto Slab;
+  text-align: center;
+  display: block;
+}
+/*END OUR AWESOME CLIENTS*/
+
+/*CONTACT*/
+.bg-green {
+  background-color: #7cc576;
+  padding: 69px 0 89px;
+}
+.contact-title {
+  color: #ffffff;
+  font: 700 40px Montserrat;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+.contact-btn {
+    padding: 9px 34px;
+    color: #ffffff;
+    font: 700 18px / 0px Montserrat;
+    border: 3px solid #ffffff;
+    border-radius: 3px;
+}
+.contact-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #ffffff;
+
+}
+.section_mini {
+  padding: 60px 0;
+}
+.sponsor-img {
+  display: inline-block;
+  margin-right: 40px;
+}
+.bg-black {
+  background-color: #222222;
+}
+.contact-title-small {
+  color: #ffffff;
+  font: 700 18px / 50px Montserrat;
+  text-transform: uppercase;
+}
+.contact-list, .leters-list {
+  list-style: none;
+
+    li:hover {
+      color: #7cc576;
+    }
+    a:hover {
+      color: #7cc576;
+      text-decoration: none;
+    }
+}
+.contact-item, .leters-item {
+  position: relative;
+  color: #ececec;
+  font: 400 16px RobotoSlab;
+  margin-bottom: 24px;
+}
+.leters-link {
+  color: #ececec;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-item:before {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  font-size: 31px;
+}
+.contact-item:nth-child(2):before {
+  top: -6px;
+}
+.contact-item:nth-child(3):before {
+  font-size: 16px;
+  left: -35px;
+}
+.phone, .mail {
+  color: #ececec;
+  text-decoration: none;
+}
+.leters-item:before {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  font-size: 21px;
+}
+.tag {
+  font: 700 16px / 22px Roboto Slab;
+  display: block;
+}
+.ago {
+  font: 400 12px / 22px Roboto Slab;
+  display: block;
+}
+/*END CONTACT*/
+/*.footer*/
+.footer {
+  padding: 28px 31px;
+}
+.footer p, .social-box {
+  display: inline-block;
+}
+.footer p {
+  margin: 14px 119px 0 0;
+  color: #555555;
+  font: 400 14px / 22px Montserrat;
+  vertical-align: top;
+}
+.social-box {
+  font-size: 37px;
+}
+.social-box .icon {
+  cursor: pointer;
+} 
+.social-box .icon:hover {
+  color: #7cc576;
+}
+.hidden_animation{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+}

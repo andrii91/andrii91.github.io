@@ -1,0 +1,52 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+     .head-phone {
+     	float: right;
+     }
+     .registration-title {
+     	max-width: 100%;
+     }
+     .registration-box {
+     	margin: 0 auto;
+     }
+     .mental-info {
+     	max-width: 100%;
+     }
+     .mental-fact {
+     	margin-right: auto;
+     	margin-left: auto;
+     }
+     .mental-img {
+     	max-width: 100%;
+     }
+     .ucmas-info {
+     	font-size: 17px;
+     	line-height: 1;
+     }
+      .mar-top-105,  .mar-top180 {
+	    margin-top: 182px;
+	}
+	.what_get-box {
+		float: none;
+	}
+	.questions-list {
+    padding-right: 200px;
+    padding-top: 240px;
+}
+.history .carousel-control .glyphicon-chevron-left, .history .carousel-control .glyphicon-chevron-right, .history .carousel-control .icon-next, .history .carousel-control .icon-prev {
+	top: 50%;
+	}
+	.masonry-list li {
+		margin: 4px;
+	}
+	.row {
+		.row {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+}

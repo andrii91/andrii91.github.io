@@ -1,0 +1,16 @@
+a[href*="ya"] {
+	color: #f70;
+}
+a[target="_blank"]:after {
+	display: inline-block;
+	margin-left: 5px;
+	content: " \21f1";
+	-moz-transform: rotate(90deg); 
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg); 
+	-o-transform: rotate(90deg); 
+	transform: rotate(90deg);
+}
+a[href*="google"] {
+	color: #666;
+}

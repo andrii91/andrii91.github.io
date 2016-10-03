@@ -1,0 +1,78 @@
+body {
+    margin:0;
+}
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 0;
+}
+.container {
+	margin-right: auto;
+    margin-left: auto;
+    width: 1025px;
+    text-align: center;
+}
+.bg-comment {
+    background: url(images/bg-comment.png); 
+    min-height: 315px;
+    width: 100%;
+    background-size: cover;
+}
+.comment-box {
+    display: inline-block;
+    width: 490px;
+}
+.comment-title {
+    color: #3170a8;
+    font: 400 40px / 18px 'Trebuchet MS';
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.comment-title span {
+    color: #ee8129;
+}
+.comment-box {
+    position: relative;
+}
+.comment-box img {
+    float: left;
+}
+.comment-content {
+    float: right;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.17);
+    height: 98px;
+    width: 360px;
+}
+.triangle {
+    border: 12px solid transparent;
+    border-right: 20px solid #f7f7f7;
+    position: absolute;
+    bottom: 36px;
+    left: 98px;
+}
+.comment-content-title {
+    color: #3070a8;
+    font: italic 13px / 14px 'Trebuchet MS';
+    font-style: italic;
+    height: 14px;
+    border-bottom: 1px dotted #000;
+    position: relative;
+    padding: 10px;
+    width: 315px;
+    margin: 0 auto;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.comment-content p {
+    color: #666666;
+    font: 400 13px / 20px 'Trebuchet MS';
+    text-align: left;
+    padding: 0 18px;
+    width: 307px;
+    margin-top: 6px;
+}

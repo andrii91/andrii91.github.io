@@ -1,0 +1,340 @@
+@media only screen and (min-width: 1650px){
+  .before {
+    background-position-y: 94%;
+  }
+  .when {
+    padding: 357px 0;
+    background-position-y: 37%;
+  }
+  .programs {
+    padding: 308px 0;
+  }
+  body {
+    overflow-x: hidden; 
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px)  {
+  	.participants-block {
+  		margin-top: 0;
+  	}
+  	.participants-box-name {
+  		margin: 0 auto;
+  		text-align: center;
+  		display: block;
+  	}
+  	.participants-box-name h4 {
+  		margin: 0 auto;
+  	}
+  	.left248, .top-57 {
+  		position: static;
+  	}
+  	.mar-right57 {
+  		margin-right: 0;
+  	}
+  	.participants-box-small {
+  		display: block;
+  		margin: 0 auto;
+  		width: 620px;
+  	}
+  	.programs-title-small {
+  		text-align: center;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	.programs-title-small:before {
+  		left: 0;
+  	}
+  	.programs-list {
+  		margin: 0 auto;
+  	}
+  	.line-big:before {
+  		width: 400px;
+  	}
+  	.show-item:nth-child(1) {
+  		margin-top: 0;
+  	}
+  	.show-item:nth-child(5) {
+  		margin-left: 0;
+  	}
+  	.when-title {
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	.when-adress {
+  		/*width: 400px;*/
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	.when-map {
+  		text-align: center;
+  	}
+  	.before-info {
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	.before-title {
+  		width: 100%;
+  		text-align: center;
+  	}
+  	.before-img {
+  		position: static;
+  	}
+  	.before-img:nth-child(2) {
+  		margin-left: 280px;
+  	}
+  	.registr-img  img {
+  		width: 100%;
+  	}
+  	.when-map .gallery img, .programs-img img {
+  		width: 100%;
+  	}
+    .one-user {
+      margin: 0;
+    }
+
+    .head video, #video-head {
+      width: 100% !important;
+      display: none;
+    }
+    body {
+      overflow-x: hidden; 
+    }
+    .head-logo  img {
+    width: 50%;
+   }
+    .box-small-img, .participants-img {
+      margin-bottom: 30px;
+    }
+    .head {
+    background: url(images/head-bg.png) no-repeat;
+    min-height: 910px;
+  }
+  .head-title {
+    margin-top: -30px;
+  }
+  .absolute {
+    bottom: 0;
+    right: -6%;
+  }
+   .command-3 img {
+    position: static;
+  }
+  .command-3 .bg-img1{
+    display: block;
+    margin: 0 auto;
+  }
+  .logo8:before {
+    display: none;
+  }
+  .pull-right {
+    float: none !important;
+  }
+  .participants-img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+   .head-logo  img {
+		width: 100%;
+   }
+    .head-title {
+		width: 100%;
+		margin-top: 0;
+   }
+   .participants-title, .programs-title, .show-title,
+   .when-title, .before-title, .registr-title  {
+   	width: 100%;
+   	font: 900 43px / 1 PFDinDisplayPro;
+   	text-align: center;
+   }
+   .participants-title:before {
+   	display: none;
+   }
+   .participants-block {
+   	margin: 0;
+   }
+   .left110 {
+   	position: static;
+   }
+   .participants-img img {
+   	width: 100%;
+   }
+   .command-logo:before {
+    bottom: 38%;
+    left: -6%;
+	}
+	.participants-box-name h4 {
+		width: 100%;
+	}
+	.left248 {
+		position: static;
+		text-align: center;
+	}
+	.mar-right57 {
+		margin-right: 0;
+	}
+	.box-small-name h4 {
+		width: 100%;
+	}
+	.participants-box-small {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.mar-right138 {
+		margin-right: 0;
+	}
+	.programs-img img {
+		width: 100%;
+	}
+	.programs-title-small {
+		text-align: center;
+	}
+	.programs-item {
+		margin-bottom: 25px;
+	}
+	.programs-title-small:before {
+		width: 100%;
+		left: 0;
+	}
+	.programs-item font {
+		font-size: 21px;
+	}
+	.show-info, .when-title:before {
+		width: 100%;
+	}
+	.show-item:nth-child(1) {
+		width: 100%;
+		margin-top: 0;
+	}
+	.show-item p {
+		display: block;
+		width: 100% !important;
+	}
+	.show-list {
+		text-align: center;
+	}
+	.show-item {
+		margin-left: 0 !important;
+		width: 100% !important;
+	}
+	.gallery img {
+		width: 100%;
+	}
+	.before-info, .before-info:before, .registr-title:before {
+		width: 100%;
+	}
+	.before-img {
+		position: static;
+	}
+	.before-img img {
+		width: 100%
+	}
+	.input-text, .btn-reg {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#reg {
+		text-align: center;
+	}
+	.registr-img img {
+		width: 100%;
+	}
+	.show-item {
+		margin-right: 0;
+	}
+  .one-user {
+      margin: 0;
+    }
+     video, #video-head {
+      width: 100% !important;
+      display: none;
+    }
+        body {
+      overflow-x: hidden; 
+    }
+    .head {
+  background: url(images/head-bg.png) no-repeat;
+  }
+  .box-small-name {
+    margin-top: 33px;
+  }
+  .head-box {
+    padding: 110px 0 256px;
+  }
+  .participants-box-name {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .top-57 {
+    top: 0;
+  }
+  .programs {
+    padding: 185px 0 150px;
+  }
+  .show {
+    padding: 0;
+  }
+  .show-item p {
+    padding-top: 0;
+  }
+  .when {
+    padding: 138px 0;
+  }
+  .show-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .sponsor-title {
+    margin-bottom: 10px;
+    font: 900 52px / 1 PFDinDisplayPro;
+  }
+  .participants {
+    padding-bottom: 0;
+  }
+  .programs-title {
+    margin-bottom: 5px;
+  }
+  .mar-top143 {
+    margin-top: 20px;
+  }
+  .box-small-name {
+    margin-top: 0;
+  }
+  .logo5:before {
+    left: 5%;
+    top: 238px;
+  }
+  .mtxs33 {
+    margin-top: 33px;
+  }
+  .head-title font {
+    height: 32px;
+  }
+  .registr-title:before {
+    bottom: -1px;
+  }
+  .registr-title {
+    margin-bottom: 23px;
+  }
+  .absolute {
+    bottom: -86px;
+  }
+  .command-3 img {
+    position: static;
+  }
+  .logo8:before {
+    display: none;
+  }
+  .logo9:before {
+    background: url('../images/logo/MYa+logo.png') no-repeat;
+    width: 140px;
+    height: 136px;
+    background-size: 100%;
+    top: 148px;
+    left: 76px;
+  }
+  .logo10:before {
+    top: 211px;
+  }
+}

@@ -1,0 +1,268 @@
+@media only screen 
+  and (min-device-width: 1500px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .arr-down {
+      left: 109px;
+    }
+    
+}
+@media only screen 
+  and (min-width: 1700px) 
+  and (max-width: 1920px) {
+    .arr-down {
+      left: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1024px) {
+  	#canvas {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .bale-img img   {
+    width: 100%;
+  }
+  .bale-img.fixed, .bale-img {
+    width: 664px;
+    height: 320px;
+    margin: -160px 0 0 -334px;
+  }
+  .arr-down {
+    display: none;
+  }
+  .btn-absolute {
+    left: 50%;
+  }
+  .block2-title {
+    width: 100%;
+  }
+  .box-item {
+    float: none;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  .item-border {
+    border: 1px solid #e9e61c;
+  }
+
+  .footer-btn, .footer-name {
+    margin-top: 20px;
+  }
+  .block2-box {
+    display: block;
+    margin: 0 auto 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .block2-box:nth-child(3) {
+    margin-right: auto;
+  }
+   .thanks-title {
+    width: 100%;
+  }
+  .box-title font {
+    margin-left: 0;
+  }
+  .min-height {
+    min-height: auto;
+  }
+  .head, .block1 {
+    min-height: 652px;
+    background-position: center;
+
+  }
+  .block1-title {
+    margin-top: 45px;
+  }
+  .block-bg1 {
+    min-height: 820px;
+    background-position: center;
+
+  }
+  .block-bg2, .block-bg3, .block5 {
+    min-height: 600px;
+    background-position: center;
+  }
+  .block5-title {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #canvas {
+    display: none;
+  }
+  .hidden_animation {
+    opacity: 1;
+  }
+  .container {
+    width: 100%;
+  }
+  .head-content {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .head-logo img, .head-logo, .box-img img {
+    width: 100%
+  }
+  .arr-down {
+    display: none;
+  }
+  .pull-right {
+    float: none;
+  }
+  .block1-title {
+    width: 100%;
+    text-align: center !important;
+  }
+  .btn-absolute {
+    position: static;
+  }
+
+  .block2-title, .block4-title {
+      font: 300 28.96px AvantGardeGothicC, Sans-Serif;
+      width: 100%;
+  }
+  .block2-box {
+    width: 100%;
+  }
+  .take {
+    width: 100%;
+    line-height: 1;
+    height: 59px;
+  }
+  .bale-img img, .bale-img.fixed, .bale-img {
+    width: 100%;
+    position: relative;
+    top: 26px;
+    left: 2px;
+    margin: 0;
+  }
+   .bale-img.fixed, .bale-img {
+      height: 153px;
+   }
+  .box-item {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  .item-border {
+    border: 1px solid #e9e61c;
+
+  }
+  .box-item:nth-child(1) .take {
+    line-height: 2;
+  }
+  
+  .block5-btn {
+    position: static;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer-tel-box, .footer-form {
+    float: none;
+    width: 100%;
+  }
+  .input-text {
+    width: 100%;
+  }
+  .footer-btn {
+    /*height: 52px;*/
+    /*width: 133px;*/
+       margin: 19px auto 0;
+    display: block;
+    padding: 0;
+    font-size: 27px;
+    line-height: 2;
+    float: none;
+  }
+  .footer-name {
+    text-align: center;
+    margin-top: 30px;
+    float: none;
+  }
+  #modal_form, .reg-form, .thanks {
+    width: 100%;
+    height: auto;
+  }
+  .thanks-title {
+    width: 100%;
+  }
+  .box-title font {
+    margin-left: 0;
+  }
+  .min-height {
+    min-height: auto;
+  }
+  .head, .block1 {
+    min-height: 652px;
+    background-position: center;
+
+  }
+  .block1-title {
+    margin-top: 45px;
+  }
+  .block-bg1 {
+    min-height: 510px;
+    background-position: center;
+
+  }
+  .block-bg2, .block-bg3, .block5 {
+    min-height: 520px;
+    background-position: center;
+  }
+  .head-content {
+    background: none;
+    border: 4px solid #eee;
+    border-radius: 15px;
+    background: #f1e510;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .bg-text {
+  }
+  .top-9{
+    position: relative;
+    top: -9px;
+  }
+  .take {
+    width: 240px;
+  }
+  .head {
+    min-height: 652px;
+    background-position: center;
+    background-position-x: -428px;
+  }
+  .l-height2-xs {
+    line-height: 2;
+  }
+  .head-logo {
+    height: auto;
+  }
+  .block1 {
+    min-height: 652px;
+    background-position: -29px center;
+  }
+  .block1-title {
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  .left-xs20 {
+    position: absolute;
+    left: 20%;
+  }
+  .block5-title, .block5-title font {
+    position: static;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+  }
+  .block5-title img {
+    margin-top: 0;
+  }
+}

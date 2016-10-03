@@ -1,0 +1,22 @@
+@import '../../mq';
+
+@media #{$phoneLandscape} {
+    @import '../mobile';
+
+    & {
+      .start-title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .where {
+        text-align: center;
+        padding: 0;
+      }
+      .rules-list li .step-info {
+          width: 76%;
+      }
+      .registration-info {
+        margin-top: 30px;
+      }
+    }
+}

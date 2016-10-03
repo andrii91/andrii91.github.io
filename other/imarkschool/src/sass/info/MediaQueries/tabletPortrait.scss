@@ -1,0 +1,37 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+  & {
+    .registration_1-title, .registration_1-form-info, .registration_1-name {
+      text-align: left;
+      max-width: 50%;
+    }
+    .registration_2 .reg-box {
+      margin: 0 auto;
+    }
+    .nav-tabs {
+      text-align: center;
+    }
+    .nav-tabs > li {
+      display: inline-block;
+    }
+    .slider {
+    height: 167px;
+    }
+    .green-tab .nav-tabs {
+      max-width: 583px;
+    }
+    .green-tab {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .footer .menu {
+      display: inline-block;
+      max-width: 450px;
+      .menu-item {
+        float: right;
+      }
+    }
+  }
+}

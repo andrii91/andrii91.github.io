@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../themes.googleusercontent.com/static/fonts/ptsans/v6/S1YQx4pVZa17uu0HWQd2fA.eot"/*tpa=http://themes.googleusercontent.com/static/fonts/ptsans/v6/S1YQx4pVZa17uu0HWQd2fA.eot*/);
+  src: local('PT Sans'), local('PTSans-Regular'), url("../themes.googleusercontent.com/static/fonts/ptsans/v6/S1YQx4pVZa17uu0HWQd2fA.eot"/*tpa=http://themes.googleusercontent.com/static/fonts/ptsans/v6/S1YQx4pVZa17uu0HWQd2fA.eot*/) format('embedded-opentype'), url("../themes.googleusercontent.com/static/fonts/ptsans/v6/LKf8nhXsWg5ybwEGXk8UBQ.woff"/*tpa=http://themes.googleusercontent.com/static/fonts/ptsans/v6/LKf8nhXsWg5ybwEGXk8UBQ.woff*/) format('woff');
+}

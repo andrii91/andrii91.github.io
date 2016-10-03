@@ -1,0 +1,6 @@
+tr:nth-child(even){
+	background: #ddebf7; голубой 
+}
+td:nth-child(3), td:nth-child(5), td:nth-child(7), td:nth-child(9) {
+	background: #f2f2de; бежевый
+}

@@ -1,0 +1,48 @@
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar{
+  width:10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb{
+  border-width: 1px 1px 1px 2px;
+  border-color: #fff;
+  background-color: #1c2866;
+}
+::-webkit-scrollbar-thumb:hover{
+  border-width: 1px 1px 1px 2px;
+  border-color: #fff;
+  background-color: #1c2866;
+}
+::-webkit-scrollbar-track{
+  border-width: 1px;
+  background-color: #eee;
+  border-color: #fff;
+}
+::-webkit-scrollbar-track:hover{
+  border: solid 1px #1c2866;
+  border-color: #fff;
+}
+@font-face {
+  font-family: 'FredokaOne';
+  src: url('../fonts/FredokaOne-Regular.eot');
+  src: local('☺'), url('../fonts/FredokaOne-Regular.woff') format('woff'), url('../fonts/FredokaOne-Regular.ttf') format('truetype'), url('../fonts/FredokaOne-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka dingbats';
+  src: url('../fonts/Fredoka dingbats.eot');
+  src: local('☺'), url('../fonts/Fredoka dingbats.woff') format('woff'), url('../fonts/Fredoka dingbats.ttf') format('truetype'), url('../fonts/Fredoka dingbats.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import 'info/bootstrap';
+@import 'info/main';

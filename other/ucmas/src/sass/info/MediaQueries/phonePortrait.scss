@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$phonePortrait} {
+    @import '../mobile';
+	& {
+	.structure .carousel-control.left {
+	    left: 22%;
+	}
+	}
+}

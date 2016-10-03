@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Професійна фотозйомка, виготовлення фотокниг та випускних альбомів</title>
+  <!-- must have -->
+ <link rel="shortcut icon" href="/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/inputmask.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <script src="js/portfolio.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+  <nav id="slide-menu">
+    <ul class="menu">
+      <li class="menu-item home"><a href="../index.html">Головна</a></li>
+      <li class="menu-item album"><a href="../photo.html">Дизайн</a></li>
+      <li class="menu-item album"><a href="../photo/index.html">Photo</a></li>
+      <li class="menu-item album"><a href="../album.html">Альбоми</a></li>
+      <li class="menu-item order-img"><a class="btn_order">Хочу фото</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <div class="menu-trigger"></div>
+    <div id="portfolio">
+      <div id="background"></div>   
+      <div class="arrows">
+        <a href="#" class="up">Вверх</a>
+        <a href="#" class="down">Вниз</a>
+        <a href="#" class="prev">Назад</a>
+        <a href="#" class="next">Вперед</a>
+      </div>
+      <div class="gallery">
+        <div class="inside">
+          <div class="item">
+            <div><img src="../images/f1.jpg" alt="image1" /></div>
+            <div><img src="images/2.jpg" alt="image2" /></div>
+            <div><img src="images/3.jpg" alt="image3" /></div>
+          </div>
+          <div class="item">
+            <div><img src="images/4.jpg" alt="image4" /></div>
+            <div><img src="images/5.jpg" alt="image5" /></div>
+          </div>
+          <div class="item">
+            <div><img src="images/6.jpg" alt="image6" /></div>
+            <div><img src="images/7.jpg" alt="image7" /></div>
+            <div><img src="images/8.jpg" alt="image8" /></div>
+            <div><img src="images/9.jpg" alt="image9" /></div>
+            <div><img src="images/10.jpg" alt="image10" /></div>
+            <div><img src="images/11.jpg" alt="image11" /></div>
+          </div>
+          <div class="item">
+            <div><img src="images/12.jpg" alt="image12" /></div>
+            <div><img src="images/13.jpg" alt="image13" /></div>
+            <div><img src="images/14.jpg" alt="image14" /></div>
+            <div><img src="images/15.jpg" alt="image15" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div id="modal_form"><!-- Сaмo oкнo --> 
+      <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+      <form action="order.php" method="post" class="order_form" id="order_form">
+        <input type="text" class="order-input" name="firstname" placeholder="Ім’я" required>
+        <input type="text" class="order-input" name="lastname" placeholder="Прізвище" required>
+        <input type="email" class="order-input" name="email"  placeholder="Імейл"required>
+        <input type="phone" class="order-input" id="phone" name="phone" placeholder="Телефон" required>
+        <input type="text" class="order-input" name="city" placeholder="Місто/Село" required>
+        <select name="view_photo" class="select">
+          <option>Вид фото</option>
+          <option>Дизайн</option>
+          <option>Photo</option>
+          <option>Альбоми</option>
+        </select>
+        <input type="submit" value="Замовити" id="order_submit">
+      </form>
+  </div>
+  <a class="btn_order order">Хочу Фото</a>
+  <div id="overlay"></div>
+  </body>
+</html>

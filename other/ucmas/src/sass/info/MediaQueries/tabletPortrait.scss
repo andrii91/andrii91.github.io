@@ -1,0 +1,40 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+		.insert-btn {
+			width: 390px;
+		}
+		.btn-box {
+			padding-left: 27%;	
+		}
+		.intelligence-info {
+			text-align: inherit;
+		}
+		.intelligence-title-small {
+			font-size: 17px;
+		}
+		.result-box {
+			width: 323px;
+		}
+		.ucmas_block-info {
+			padding-left: 97px;
+			&:before {
+			   display: block;
+		  }
+		}
+		.ucmas_block-box {
+			width: 322px;
+		}
+		.ucmas_it {
+		    padding: 208px 0 0;
+		}
+		.ucmas_block_one-content {
+			text-align: inherit;
+		}
+		.structure .carousel-control.right {
+			right: 11%;
+		}
+	}
+}

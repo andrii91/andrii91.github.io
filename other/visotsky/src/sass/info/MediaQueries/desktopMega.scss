@@ -1,0 +1,5 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+}

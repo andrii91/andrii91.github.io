@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'PFDinDisplayPro-bold';
+	src: url('../fonts/pfdintextpro-xblack.eot');
+	src: local('☺'), url('../fonts/pfdintextpro-xblack.woff') format('woff'), url('../fonts/pfdintextpro-xblack.ttf') format('truetype'), url('../fonts/pfdintextpro-xblack.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFDinDisplayPro';
+	src: url('../fonts/PFDinDisplayPro-Reg.eot');
+	src: local('☺'), url('../fonts/PFDinDisplayPro-Reg.woff') format('woff'), url('../fonts/PFDinDisplayPro-Reg.ttf') format('truetype'), url('../fonts/PFDinDisplayPro-Reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

@@ -1,0 +1,46 @@
+input[id="red"]:checked ~ label[for="red"], input[id="green"]:checked ~ label[for="green"], 
+input[id="blue"]:checked~ label[for="blue"] {
+	opacity: 0.2;
+}
+
+input[id="red"] ~ label[for="red"] {
+	color: red;
+	text-decoration: underline;
+}
+
+input[id="green"]~ label[for="green"] {
+	color: green;
+	text-decoration: underline;
+}
+
+input[id="blue"] ~ label[for="blue"] {
+	color: blue;
+	text-decoration: underline;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[id="red"]:checked ~ .red, input[id="green"]:checked ~ .green, 
+input[id="blue"]:checked ~ .blue  {
+	display: none;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+span {
+	padding: 1px 5px;
+	border-radius: 7px;
+	display: inline-block;  
+}

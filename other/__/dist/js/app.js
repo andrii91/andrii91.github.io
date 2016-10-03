@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".head-img img").click(function(){var o=$(".program").offset().top-0;$("body,html").animate({scrollTop:o},500)})});

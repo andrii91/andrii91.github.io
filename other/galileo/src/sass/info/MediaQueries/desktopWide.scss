@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$desktopWide} {
+    @import '../desktop';
+    & {
+		.where:before {
+          width: 100%;
+        }
+	}
+}

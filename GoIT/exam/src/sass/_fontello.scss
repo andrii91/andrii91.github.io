@@ -1,0 +1,32 @@
+.icon-2x {
+  font-size: 2em;
+}
+.icon-3x {
+  font-size: 3em;
+}
+
+@mixin icon-rotate($parent, $deg, $ms) {
+  #{$parent}:before {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+  }
+}
+
+@include icon-rotate('.icon-rotate-90', 90deg, 1);
+@include icon-rotate('.icon-rotate-180', 180deg, 2);
+@include icon-rotate('.icon-rotate-270', 270deg, 3);
+
+.icon-flip-horizontal:before {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.icon-flip-vertical:before {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}

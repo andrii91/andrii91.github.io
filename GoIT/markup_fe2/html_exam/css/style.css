@@ -1,0 +1,47 @@
+
+.header {
+  background: url(images/bg.png) no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.header__logo {
+  float: left;
+}
+
+.header__menu {
+  float: right;
+}
+
+.header__item {
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+  
+}
+.header__item:hover .header__link {
+  border-bottom: 2px solid #edbfff; 
+}
+
+.header__menu {
+  margin: 0;
+}
+
+.header__link {
+  color: #ffffff;
+  font: 400 24px / 33.724px LeagueGothic;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  text-transform: uppercase;
+}

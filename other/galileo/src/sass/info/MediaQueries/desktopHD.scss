@@ -1,0 +1,13 @@
+@import '../../mq';
+
+@media #{$desktopHD} {
+    @import '../desktop';
+    & {
+      .registration {
+        min-height: 400px;
+      }
+      .where:before {
+        width: 100%;
+      }
+    }
+}

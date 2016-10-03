@@ -1,0 +1,33 @@
+
+.pager {
+	margin-top: 20px;
+	position: relative;
+    height: 40px;
+}
+.pager a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #a23ad5;
+	margin:5px;
+}
+span a {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #eee;
+}
+
+span a:hover {
+	background-color: #a23ad5;
+	color:  #eee;
+}
+span a:nth-child(3){
+	border: 0;
+	color: #000;
+	padding-bottom: 0;
+    cursor: default;
+}
+span a:nth-child(3):hover {
+	background: transparent;
+	color: #000;
+}

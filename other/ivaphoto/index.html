@@ -1,0 +1,109 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Професійна фотозйомка, виготовлення фотокниг та випускних альбомів</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="css/bannerscollection_zoominout.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="fonts/css-family=Droid+Sans.css" rel='stylesheet' type='text/css'>
+  <link href="fonts/css-family=Lato-400,700,900,700italic,900italic.css" rel='stylesheet' type='text/css'>
+  <style>
+    .bannerControls, .bottomNav, .mycanvas {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <nav id="slide-menu">
+    <ul class="menu">
+      <li class="menu-item home"><a href="index.html">Головна</a></li>
+      <li class="menu-item album"><a href="photo.html">Дизайн</a></li>
+      <li class="menu-item album"><a href="photo/index.html">Photo</a></li>
+      <li class="menu-item album"><a href="album.html">Альбоми</a></li>
+      <li class="menu-item order-img"><a class="btn_order">Хочу Фото</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <div class="menu-trigger"></div>
+    <div id="bannerscollection_zoominout_opportune">
+      <div class="myloader"></div>
+      <!-- CONTENT -->
+      <ul class="bannerscollection_zoominout_list">
+        <li data-initialZoom="0.77" data-finalZoom="1" data-horizontalPosition="center" data-verticalPosition="center"data-bottom-thumb="images/1wHhaulmy4c.jpg" data-text-id="#bannerscollection_zoominout_photoText1" data-autoPlay="10"><img src="images/1wHhaulmy4c.jpg" alt="" width="2500" height="1570" /></li>
+
+        <li data-initialZoom="0.77" data-finalZoom="1" data-horizontalPosition="center" data-verticalPosition="center"data-bottom-thumb="images/jyenBSfEck4.jpg" data-text-id="#bannerscollection_zoominout_photoText1" data-autoPlay="10"><img src="images/jyenBSfEck4.jpg" alt="" width="2500" height="1570" /></li>
+        
+        <li data-initialZoom="0.77" data-finalZoom="1" data-horizontalPosition="left" data-verticalPosition="top" data-bottom-thumb="images/5YdGbfd-ZFc.jpg" data-text-id="#bannerscollection_zoominout_photoText2" ><img src="images/5YdGbfd-ZFc.jpg" alt="" width="2500" height="1570" /></li>
+        
+        <li data-horizontalPosition="right" data-verticalPosition="center" data-initialZoom="0.77" data-finalZoom="1" data-bottom-thumb="images/f7.jpg"><img src="images/f7.jpg"  alt="" width="2500" height="1570"  /></li>
+        <li data-horizontalPosition="right" data-verticalPosition="center" data-initialZoom="0.77" data-finalZoom="1" data-bottom-thumb="images/f9.jpg"><img src="images/f9.jpg"  alt="" width="2500" height="1570"  /></li>
+        
+        <li data-horizontalPosition="center" data-verticalPosition="center" data-initialZoom="1" data-finalZoom="0.77" data-duration="15" data-bottom-thumb="images/f6.jpg"><img src="images/f6.jpg"  alt="" width="2500" height="1570" /></li>
+
+        <li data-horizontalPosition="center" data-verticalPosition="center" data-initialZoom="1" data-finalZoom="0.77" data-duration="15" data-bottom-thumb="images/f2.jpg"><img src="images/f2.jpg"  alt="" width="2500" height="1570" /></li>
+
+      </ul>
+    </div>
+
+    <div class="album-block">
+      <div class="album-box">
+        <a href="photo.html">
+          <div class="effect eff">
+            <img src="images/1wHhaulmy4c.jpg" alt="" />
+            <div class="caption">
+              <h4 class="album-title">Дизайн</h4>
+            </div>
+          </div>                  
+        </a>
+      </div>
+      <div class="album-box">
+        <a href="photo/index.html">
+          <div class="effect eff">
+            <img src="images/f5.jpg" alt="" />
+            <div class="caption">
+              <h4 class="album-title">Photo</h4>
+            </div>
+          </div>                  
+        </a>
+      </div>
+      <div class="album-box">
+        <a href="album.html">
+          <div class="effect eff">
+            <img src="images/_DSC3860.JPG" alt="" />
+            <div class="caption">
+              <h4 class="album-title">Альбоми</h4>
+            </div>
+          </div>                  
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal_form"><!-- Сaмo oкнo --> 
+      <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+      <form action="order.php" method="post" class="order_form" id="order_form">
+        <input type="text" class="order-input" name="firstname" placeholder="Ім’я" required>
+        <input type="text" class="order-input" name="lastname" placeholder="Прізвище" required>
+        <input type="email" class="order-input" name="email"  placeholder="Імейл"required>
+        <input type="phone" class="order-input" id="phone" name="phone" placeholder="Телефон" required>
+        <input type="text" class="order-input" name="city" placeholder="Місто/Село" required>
+        <select name="view_photo" class="select">
+          <option>Вид фото</option>
+          <option>Дизайн</option>
+          <option>Photo</option>
+          <option>Альбоми</option>
+        </select>
+        <input type="submit" value="Замовити" id="order_submit">
+      </form>
+  </div>
+  <a class="btn_order order">Хочу Фото</a>
+  <div id="overlay"></div>
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/inputmask.js"></script>
+  <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+  <script src="js/bannerscollection_zoominout.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

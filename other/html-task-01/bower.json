@@ -1,0 +1,21 @@
+{
+  "name": "html-task-01",
+  "description": "",
+  "authors": [
+    "Andrii <al@gogmat.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
