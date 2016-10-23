@@ -1,0 +1,47 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+     .padd-top50, .padd-top40 {
+     	padding-top: 0;
+     }
+     .approaches .approaches-container {
+     	margin-bottom: 30px;
+     }
+     .approaches-arr {
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+	    -o-transform: rotate(0deg);
+	}
+      .pos-rel {
+        position: absolute;
+        bottom: 0;
+      }
+      .pay-btn:before {
+        display: none;
+      }
+	.squeeze-box, .squeeze-img {
+		width: 49%;
+		padding-top: 0;
+	}
+	.where-img {
+    width: 100%;
+    position: static;
+    display: block;
+	}
+	.where-title, .where-address, .where-box {
+		text-align: center;
+	}
+	.price-box {
+		max-width: 342px;
+	}
+	.translucent {
+		position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	}
+	}
+}
