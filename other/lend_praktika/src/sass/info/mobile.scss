@@ -1,0 +1,44 @@
+& {
+ 	.why {
+ 		padding-top: 202px;
+ 	}
+ 	.why-title, .video-title, .practice-title, .skills-title {
+ 		margin-bottom: 20px;
+ 	}
+ 	.why-img {
+ 		img {
+ 			width: 100%;
+ 		}
+ 	}
+ 	.practice-box h4:after, .practice-box h4:before {
+ 		display: none;
+ 	}
+ 	.reg-btn {
+	    padding: 19px 30px;
+	}
+	.gray {
+		height: auto;
+	}
+	.summary {
+	    padding: 108px 0 0;
+	}
+	.footer-link {
+		line-height: 1;
+	}
+	br {
+		display: none;
+	}
+	.lh8 {
+		line-height: 1;
+	}
+	.skills-img {
+		min-height: 100%;
+		line-height: 1;
+	}
+	.video-box {
+		background: none;
+	}
+}
+
+
+
