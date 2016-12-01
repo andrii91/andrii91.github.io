@@ -1,10 +1,6 @@
 $(document).ready(function() {
-    $('.head-img img').click(function() {
-        var destination = $(".program").offset().top - 0;
-        $("body,html").animate({
-            scrollTop: destination
-        }, 500);
-    });
+
+
     if ($(window).width() > 1300) {
         $('#fullpage').fullpage();
     }
@@ -20,8 +16,10 @@ $(document).ready(function() {
     $('.price-checkbox li').click(function() {
         $(this).parent('.price-checkbox').find('li.active').removeClass('active');
         $(this).parents('.price-box').find('.price-summ.active').removeClass('active');
+        $(this).parents('.price-box').find('.price-summ.old.act').removeClass('act');
         $(this).addClass('active');
-        $('#' + $(this).data('check')).addClass('active');
+        $('.' + $(this).data('check')).addClass('active');
+        $('.' + $(this).data('check') + '.old').addClass('act');
         $('.option_price').val($(this).parents('.price-box').find('.price-summ.active').text());
         $('.option').val($(this).parents('.price-box').find('.price-title_small').text());
         $('.option_type').val($(this).text());
@@ -54,14 +52,38 @@ $(document).ready(function() {
         $("body").append(script);
 
         setTimeout(function() {
-		    $(".registration")[0].reset();
-			$(".registration")[1].reset();
-			$(".registration")[2].reset();
+            $(".registration")[0].reset();
+            $(".registration")[1].reset();
+            $(".registration")[2].reset();
+            $(".registration")[3].reset();
 
             $('#myModal').modal('hide');
             $('#myModal_1').modal('show');
-            
+            window.location.href = "thx.html";
+
         }, 1000);
     });
 
+    $('.sp-link').click(function() {
+        var destination = $("#section2").offset().top - 0;
+        $("body,html").animate({
+            scrollTop: destination
+        }, 500);
+    });
+    $('.registration-call').on('submit', function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        $.ajax({
+            type: 'POST',
+            url: 'crm/call.php',
+            dataType: 'json',
+            data: $form.serialize(),
+            success: function(response) {
+                console.info(response);
+                if (response.status == 'success') {
+                    window.location.href = "thx.html";
+                }
+            }
+        });
+    });
 });

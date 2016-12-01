@@ -7274,7 +7274,9 @@ button.close {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 	text-align: center
 }
-
+.menu-top li a {
+	color: #fff;
+}
 .menu-top li,
 .price-box .registr-btn,
 .reg-btn,
@@ -8650,7 +8652,7 @@ nav {
 .section1-img img,
 .section1-img iframe {
 	width: 100%;
-	height: 554px
+	height: 556px
 }
 
 .head-form {
@@ -8669,10 +8671,11 @@ nav {
 }
 
 .head-info {
-	color: #989898;
+	color: #000;
 	font: 500 14px/21px GothamPro;
-	padding-left: 8.42105vw;
-	max-width: 703px
+	/*padding-left: 8.42105vw;*/
+	/*max-width: 703px;*/
+	text-align: center;
 }
 
 .registration {
@@ -8681,6 +8684,21 @@ nav {
 }
 
 .registration:before {
+	content: "";
+	background: url(images/Layer-1.png) no-repeat;
+	height: 39px;
+	width: 126px;
+	position: absolute;
+	left: 27px;
+	bottom: 35px
+}
+
+.registration-call {
+	padding: 0 50px 20px;
+	position: relative
+}
+
+.registration-call:before {
 	content: "";
 	background: url(images/Layer-1.png) no-repeat;
 	height: 39px;
@@ -8701,6 +8719,11 @@ nav {
 	color: #989898;
 	font: 500 14px/67px GothamPro
 }
+.registration-call label {
+	display: block;
+	color: #989898;
+	font: 500 14px/20px GothamPro
+}
 
 .reg-input {
 	display: block;
@@ -8715,7 +8738,7 @@ nav {
 .head-bottom {
 	background: #d3d3d3;
 	background-size: cover;
-	padding: 1.6% 0 0;
+	padding: 1.6% 0;
 	text-align: center
 }
 
@@ -8739,15 +8762,16 @@ nav {
 }
 
 .head-box {
-	background-color: #fcfcfc;
+	/*background-color: #fcfcfc;*/
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	box-shadow: 0 10px 59px 0 rgba(0, 0, 0, .1);
+	/*box-shadow: 0 10px 59px 0 rgba(0, 0, 0, .1);*/
 	margin: 0 56px;
 	max-width: 356px;
 	width: 100%;
-	padding: 10px 60px;
-	min-height: 120px
+    padding: 25px 60px;
+    min-height: 105px;
+    margin-top: 20px;
 }
 
 .head-icon {
@@ -8767,7 +8791,7 @@ nav {
 .compn-img img {
 	width: 100%;
 	border-radius: 50%;
-	background: #c61c2b
+	background: #fff
 }
 
 .compn-img:before,
@@ -8798,7 +8822,7 @@ nav {
 
 #section1 {
 	background-color: #d3d3d3;
-	padding: 20px 0
+	padding: 10px 0
 }
 
 .company-logo {
@@ -8889,7 +8913,8 @@ nav {
 	max-width: 960px;
 	min-height: 320px;
 	vertical-align: top;
-	margin-left: -109px
+    margin-left: -101px;
+    margin-top: 40px;
 }
 
 .item-info .name {
@@ -8979,7 +9004,7 @@ nav {
 }
 
 .indicators-info span {
-	color: #949494;
+	/*color: #949494;*/
 	font: 400 23px PFDinTextCompPro
 }
 
@@ -9204,7 +9229,7 @@ nav {
 }
 
 .program-numb h4 {
-	font: 500 320.94px/304px PFDinTextCompPro
+	font: 500 320.94px/292px PFDinTextCompPro
 }
 
 .format-info,
@@ -9283,7 +9308,8 @@ nav {
 
 .format-info {
 	font: 400 31.64px/1 PFDinTextCompPro;
-	font-size: 1.66526vw
+	font-size: 1.66526vw;
+	margin-bottom: 10px;
 }
 
 .format-block {
@@ -9498,7 +9524,7 @@ nav {
 
 .reviews .item-video iframe,
 .reviews .item-video img {
-	box-shadow: 0 24px 128px 0 rgba(0, 0, 0, .78)
+	box-shadow: 0 24px 128px 0 rgba(0, 0, 0, .78);
 	height:545px
 }
 
@@ -9556,7 +9582,11 @@ nav {
 .item-box {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 42px
+	margin-right: 42px;
+	max-width: 140px;
+}
+.item-box p {
+	font: 700 18px PFDinTextCompPro;
 }
 
 .item-box .name {
@@ -9623,7 +9653,7 @@ nav {
 }
 
 .st-img {
-	max-width: 990px;
+	max-width: 930px;
 	margin: 0 auto
 }
 
@@ -9692,10 +9722,13 @@ nav {
 
 .price-title {
 	color: #595959;
-	font: 400 51.9px/90px PFDinTextCompPro;
+	font: 400 51.9px/1 PFDinTextCompPro;
 	font-size: 2.73158vw;
 	margin-top: 80px;
 	margin-bottom: 10px
+}
+.price-block {
+	margin-top: 10px;
 }
 
 .price-box {
@@ -9706,7 +9739,7 @@ nav {
 	background: #f0f0f0;
 	z-index: 1;
 	padding: 40px 56px;
-	min-height: 750px
+	min-height: 720px
 }
 
 .price-box:after,
@@ -9717,7 +9750,7 @@ nav {
 }
 
 .price-box .price-list {
-	margin-bottom: 100px
+	margin-bottom: 64px
 }
 
 .price-box:nth-child(2) {
@@ -9725,16 +9758,19 @@ nav {
 	z-index: 2;
 	margin-left: -23px;
 	margin-top: 0;
-	min-height: 810px;
+	min-height: 766px;
 	background: #fcfcfc
 }
 
 .price-box:nth-child(2) .price-list {
-	margin-bottom: 65px
+	margin-bottom: 145px
+}
+.price-box:nth-child(3) .price-list {
+	margin-bottom: 10px;
 }
 
-.price-box:nth-child(3) .price-list,.price-title_small {
-	margin-bottom: 40px
+.price-list,.price-title_small {
+	margin-bottom: 10px
 }
 
 .price-box:nth-child(2):before {
@@ -9743,7 +9779,8 @@ nav {
 }
 
 .price-box:nth-child(3) {
-	margin-left: -23px
+	margin-left: -23px;
+	
 }
 
 .price-box:before {
@@ -9768,7 +9805,8 @@ nav {
 	font: 500 20.3px GothamPro;
 	max-width: 266px;
 	width: 100%;
-	cursor: pointer
+	cursor: pointer;
+	margin-top: 0;
 }
 
 .price-title_small {
@@ -9793,15 +9831,23 @@ nav {
 	content: "-";
 	position: absolute;
 	left: -20px;
-	top: 10px
+	top: 0px
 }
 
 .price-summ {
-	color: #000;
+	color: #c61c2b;
 	font: 500 56.84px/1 GothamProM;
-	margin-bottom: 64px;
+	margin-bottom: 25px;
 	display: none;
 	font-size: 2.99158vw
+}
+.price-summ.old {
+	color: #000;
+	font: 500 56.84px/1 GothamProM;
+	margin-bottom: 0px;
+	display: none;
+	font-size: 2vw;
+	text-decoration: line-through;
 }
 
 .price-summ sup {
@@ -9970,8 +10016,9 @@ nav {
 	vertical-align: top
 }
 
-.questions-img img {
-	width: 100%
+.questions-img iframe {
+	width: 100%;
+	height: 790px;
 }
 
 .questions-title {
@@ -10485,6 +10532,13 @@ nav {
 	body .reg-btn {
 		margin-left: 63px
 	}
+	.price-list li {
+    font: 400 15.9px/1 GothamPro;
+	}
+	.price-checkbox li {
+    font: 400 15.9px/2 GothamPro;
+    margin-bottom: 20px;
+}
 
 	body .reg-btn:active {
 		margin: 0 calc(2px + 6px) 2px 63px;
@@ -10546,8 +10600,16 @@ nav {
 	}
 
 	body .head-bottom {
-		padding: 30px 0 0
+		padding: 60px 0;
 	}
+	body .format-container {
+    max-width: 950px;
+    margin: 0 auto;
+	}
+	body .reviews .item-video iframe, .reviews .item-video img {
+		height: 315px;
+	}
+
 
 	body .head-box {
 		margin: 0 5px;
@@ -10807,20 +10869,20 @@ nav {
 
 	body .price-box {
 		max-width: 400px;
-		margin-top: 31px;
+		margin-top: 8px;
 		padding: 40px 25px;
 		min-height: auto
 	}
 
 	body .price-box:nth-child(2) {
 		max-width: 440px;
-		min-height: 520px;
+		min-height: 508px;
 		margin-bottom: 10px
 	}
 
 	body .price-title_small {
 		font: 500 32.5px/1 PFDinTextCompPro;
-		margin-bottom: 15px
+		margin-bottom: 0
 	}
 
 	body .price-list li::before {
@@ -10828,11 +10890,11 @@ nav {
 	}
 
 	body .price-box .price-list {
-		margin-bottom: 68px
+		margin-bottom: 50px
 	}
 
 	body .price-box:nth-child(2) .price-list {
-		margin-bottom: 43px
+		margin-bottom: 57px
 	}
 
 	body .price-box::before {
@@ -10910,4 +10972,225 @@ nav {
 }
 #myModal_1 .modal-header {
     padding: 15px 15px 0 0;
+}
+.mt40 {
+	margin-top: 40px;
+}
+.price-summ.act {
+	display: block;
+}
+.phone-hunter-phone{background-color:transparent!important;cursor:pointer!important;height:200px!important;position:fixed!important;transition:visibility .5s ease 0s!important;visibility:hidden;width:200px!important;z-index:200000!important;position:fixed!important;right:-20px;bottom:40px}.phone-hunter-phone.phone-hunter-show{visibility:visible}.phone-hunter-phone.phone-hunter-static{opacity:.6!important}.phone-hunter-phone.phone-hunter-hover{opacity:1!important}.phone-hunter-ph-circle{animation-name:phone-hunter-circle-anim!important;animation-duration:1.2s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-anim!important;-webkit-animation-duration:1.2s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important;background-color:transparent!important;border:2px solid rgba(0,154,43,.4)!important;border-radius:100%!important;height:160px!important;left:20px!important;opacity:.1!important;position:absolute;top:20px;transform-origin:50% 50% 0!important;transition:all .5s ease 0s!important;width:160px!important}.phone-hunter-phone.phone-hunter-active .phone-hunter-ph-circle{animation-name:phone-hunter-circle-anim!important;animation-duration:1.1s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-anim!important;-webkit-animation-duration:1.1s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important}.phone-hunter-phone.phone-hunter-static .phone-hunter-ph-circle{animation-name:phone-hunter-circle-anim!important;animation-duration:2.2s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-anim!important;-webkit-animation-duration:2.2s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important}.phone-hunter-phone.phone-hunter-hover .phone-hunter-ph-circle{border-color:rgba(0,175,242,1)!important;opacity:.5!important}.phone-hunter-phone.phone-hunter-green.phone-hunter-hover .phone-hunter-ph-circle{background-color:#11c849!important;opacity:.5!important}.phone-hunter-phone.phone-hunter-gray.phone-hunter-hover .phone-hunter-ph-circle{border-color:rgba(204,204,204,1)!important;opacity:.5!important}.phone-hunter-phone.phone-hunter-gray .phone-hunter-ph-circle{background-color:#11c849!important;opacity:.5!important}.phone-hunter-ph-circle-fill{animation-name:phone-hunter-circle-fill-anim!important;animation-duration:2.3s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-fill-anim!important;-webkit-animation-duration:2.3s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important;background-color:#000!important;border:2px solid transparent!important;border-radius:100%!important;height:100px!important;left:50px!important;opacity:.1!important;position:absolute!important;top:50px!important;transform-origin:50% 50% 0!important;transition:all .5s ease 0s!important;width:100px!important}.phone-hunter-phone.phone-hunter-active .phone-hunter-ph-circle-fill{animation-name:phone-hunter-circle-fill-anim!important;animation-duration:1.7s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-fill-anim!important;-webkit-animation-duration:1.7s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important}.phone-hunter-phone.phone-hunter-static .phone-hunter-ph-circle-fill{animation-name:phone-hunter-circle-fill-anim!important;animation-duration:2.3s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-fill-anim!important;-webkit-animation-duration:2.3s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important;opacity:0!important}.phone-hunter-phone.phone-hunter-hover .phone-hunter-ph-circle-fill{background-color:#11c849!important;opacity:.75!important}.phone-hunter-phone.phone-hunter-green.phone-hunter-hover .phone-hunter-ph-circle-fill{background-color:#11c849!important;opacity:.75!important}.phone-hunter-phone.phone-hunter-green .phone-hunter-ph-circle-fill{background-color:#11c849!important;opacity:.75!important}.phone-hunter-phone.phone-hunter-gray .phone-hunter-ph-circle-fill{background-color:#11c849!important;opacity:.75!important}.phone-hunter-ph-img-circle{background-color:rgba(30,30,30,.1)!important;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NURGQTFBNTczMTFCMTFFNTlDODk5MUNGQzg1RkUwRjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NURGQTFBNTgzMTFCMTFFNTlDODk5MUNGQzg1RkUwRjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1REZBMUE1NTMxMUIxMUU1OUM4OTkxQ0ZDODVGRTBGMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1REZBMUE1NjMxMUIxMUU1OUM4OTkxQ0ZDODVGRTBGMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkPsIDIAAAKrSURBVHja7JpPSBVRFMbnqRkqD0MUtCiFoELIFoqLMBVCSMoiiWgTQeAibKNtVNBFQhRoQeLGTBAX5VLRTdBCoZXYIis1iWjVH0VESFHf8/YdvELJm5l7Z+Y+j4/3wW8398z73p177zlnJiSEsBJBKVaCKGkkEYykgdMg9aAayQANYArMgsespoR2LQVugg/if0XAJcXxxnG7IBe8Evb6BvK4GzkFPgp3veZsJAfMCnXd3W8jdov9ITijsdS6Na8PXKEYKUoBmAdhzVgToAZscdl+czyYIFWBVk7nyDbtyh7jtYMLnIyEPMajU//5fpz6sYysgCUfMdO5zMgv8NljvAVwC0S55FpfPMQaB5VghlPS+EYzTi+4Cn5yOkdI+WAOZCvEGAN1XNN4+mcnFWNMWgzkVI8MKcY4z8FIyKGLkgU+gUKXGBFQDd5xnZE/oE/xEHzk4xCNS6n7AvxWiEPb7h3ORhZBl2KsJ+AYxzWyq0wwrVhvjIB6ma+x66KsgQeK8a6BNs5dFGJAseyl7sptbl2UfzkCFhTNbINGzR9TCzpBsWkjRDlY12hK9INshbjUH9uSY5ZBg2kjxD2hpxlw0SHeSbBk02bKN2nEko+AjuhR6wNFe+LQbE07jPsOrpg0QrwU+loEHeCsfEzfKo7rAlmmjKSCYeFNUQ9jpkCZCSPEYTAo4qc10CTvG6iRXZ6K+KpFtWWqq2bQEsfUZNVLrqWjyzL1P2rQxA+Z9636ffXm1kmpkHW8KT2LNSMm85/7NgedH30FYRO7lhsn5HkTDchIvantVydHo5Rj04eJHqd7BL3Y3XROlsQ3wHGNcWNyzIafCtGEwvJ9ynVQCkpsmhcR2cWk9y7rfktd0zoEiqydjxDK5U5KbIJR8D6omv1AKPlRTdKIIf0VYADgI8f6mCJcdAAAAABJRU5ErkJggg==)!important;background-position:center center!important;background-repeat:no-repeat!important;border:2px solid transparent!important;border-radius:100%!important;height:60px!important;left:70px!important;opacity:.9!important;position:absolute!important;top:70px!important;transform-origin:50% 50% 0!important;width:60px!important}.phone-hunter-phone.phone-hunter-active .phone-hunter-ph-img-circle{animation-name:phone-hunter-circle-img-anim!important;animation-duration:1s!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important;-webkit-animation-name:phone-hunter-circle-img-anim!important;-webkit-animation-duration:1s!important;-webkit-animation-timing-function:ease-in-out!important;-webkit-animation-iteration-count:infinite!important}.phone-hunter-phone.phone-hunter-green.phone-hunter-hover .phone-hunter-ph-img-circle{background-color:#11c849!important}.phone-hunter-phone.phone-hunter-green .phone-hunter-ph-img-circle{background-color:#11c849!important}@keyframes phone-hunter-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@keyframes phone-hunter-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@keyframes phone-hunter-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}@keyframes phone-hunter-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}@keyframes phone-hunter-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@keyframes phone-hunter-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}@-webkit-keyframes phone-hunter-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    }
+.thanks {
+	background: url('images/20161201VrLcqY57JcscdSfp_x5fdY_large.jpeg') no-repeat center bottom;
+	background-size: cover;
+	padding: 200px 0;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.thanks-title {
+	font: 500 58px/1 PFDinTextCompPro;
+    font-size: 3.05263vw;
+    margin-bottom: 0;
+    margin-top: 70px;
+    color: #fff;
+}
+.thanks-info {
+    font: 400 31.64px/1 PFDinTextCompPro;
+    font-size: 1.66526vw;
+    margin-bottom: 10px;
+    color: #fff;
 }
