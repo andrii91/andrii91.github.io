@@ -55,7 +55,6 @@ $(document).ready(function() {
             $(".registration")[0].reset();
             $(".registration")[1].reset();
             $(".registration")[2].reset();
-            $(".registration")[3].reset();
 
             $('#myModal').modal('hide');
             $('#myModal_1').modal('show');
