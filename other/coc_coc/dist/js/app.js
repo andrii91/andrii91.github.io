@@ -76,6 +76,8 @@ $(document).ready(function() {
         navigation: false
     });
 
+    $('.col-md-4').removeClass('head-hover');
+
   }
 
   $('.accordion_m-title').click(function() {
