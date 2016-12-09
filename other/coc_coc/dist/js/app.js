@@ -33,7 +33,6 @@ $(document).ready(function() {
         if (i == 7) {
             i = 0;
         }
-        console.log(i);
     }
     if ($(window).width() > 1200) {
       var intervalID = setInterval(autoPlayLi, 2000);
@@ -53,6 +52,14 @@ $(document).ready(function() {
         pagination: false,
         navigation: true
     });
+      $('.making-img').addClass('hidden_animation');
+    var making = new Waypoint({
+        element: $('.making'),
+        handler: function(direction) {
+            $('.making-img').addClass('visible animated fadeInLeft');
+        },
+        offset: '80%'
+    });
       
     }
 
@@ -61,13 +68,14 @@ $(document).ready(function() {
       $('.head-menu').toggle();
     })
     $('.owl-carousel').owlCarousel({
-        autoPlay: 3000,
-        items: 3,
+        autoPlay: false,
+        items: 1,
         slideSpeed: 300,
         navigationText: false,
         pagination: false,
         navigation: false
     });
+
   }
 
   $('.accordion_m-title').click(function() {
@@ -120,14 +128,7 @@ $(document).ready(function() {
         }
 
     });
-    $('.making-img').addClass('hidden_animation');
-    var making = new Waypoint({
-        element: $('.making'),
-        handler: function(direction) {
-            $('.making-img').addClass('visible animated fadeInLeft');
-        },
-        offset: '80%'
-    });
+    
 
     
 
