@@ -22,6 +22,12 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('#' + $(this).data('tab')).toggleClass('active');
     });
+    $('.types-accordion li').hover(function() {
+        $('.types-accordion li').removeClass('active');
+        $('.tabs').removeClass('active');
+        $(this).toggleClass('active');
+        $('#' + $(this).data('tab')).toggleClass('active');
+    });
 
 
     var i = 0;
@@ -45,12 +51,13 @@ $(document).ready(function() {
       });
 
       $('.owl-carousel').owlCarousel({
-        autoPlay: 3000,
-        items: 3,
-        slideSpeed: 300,
-        navigationText: false,
-        pagination: false,
-        navigation: true
+        items:3,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        nav:true,
+        navText: false,
+        autoplayHoverPause:true
     });
       $('.making-img').addClass('hidden_animation');
     var making = new Waypoint({
@@ -68,15 +75,14 @@ $(document).ready(function() {
       $('.head-menu').toggle();
     })
     $('.owl-carousel').owlCarousel({
-        autoPlay: false,
-        items: 1,
-        slideSpeed: 300,
-        navigationText: false,
-        pagination: false,
-        navigation: false
+        items:1,
+        loop:true,
+        autoplay:false,
+        autoplayTimeout:2000,
+        nav:false,
+        navText: false,
+        autoplayHoverPause:true
     });
-
-    $('.col-md-4').removeClass('head-hover');
 
   }
 
