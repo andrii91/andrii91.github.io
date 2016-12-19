@@ -1,6 +1,6 @@
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     return $('.head-top').toggleClass("header_fixed", $(window).scrollTop() > 0);
-});
+});*/
 $(document).ready(function() {
     $('.reg-scroll').click(function() {
         var destination = $(".registration").offset().top - 0;
@@ -43,7 +43,7 @@ $(document).ready(function() {
     if ($(window).width() > 1200) {
       var intervalID = setInterval(autoPlayLi, 2000);
 
-      $(".types-accordion").hover(function () {
+      $(".types-block").hover(function () {
       clearInterval(intervalID);
       },
       function(){
