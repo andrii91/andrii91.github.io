@@ -41,55 +41,57 @@ $(document).ready(function() {
         }
     }
     if ($(window).width() > 1200) {
-      var intervalID = setInterval(autoPlayLi, 2000);
+        var intervalID = setInterval(autoPlayLi, 2000);
 
-      $(".types-block").hover(function () {
-      clearInterval(intervalID);
-      },
-      function(){
-      intervalID = setInterval(autoPlayLi, 2000);
-      });
+        $(".types-block").hover(function() {
+                clearInterval(intervalID);
+            },
+            function() {
+                intervalID = setInterval(autoPlayLi, 2000);
+            });
 
-      $('.owl-carousel').owlCarousel({
-        items:3,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:2000,
-        nav:true,
-        navText: false,
-        autoplayHoverPause:true
-    });
-      $('.making-img').addClass('hidden_animation');
-    var making = new Waypoint({
-        element: $('.making'),
-        handler: function(direction) {
-            $('.making-img').addClass('visible animated fadeInLeft');
-        },
-        offset: '80%'
-    });
-      
+        $('.making-img').addClass('hidden_animation');
+        var making = new Waypoint({
+            element: $('.making'),
+            handler: function(direction) {
+                $('.making-img').addClass('visible animated fadeInLeft');
+            },
+            offset: '80%'
+        });
+
     }
-
-  if ($(window).width() < 1200) {
-    $('.mob-btn, .head-menu li').click(function(){
-      $('.head-menu').toggle();
-    })
     $('.owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        autoplay:false,
-        autoplayTimeout:2000,
-        nav:false,
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        nav: true,
         navText: false,
-        autoplayHoverPause:true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
     });
 
-  }
+    /*if ($(window).width() < 1200) {
+        $('.mob-btn, .head-menu li').click(function() {
+            $('.head-menu').toggle();
+        })
 
-  $('.accordion_m-title').click(function() {
-    $(this).toggleClass('active');
-     $(this).parents('.accordion-list').find('.accordion_m-info').slideToggle(400);
-  });
+    }
+*/
+    $('.accordion_m-title').click(function() {
+        $(this).toggleClass('active');
+        $(this).parents('.accordion-list').find('.accordion_m-info').slideToggle(400);
+    });
 
     $('.video-btn').click(function() {
         $(this).hide();
@@ -136,9 +138,9 @@ $(document).ready(function() {
         }
 
     });
-    
 
-    
+
+
 
     $('.more-btn').click(function() {
         $(this).parents('.item').find('.more').slideToggle(400);
@@ -160,6 +162,6 @@ $(document).ready(function() {
             phone: $form.find('input[name="phone"]').val(),
         };
 
-        window.location.href = 'https://qc.coccoc.com/dang-ky-tai-khoan?name='+data.name+'&website='+ data.website+'&phone='+data.phone;
+        window.location.href = 'https://qc.coccoc.com/dang-ky-tai-khoan?name=' + data.name + '&website=' + data.website + '&phone=' + data.phone;
     });
 });
