@@ -63,7 +63,7 @@ $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2000,
         nav: true,
         navText: false,
@@ -75,7 +75,7 @@ $(document).ready(function() {
             600: {
                 items: 2
             },
-            1000: {
+            1050: {
                 items: 3
             }
         }
