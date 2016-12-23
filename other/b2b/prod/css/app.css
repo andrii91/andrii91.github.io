@@ -8902,7 +8902,7 @@ nav {
 
 .item-img img {
 	/*width: 100%;*/
-	max-width: 506px;
+	max-width: 393px;
 	max-height: 879px;
 }
 
@@ -9754,7 +9754,7 @@ nav {
 }
 
 .price-box .price-list {
-	margin-bottom: 64px
+	margin-bottom: 120px
 }
 
 .price-box:nth-child(2) {
@@ -9829,7 +9829,7 @@ nav {
 	color: #000;
 	font: 400 20.9px/36px GothamPro;
 	font-size: 1.1vw;
-	line-height: 1.89474vw
+	line-height: 1.1vw
 }
 
 .price-list li:before {
@@ -9853,9 +9853,15 @@ nav {
 	margin-bottom: 0px;
 	display: none;
 	font-size: 2vw;
-	text-decoration: line-through
+	text-decoration: line-through;
+	min-height: 27px;
 }
-
+.price-list li.red {
+	color: red;
+}
+.price-list li b {
+	font-weight: bold;
+}
 .price-summ sup {
 	font: 500 26.68px/1 GothamPro;
 	font-size: 1.40421vw
@@ -10071,7 +10077,9 @@ nav {
 	body .section_info-content {
 		text-align: center
 	}
-
+	body .item-img img {
+		width: 100%;
+	}
 	body .menu-top {
 		margin: 0;
 		background-color: #c61c2b;
@@ -10084,6 +10092,9 @@ nav {
 		font-size: 16px;
 		float: none;
 		line-height: 50px
+	}
+	body .item-info {
+		margin-top: 0;
 	}
 
 	body .mob-btn {
@@ -10481,10 +10492,7 @@ nav {
 		margin-top: 0
 	}
 
-	body #carousel-example-generic .chevron-left,
-	body #carousel-example-generic .chevron-right {
-		top: 74%
-	}
+	
 
 	.play,
 	.video-paranja {
@@ -10531,6 +10539,9 @@ nav {
 	body .program-numb.active:before {
 		content: "\e113"
 	}
+	body #carousel-example-generic .chevron-left, body #carousel-example-generic .chevron-right {
+	    top: 658px;
+	}
 
 }
 
@@ -10540,7 +10551,7 @@ nav {
 	}
 
 	.price-list li {
-		font: 400 15.9px/1 GothamPro
+		font: 400 13px/1 GothamPro
 	}
 
 	.price-checkbox li {
@@ -10569,27 +10580,30 @@ nav {
 	body .head-form {
 		min-height: auto;
 		max-width: 100%;
-		width: 69.9%
+		width: 52.9%
 	}
 
 	body .section1-img {
-		max-width: 410px
+		max-width: 47%
 	}
 
-	body .head-box,
-	body .item-img img {
+	body .head-box {
 		max-width: 320px
+	}
+	body .item-img img {
+		max-width: 246px
 	}
 
 	body .registration label {
-		display: inline-block;
 		line-height: 1.5;
-		margin: 0 24px
+		margin: 0 
 	}
 
 	body .reg-input {
-		display: inline-block;
-		vertical-align: top
+		display: block;
+		vertical-align: top;
+		max-width: 100%;
+		width: 100%;
 	}
 
 	body .registration {
@@ -10608,7 +10622,7 @@ nav {
 	}
 
 	body .head-bottom {
-		padding: 60px 0
+		padding: 35px 0
 	}
 
 	body .format-container {
@@ -10873,8 +10887,11 @@ nav {
 
 	body .price-title {
 		margin-top: 70px;
-		margin-bottom: 15px;
+		margin-bottom: 0px;
 		line-height: 1
+	}
+	body .head-info {
+		padding: 0 35px;
 	}
 
 	body .price-box {
@@ -10886,7 +10903,7 @@ nav {
 
 	body .price-box:nth-child(2) {
 		max-width: 440px;
-		min-height: 508px;
+		min-height: 475px;
 		margin-bottom: 10px
 	}
 
@@ -10963,7 +10980,7 @@ nav {
 	body .section1-img iframe {
 		display: block;
 		width: 100%;
-		height: 256px
+		height: 342px
 	}
 
 	body #carousel-example-generic {
@@ -11455,22 +11472,98 @@ nav {
 	background-size: cover;
 	padding: 200px 0;
 	text-align: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0
 }
 
 .thanks-title {
 	font: 500 48px/1 PFDinTextCompPro;
 	margin-bottom: 0;
 	margin-top: 70px;
-	color: #fff
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .thanks-info {
 	font: 400 21.64px/1 PFDinTextCompPro;
 	margin-bottom: 10px;
-	color: #fff
+	color: #fff;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width:1200px) and (max-width:1300px) {
+	body .section1-img {
+		max-width: 100%;
+		height: 100%;
+	}
+	body .section1-img  iframe{
+		height: 400px;
+	}
+	body .head-form {
+		max-width: 100%;
+	}
+	body #section0 {
+		padding: 0;
+	}
+	.item-img {
+		padding: 0;
+	}
+	body .item-info {
+		max-width: 815px;
+		margin-left: -101px;
+	    padding: 40px 95px;
+	}
+	body #section2 {
+		padding: 30px 0 0;
+	}
+	body .program-numb, .program-list.one .program-info {
+		max-width: 100% !important;
+	}
+	body .program-numb:nth-child(1):before, body .program-numb:nth-child(3):before, body .program-numb:nth-child(5):before, body .program-numb:nth-child(7):before, body .program-numb:nth-child(9):before {
+	    right: 93%;
+	}
+	body .format-box, body .format-box:nth-child(1) {
+		display: inline-block;
+		width: 49%;
+	}
+	body .item-content, body .reviews .item-content {
+		margin: 0 auto;
+	}
+	body #carousel_2 .left.carousel-control {
+		left: 0;
+	}
+	#carousel_2 .carousel-control {
+	    top: 50%;
+	}
+	body .box-info h4 {
+	    font: 500 37px/1 PFDinTextCompPro;
+	}
+	body .box-info p {
+	    font: 400 24px/1 PFDinTextCompPro;
+	}
+	body .box-img img {
+	    max-width: 100px;
+	}
+	body .price-box, body .price-box:nth-child(2) {
+	    padding: 45px 100px;
+	}
+	.format-info {
+		margin-bottom: 40px;
+	}
+	body .section_info-content {
+		text-align: left;
+	}
+	body .questions .head-form {
+	    min-height: auto;
+	    float: left;
+	    width: 50%;
+	}
+	body .questions-img {
+	    width: 50%;
+	}
+	body .modal-dialog .registration {
+	    padding: 0 55px;
+	}
+	body .format-block {
+	    padding: 46px;
+	    width: 88%;
+	}
 }

@@ -5,13 +5,20 @@ $(document).ready(function() {
         $('#fullpage').fullpage();
     }
     if ($(window).width() < 1300) {
-        $('.mob-btn, .menu-top li').click(function() {
+        $('.mob-btn, .menu-top li a, .menu-top .reg-btn').click(function() {
             $('.menu-top').toggle();
         });
         $('.program-numb').click(function() {
             $(this).toggleClass('active');
             $(this).parent('.program-list').find('#' + $(this).data('list')).toggle();
         })
+        $('.menu-top li a').click(function() {
+            var skrl = $(this).data('menuanchor');
+            var destination = $('section[data-anchor="'+skrl+'"]').offset().top - 0;
+            $("body,html").animate({
+                scrollTop: destination
+            }, 500);
+        });
     }
     $('.price-checkbox li').click(function() {
         $(this).parent('.price-checkbox').find('li.active').removeClass('active');
