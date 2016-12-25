@@ -92,9 +92,9 @@
             }
           });
 
-        $.getJSON('//gdata.youtube.com/feeds/api/videos/' + id + '?v=2&alt=json', function (data) {
+        /*$.getJSON('//gdata.youtube.com/feeds/api/videos/' + id + '?v=2&alt=json', function (data) {
             $el.find('#lazyYT-title-' + id).text(data.entry.title.$t);
-        });
+        });*/
 
     }
 
