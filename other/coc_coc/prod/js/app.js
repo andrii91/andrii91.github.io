@@ -96,9 +96,10 @@ $(document).ready(function() {
     $('.video-btn').click(function() {
         $(this).hide();
         $('.video-box').show();
-        var src = $('.video-box iframe').attr('src');
+        /*var src = $('.video-box iframe').attr('src');
         var src1 = /^[^?]+/.exec(src)[0] + '?rel=0&autoplay=1;controls=0&amp;showinfo=0';
-        $('.video-box iframe').attr('src', src1);
+        $('.video-box iframe').attr('src', src1);*/
+        $('.ytp-large-play-button').trigger('click');
     });
 
     var count = 0;
@@ -164,4 +165,5 @@ $(document).ready(function() {
 
         window.location.href = 'https://qc.coccoc.com/dang-ky-tai-khoan?name=' + data.name + '&website=' + data.website + '&phone=' + data.phone;
     });
+    $('.js-lazyYT').lazyYT(); 
 });
