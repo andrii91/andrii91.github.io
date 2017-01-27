@@ -5,7 +5,7 @@
 }
 a:focus,  input:focus, input:hover {
   text-decoration: none;
-  color: inherit;
+  color: inherit; 
 }
 body {
   overflow-x: hidden;
@@ -76,6 +76,9 @@ body {
   bottom: 0;
   left: 0;
   z-index: 2;
+  &.footer {
+        background-image: linear-gradient(to top,#000 0,transparent 170%);
+  }
   &:before {
     content: "";
     width: 100%;
@@ -555,7 +558,7 @@ background-image: linear-gradient(to left, rgb(76, 217, 100) 0%, rgb(59, 111, 16
   margin-top: -300px;
   position: fixed;
   top: 50%;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 600px;
     width: 100%;
   z-index: 99999999999;
@@ -1880,12 +1883,15 @@ footer {
 }
 
 footer.head-bottom {
-  background-color: #000;
+//  background-color: #000;
+  position: relative;
 }
 
 .footer-logo {
   text-align: center;
   padding: 29px 0;
+      position: relative;
+    z-index: 6;
 }
 .modal {
   position: fixed;
