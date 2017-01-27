@@ -1878,12 +1878,11 @@ font-weight: 400;
 
 footer {
   .head-overlay:before {
-    display: none;
+    display: none; 
   }
 }
 
 footer.head-bottom {
-//  background-color: #000;
   position: relative;
 }
 
@@ -1895,7 +1894,7 @@ footer.head-bottom {
 }
 .modal {
   position: fixed;
-  z-index: 1050;
+  z-index: 1050; 
   display: none;
   overflow: hidden;
   outline: 0;
