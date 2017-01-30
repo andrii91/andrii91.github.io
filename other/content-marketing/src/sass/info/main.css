@@ -9,7 +9,7 @@ a:focus, input:focus, input:hover {
 
 /* line 10, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 /* line 14, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-bottom {
@@ -18,7 +18,7 @@ body {
 /* line 18, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head {
   padding: 26px 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -66,7 +66,13 @@ body {
     width: 100%;
     max-width: 786px; }
 
-/* line 71, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 72, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx .head-overlay {
+  background: #000;
+  opacity: 0.6;
+  top: 0; }
+
+/* line 79, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-overlay {
   background-image: linear-gradient(to top, black 0%, transparent 100%);
   width: 100%;
@@ -75,10 +81,10 @@ body {
   bottom: 0;
   left: 0;
   z-index: 2; }
-  /* line 79, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 87, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .head-overlay.footer {
     background-image: linear-gradient(to top, #000 0, transparent 170%); }
-  /* line 82, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 90, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .head-overlay:before {
     content: "";
     width: 100%;
@@ -89,7 +95,7 @@ body {
     left: 0;
     z-index: 1; }
 
-/* line 94, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 102, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-text {
   position: absolute;
   bottom: 111px;
@@ -98,7 +104,7 @@ body {
   z-index: 3;
   width: 100%; }
 
-/* line 103, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 111, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-title {
   color: white;
   font-family: Souses;
@@ -106,7 +112,35 @@ body {
   font-weight: 400;
   line-height: 72px; }
 
-/* line 111, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 121, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx .head-img:before {
+  background: url("../images/263128thx.png") no-repeat center;
+  height: 100%;
+  width: 100%;
+  top: -135px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/* line 130, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx .head-img:after {
+  display: none; }
+
+/* line 134, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx .head-text {
+  bottom: 30%; }
+
+/* line 137, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx .head-info {
+  max-width: 695px;
+  color: white;
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 auto;
+  font-style: normal; }
+
+/* line 147, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-info {
   color: white;
   font-family: ProximaNova-L;
@@ -114,10 +148,10 @@ body {
   font-weight: 400;
   line-height: 34px;
   font-style: italic; }
-  /* line 118, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 154, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .head-info span {
     position: relative; }
-    /* line 120, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 156, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .head-info span:before {
       content: "";
       border-top: 1px solid #ff791f;
@@ -127,7 +161,7 @@ body {
       top: 50%;
       margin-top: -0.5px;
       left: 0; }
-    /* line 130, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 166, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .head-info span span {
       position: absolute;
       width: 133px;
@@ -139,23 +173,23 @@ body {
       font-size: 14px;
       font-weight: 400;
       font-style: normal; }
-      /* line 141, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 177, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .head-info span span:before {
         display: none; }
 
-/* line 148, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 184, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-speaker {
   font-family: ProximaNova-B;
   font-size: 18px;
   font-weight: 900;
   color: #fff; }
-  /* line 153, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 189, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .head-speaker span {
     font-family: Souses;
     font-size: 24px;
     font-weight: 400; }
 
-/* line 160, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 196, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .head-date {
   background: url(../images/date-bg.png) no-repeat center;
   width: 100%;
@@ -168,7 +202,7 @@ body {
   margin: -80px auto 0;
   border-radius: 10px; }
 
-/* line 173, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 209, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .date-calend {
   display: inline-block;
   background: url("../images/265683.png") no-repeat center;
@@ -183,7 +217,7 @@ body {
   margin: 0 0px 0 60px;
   line-height: 2; }
 
-/* line 188, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 224, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .calend-info {
   max-width: 85px;
   color: white;
@@ -192,17 +226,17 @@ body {
   font-weight: 900;
   display: inline-block; }
 
-/* line 197, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 233, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .date-box {
   text-align: center; }
-  /* line 199, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 235, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .date-box h4 {
     color: white;
     font-family: ProximaNova-B;
     font-size: 23px;
     font-weight: 900;
     margin: 0; }
-  /* line 206, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 242, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .date-box p {
     color: white;
     font-family: ProximaNova-B;
@@ -214,7 +248,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 7px 13px rgba(0, 0, 0, 0.2);
     display: inline-block; }
-    /* line 217, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 253, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .date-box p:before {
       content: "";
       width: 14px;
@@ -227,7 +261,7 @@ body {
       top: 50%;
       margin-top: -7px; }
 
-/* line 232, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 268, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .registr-btn {
   color: white;
   font-family: ProximaNova-B;
@@ -246,22 +280,22 @@ body {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out; }
-  /* line 250, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 286, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .registr-btn.bounce:hover {
     animation: bounce 0s; }
-  /* line 253, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 289, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .registr-btn:hover {
     text-decoration: none;
     background: transparent;
     border: 1px solid #ff791f;
     color: #ff791f; }
 
-/* line 262, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 298, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .throne {
   padding: 112px 0 60px;
   text-align: center; }
 
-/* line 267, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 303, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .throne-title {
   max-width: 522px;
   font-family: Souses;
@@ -271,11 +305,11 @@ body {
   text-align: left;
   color: #3b6fa9;
   line-height: 1; }
-  /* line 276, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 312, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .throne-title span {
     color: #4cd964; }
 
-/* line 281, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 317, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .throne-list {
   padding: 0;
   margin: 0;
@@ -289,7 +323,7 @@ body {
   margin-bottom: -60px;
   position: relative;
   z-index: 1; }
-  /* line 294, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 330, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .throne-list li {
     background-color: #3b6fa9;
     background-image: linear-gradient(to right, #4cd964 0%, #3b6fa9 100%);
@@ -301,7 +335,7 @@ body {
     border-radius: 50%;
     padding-left: 15px;
     padding-right: 15px; }
-    /* line 305, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 341, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-list li:nth-child(1) {
       width: 140px;
       height: 140px;
@@ -311,7 +345,7 @@ body {
       position: absolute;
       left: 109px;
       top: 107px; }
-    /* line 315, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 351, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-list li:nth-child(2) {
       width: 167px;
       height: 167px;
@@ -319,7 +353,7 @@ body {
       position: absolute;
       top: 75px;
       left: 348px; }
-    /* line 323, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 359, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-list li:nth-child(3) {
       width: 141px;
       height: 141px;
@@ -327,7 +361,7 @@ body {
       position: absolute;
       right: 100px;
       top: -70px; }
-    /* line 331, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 367, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-list li:nth-child(4) {
       width: 174px;
       height: 174px;
@@ -335,7 +369,7 @@ body {
       position: absolute;
       top: 160px;
       right: -41px; }
-    /* line 339, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 375, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-list li:nth-child(5) {
       width: 143px;
       height: 143px;
@@ -344,11 +378,11 @@ body {
       bottom: 95px;
       right: 238px; }
 
-/* line 350, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 386, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .throne-img {
   position: relative; }
 
-/* line 354, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 390, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .throne-info {
   background: url("../images/tron-circle.png");
   width: 350px;
@@ -358,7 +392,7 @@ body {
   top: 21px;
   right: 170px;
   z-index: 5; }
-  /* line 363, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 399, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .throne-info h3 {
     text-shadow: 0 0 87px rgba(1, 0, 0, 0.68);
     color: white;
@@ -368,11 +402,11 @@ body {
     line-height: 1;
     margin-bottom: 26px;
     text-align: left; }
-    /* line 372, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 408, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-info h3 span {
       display: block;
       text-align: right; }
-  /* line 378, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 414, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .throne-info p {
     color: white;
     font-family: ProximaNova-B;
@@ -381,18 +415,18 @@ body {
     text-align: right;
     margin-bottom: 0;
     line-height: 1; }
-    /* line 386, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 422, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-info p.mr43 {
       margin-right: 43px; }
-    /* line 389, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 425, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .throne-info p.mr128 {
       margin-right: 128px; }
 
-/* line 395, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 431, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you {
   padding: 60px 0; }
 
-/* line 399, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 435, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you-title {
   max-width: 458px;
   color: #3b6fa9;
@@ -402,20 +436,20 @@ body {
   margin: 0 auto;
   line-height: 1;
   margin-bottom: 34px; }
-  /* line 408, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 444, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .what-you-title span {
     display: block;
     text-align: right; }
 
-/* line 414, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 450, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you-block {
   max-width: 875px;
   margin: 0 auto; }
-  /* line 417, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 453, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .what-you-block .col-md-5 {
     padding: 0; }
 
-/* line 424, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 460, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you-box h4 {
   color: #49ca6f;
   font-family: ProximaNova-B;
@@ -424,7 +458,7 @@ body {
   margin: 0 auto 34px;
   line-height: 1; }
 
-/* line 432, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 468, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you-box p {
   color: black;
   font-family: ProximaNova-L;
@@ -433,15 +467,15 @@ body {
   margin-bottom: 20px;
   line-height: 1; }
 
-/* line 440, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 476, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .what-you-box.text-right {
   margin-left: auto; }
 
-/* line 445, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 481, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .text-right {
   text-align: right; }
 
-/* line 448, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 484, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .wake {
   min-height: 707px;
   background-color: #bfe4f6;
@@ -449,17 +483,17 @@ body {
   position: relative;
   max-width: 970px;
   margin: 0 auto; }
-  /* line 455, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 491, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake .head-date {
     margin-top: 0;
     bottom: -25px; }
 
-/* line 462, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 498, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .wake-block {
   position: relative;
   padding: 67px 30px; }
 
-/* line 467, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 503, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .wake-box {
   width: 453px;
   height: 453px;
@@ -469,7 +503,7 @@ body {
   padding-top: 89px;
   text-align: right;
   position: relative; }
-  /* line 476, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 512, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-box:before {
     content: "";
     background: url(../images/arr.png) no-repeat center;
@@ -479,7 +513,7 @@ body {
     right: 11px;
     bottom: 0;
     z-index: 5; }
-  /* line 486, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 522, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-box h4 {
     color: white;
     font-family: Souses;
@@ -488,7 +522,7 @@ body {
     text-align: center;
     margin: 0 auto 42px;
     line-height: 1; }
-  /* line 495, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 531, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-box p {
     padding-left: 30px;
     color: white;
@@ -497,7 +531,7 @@ body {
     font-weight: 900;
     line-height: 30px;
     text-align: left; }
-  /* line 504, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 540, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-box span {
     color: white;
     font-family: ProximaNova;
@@ -507,18 +541,18 @@ body {
     display: inline-block;
     margin-right: 70px;
     margin-top: 30px; }
-    /* line 513, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 549, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .wake-box span span {
       text-decoration: underline;
       margin: 0; }
 
-/* line 520, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 556, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .wake-img {
   position: absolute;
   top: 0;
   right: -14px;
   display: inline-block; }
-  /* line 525, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 561, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-img .wake-btn {
     position: absolute;
     left: 50%;
@@ -536,14 +570,14 @@ body {
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out; }
-    /* line 542, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 578, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .wake-img .wake-btn:hover {
       background: #1d4571; }
-  /* line 548, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 584, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .wake-img:hover .wake-btn {
     display: block; }
 
-/* line 553, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 589, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .wake-none {
   max-width: 90%;
   margin: 0 auto;
@@ -559,7 +593,7 @@ body {
   width: 100%;
   z-index: 99999999999; }
 
-/* line 570, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 606, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -571,11 +605,11 @@ body {
   opacity: 0.8;
   z-index: 1000; }
 
-/* line 582, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 618, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion {
   padding: 60px 0; }
 
-/* line 587, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 623, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-title {
   text-align: center;
   color: #3b6fa9;
@@ -585,7 +619,7 @@ body {
   margin: 0 auto 25px;
   line-height: 1; }
 
-/* line 597, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 633, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-info {
   color: #3b6fa9;
   font-family: ProximaNova-B;
@@ -595,7 +629,7 @@ body {
   font-weight: 900;
   margin-bottom: 64px; }
 
-/* line 607, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 643, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-box {
   background-color: #fffefb;
   border: 3px solid #fffefb;
@@ -606,27 +640,27 @@ body {
   -moz-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out; }
-  /* line 617, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 653, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .acordion-box.active {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out; }
-    /* line 622, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 658, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .acordion-box.active .acordion-box-title {
       color: #4cd964; }
-    /* line 625, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 661, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .acordion-box.active .box-check {
       background-color: #4cd964;
       border-color: #4cd964; }
-      /* line 629, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 665, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .acordion-box.active .box-check:before {
         left: 26px; }
-    /* line 633, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 669, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .acordion-box.active .acordion-content {
       display: block; }
 
-/* line 639, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 675, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-box-title {
   max-width: 288px;
   display: inline-block;
@@ -640,7 +674,7 @@ body {
   -o-transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out; }
 
-/* line 653, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 689, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .box-check {
   width: 70px;
   height: 43px;
@@ -655,7 +689,7 @@ body {
   -o-transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
   border-radius: 20px; }
-  /* line 667, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 703, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .box-check:before {
     content: "";
     width: 39px;
@@ -667,7 +701,7 @@ body {
     left: -1px;
     top: -1px; }
 
-/* line 680, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 716, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-box-info {
   min-height: 56px;
   color: black;
@@ -679,7 +713,7 @@ body {
   -o-transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out; }
 
-/* line 692, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 728, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .acordion-content {
   color: black;
   font-family: ProximaNova;
@@ -688,7 +722,7 @@ body {
   line-height: 1;
   display: none; }
 
-/* line 701, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 737, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .system-box {
   max-width: 300px;
   background-color: #4bd963;
@@ -704,11 +738,11 @@ body {
   position: absolute;
   text-align: left;
   width: 100%; }
-  /* line 716, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 752, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-box.one {
     top: 22px;
     left: 0; }
-    /* line 719, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 755, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.one:before {
       content: "";
       height: 147px;
@@ -729,11 +763,11 @@ body {
       background-image: -webkit-linear-gradient(top, #41998d 0%, #47b879 100%), -webkit-linear-gradient(top, #41998d 0%, #47b879 100%);
       background-image: -moz-linear-gradient(top, #41998d 0%, #47b879 100%), -moz-linear-gradient(top, #41998d 0%, #47b879 100%);
       background-image: -o-linear-gradient(top, #41998d 0%, #47b879 100%), -o-linear-gradient(top, #41998d 0%, #47b879 100%); }
-  /* line 741, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 777, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-box.two {
     top: 220px;
     left: 0; }
-    /* line 744, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 780, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.two:before {
       content: "";
       position: absolute;
@@ -754,11 +788,11 @@ body {
       background-image: -webkit-linear-gradient(top, #3d7ca0 0%, #419490 100%), -webkit-linear-gradient(top, #3d7ca0 0%, #419490 100%);
       background-image: -moz-linear-gradient(top, #3d7ca0 0%, #419490 100%), -moz-linear-gradient(top, #3d7ca0 0%, #419490 100%);
       background-image: -o-linear-gradient(top, #3d7ca0 0%, #419490 100%), -o-linear-gradient(top, #3d7ca0 0%, #419490 100%); }
-  /* line 766, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 802, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-box.three {
     bottom: 0;
     left: 0; }
-    /* line 769, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 805, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.three:before {
       content: "";
       position: absolute;
@@ -779,7 +813,7 @@ body {
       background-image: -webkit-linear-gradient(right, #44a586 0%, #4cd964 100%), -webkit-linear-gradient(right, #44a586 0%, #4cd964 100%);
       background-image: -moz-linear-gradient(right, #44a586 0%, #4cd964 100%), -moz-linear-gradient(right, #44a586 0%, #4cd964 100%);
       background-image: -o-linear-gradient(right, #44a586 0%, #4cd964 100%), -o-linear-gradient(right, #44a586 0%, #4cd964 100%); }
-  /* line 791, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 827, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-box.four {
     top: 0;
     right: 0;
@@ -787,7 +821,7 @@ body {
     font-weight: 900;
     font-style: normal;
     max-width: 338px; }
-    /* line 798, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 834, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.four:before {
       content: "";
       position: absolute;
@@ -808,7 +842,7 @@ body {
       background-image: -webkit-linear-gradient(right, #44a586 0%, #4cd964 100%), -webkit-linear-gradient(right, #44a586 0%, #4cd964 100%);
       background-image: -moz-linear-gradient(right, #44a586 0%, #4cd964 100%), -moz-linear-gradient(right, #44a586 0%, #4cd964 100%);
       background-image: -o-linear-gradient(right, #44a586 0%, #4cd964 100%), -o-linear-gradient(right, #44a586 0%, #4cd964 100%); }
-  /* line 820, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 856, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-box.circle {
     color: white;
     font-family: Souses;
@@ -823,7 +857,7 @@ body {
     left: 50%;
     top: 50%;
     margin: -86px 0 0 -86px; }
-    /* line 834, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 870, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.circle:after {
       content: "";
       width: 233px;
@@ -834,7 +868,7 @@ body {
       position: absolute;
       top: -30px;
       left: -30px; }
-    /* line 845, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 881, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-box.circle:before {
       content: "";
       width: 281px;
@@ -846,7 +880,7 @@ body {
       top: -55px;
       left: -55px; }
 
-/* line 858, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 894, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .system-list {
   position: absolute;
   bottom: 0;
@@ -873,7 +907,7 @@ body {
   background-image: -moz-linear-gradient(left, #3d7ca0 0%, #4acc6c 100%), -moz-linear-gradient(left, #3d7ca0 0%, #4acc6c 100%);
   background-image: -o-linear-gradient(left, #3d7ca0 0%, #4acc6c 100%), -o-linear-gradient(left, #3d7ca0 0%, #4acc6c 100%);
   background-image: linear-gradient(to right, #3d7ca0 0%, #4acc6c 100%), linear-gradient(to right, #3d7ca0 0%, #4acc6c 100%); }
-  /* line 884, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 920, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .system-list li {
     padding-left: 50px;
     font-family: ProximaNova;
@@ -883,7 +917,7 @@ body {
     line-height: 1;
     margin-bottom: 15px;
     position: relative; }
-    /* line 893, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 929, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-list li:before {
       content: "";
       background: url("../images/61343.png") no-repeat;
@@ -893,30 +927,30 @@ body {
       top: 50%;
       left: 0%;
       margin: -17px 0 0; }
-    /* line 903, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 939, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .system-list li:last-child {
       color: #3b6fa8;
       font-size: 24px;
       font-weight: 700;
       line-height: 1;
       padding: 0; }
-      /* line 909, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 945, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .system-list li:last-child:before {
         display: none; }
 
-/* line 916, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 952, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .system {
   padding: 20px 0;
   text-align: center; }
 
-/* line 921, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 957, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .system-block {
   position: relative;
   max-width: 920px;
   min-height: 578px;
   margin: 0 auto; }
 
-/* line 928, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 964, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .like {
   background: url("../images/like.png") no-repeat center;
   padding: 53px 0 48px;
@@ -926,7 +960,7 @@ body {
   border-radius: 10px;
   min-height: 250px; }
 
-/* line 938, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 974, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .like-title {
   max-width: 600px;
   font-family: Souses;
@@ -935,22 +969,22 @@ body {
   margin: 0 auto 36px;
   color: #fff;
   line-height: 1; }
-  /* line 946, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 982, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .like-title span {
     color: #4bd963; }
 
-/* line 951, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 987, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .like-info {
   color: white;
   font-family: ProximaNova;
   font-size: 24px;
   font-weight: 900; }
 
-/* line 958, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 994, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .lock {
   padding: 50px 0; }
 
-/* line 962, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 998, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .lock-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -960,7 +994,7 @@ body {
   line-height: 1;
   margin-bottom: 68px; }
 
-/* line 972, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1008, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .lock-list {
   position: relative;
   list-style: none;
@@ -968,7 +1002,7 @@ body {
   margin: 0;
   min-height: 366px;
   margin: 0 auto; }
-  /* line 979, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1015, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .lock-list li {
     max-width: 295px;
     display: inline-block;
@@ -976,7 +1010,7 @@ body {
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     position: absolute; }
-    /* line 981, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1017, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li .lock-box {
       background-color: white;
       border-radius: 10px;
@@ -985,23 +1019,23 @@ body {
       display: inline-block;
       z-index: 3;
       position: relative; }
-    /* line 990, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1026, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:hover {
       z-index: 9 !important; }
-    /* line 993, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1029, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:before {
       z-index: 4; }
-    /* line 1002, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1038, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(1) {
       top: 38px;
       left: 0;
       z-index: 3; }
-      /* line 1006, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1042, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(1):after {
         content: "";
         position: absolute;
         z-index: 2; }
-      /* line 1011, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1047, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(1):before {
         content: "";
         border-bottom: 22px solid transparent;
@@ -1011,15 +1045,15 @@ body {
         position: absolute;
         bottom: -22px;
         right: 26px; }
-    /* line 1022, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1058, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(2) {
       top: 250px;
       left: 98px; }
-      /* line 1025, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1061, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(2) .lock-box {
         position: relative;
         z-index: 3; }
-      /* line 1029, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1065, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(2):before {
         content: "";
         border: 22px solid transparent;
@@ -1030,17 +1064,17 @@ body {
         top: -22px;
         right: 15px;
         z-index: 4; }
-      /* line 1040, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1076, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(2):after {
         content: "";
         position: absolute;
         z-index: 2; }
-    /* line 1046, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1082, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(3) {
       top: 0px;
       left: 205px;
       z-index: 2; }
-      /* line 1050, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1086, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(3):before {
         content: "";
         border-bottom: 22px solid transparent;
@@ -1050,17 +1084,17 @@ body {
         position: absolute;
         bottom: -22px;
         right: 26px; }
-      /* line 1060, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1096, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(3):after {
         content: "";
         position: absolute;
         z-index: -1; }
-    /* line 1066, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1102, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(4) {
       top: 46px;
       right: 112px;
       z-index: 1; }
-      /* line 1070, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1106, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(4):before {
         content: "";
         border-bottom: 22px solid transparent;
@@ -1071,7 +1105,7 @@ body {
         content: "";
         position: absolute;
         left: 16px; }
-      /* line 1081, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1117, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(4):after {
         content: "";
         background: url("../images/lock-cl1.png") no-repeat;
@@ -1081,11 +1115,11 @@ body {
         top: -10px;
         left: -37px;
         z-index: -1; }
-    /* line 1094, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1130, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(5) {
       top: 100px;
       right: 32px; }
-      /* line 1097, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1133, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(5):before {
         content: "";
         border-bottom: 22px solid transparent;
@@ -1096,7 +1130,7 @@ body {
         content: "";
         position: absolute;
         left: 16px; }
-      /* line 1108, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1144, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(5):after {
         content: "";
         background: url("../images/lock-cl1.png") no-repeat;
@@ -1106,11 +1140,11 @@ body {
         top: -10px;
         left: -37px;
         z-index: -1; }
-    /* line 1121, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1157, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(6) {
       top: 180px;
       right: 0px; }
-      /* line 1124, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1160, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(6):before {
         content: "";
         border-bottom: 22px solid transparent;
@@ -1121,7 +1155,7 @@ body {
         content: "";
         position: absolute;
         left: 16px; }
-      /* line 1135, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1171, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(6):after {
         content: "";
         background: url("../images/lock-cl1.png") no-repeat;
@@ -1131,11 +1165,11 @@ body {
         top: -10px;
         left: -37px;
         z-index: -1; }
-    /* line 1148, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1184, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:nth-child(7) {
       top: 283px;
       right: 108px; }
-      /* line 1151, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1187, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(7):before {
         content: "";
         border: 22px solid transparent;
@@ -1146,7 +1180,7 @@ body {
         content: "";
         position: absolute;
         left: 16px; }
-      /* line 1162, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1198, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li:nth-child(7):after {
         content: "";
         background: url("../images/lock-cl1.png") no-repeat;
@@ -1156,74 +1190,74 @@ body {
         top: -95px;
         left: -32px;
         z-index: -1; }
-    /* line 1176, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1212, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li:hover.bounce {
       animation: bounce 0s; }
-    /* line 1182, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1218, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active.bounce {
       animation: bounce 0s;
       z-index: 50; }
-    /* line 1187, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1223, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(1):after {
       background: url("../images/lock1.png") no-repeat center;
       width: 137px;
       height: 135px;
       bottom: -90px;
       left: 203px; }
-    /* line 1196, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1232, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(2):after {
       background: url("../images/lock2.png") no-repeat center;
       width: 171px;
       height: 169px;
       top: -135px;
       left: 205px; }
-    /* line 1205, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1241, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(3):after {
       background: url("../images/lock3.png") no-repeat center;
       width: 207px;
       height: 203px;
       bottom: -140px;
       left: 134px; }
-    /* line 1214, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1250, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(4) .lock-box {
       margin-top: -40px; }
-    /* line 1217, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1253, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(4):after {
       background: url("../images/lock2.png") no-repeat center;
       background-size: 100%;
       width: 115px;
       left: -65px; }
-    /* line 1225, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1261, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(5) .lock-box {
       margin-top: -40px; }
-    /* line 1228, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1264, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(5):after {
       background: url("../images/lock2.png") no-repeat center;
       background-size: 100%;
       width: 115px;
       left: -65px; }
-    /* line 1236, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1272, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(6) .lock-box {
       margin-top: -40px; }
-    /* line 1239, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1275, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(6):after {
       background: url("../images/lock2.png") no-repeat center;
       background-size: 100%;
       width: 115px;
       left: -65px; }
-    /* line 1248, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1284, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active:nth-child(7):after {
       background: url("../images/lock2.png") no-repeat center;
       background-size: 100%;
       width: 115px;
       left: -65px; }
-    /* line 1255, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1291, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active span {
       display: none; }
-    /* line 1258, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1294, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li.active p {
       display: block; }
-    /* line 1262, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1298, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li p {
       display: none;
       color: black;
@@ -1235,7 +1269,7 @@ body {
       -moz-transition: all .5s ease-out;
       -o-transition: all .5s ease-out;
       -webkit-transition: all .5s ease-out; }
-    /* line 1275, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1311, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .lock-list li span {
       color: #37357d;
       font-family: ProximaNova;
@@ -1245,27 +1279,27 @@ body {
       -moz-transition: all .5s ease-out;
       -o-transition: all .5s ease-out;
       -webkit-transition: all .5s ease-out; }
-      /* line 1285, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1321, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .lock-list li span .lock-click {
         cursor: pointer;
         text-decoration: underline;
         color: #37357d; }
 
-/* line 1294, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1330, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .js-lazyYT {
   margin-bottom: 30px;
   opacity: 0.2; }
 
-/* line 1299, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1335, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .mar-top0 {
   margin-top: 0; }
 
-/* line 1303, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1339, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .video {
   padding: 75px 0;
   text-align: center; }
 
-/* line 1308, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1344, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .video-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -1273,7 +1307,7 @@ body {
   font-weight: 400;
   margin: 0 auto 87px; }
 
-/* line 1316, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1352, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .opinion-box {
   background: url("../images/opinion.png") no-repeat center;
   min-height: 707px;
@@ -1282,7 +1316,7 @@ body {
   max-width: 970px;
   margin: 0 auto; }
 
-/* line 1325, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1361, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .opinion-circle {
   width: 453px;
   height: 453px;
@@ -1291,7 +1325,7 @@ body {
   border-radius: 50%;
   padding: 119px 0 0 45px;
   margin-left: auto; }
-  /* line 1333, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1369, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .opinion-circle .opinion-title {
     color: white;
     font-family: Souses;
@@ -1299,26 +1333,26 @@ body {
     font-weight: 400;
     line-height: 1;
     margin-bottom: 21px; }
-  /* line 1341, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1377, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .opinion-circle p {
     color: white;
     font-family: ProximaNova;
     font-size: 26px;
     font-weight: 900; }
-  /* line 1347, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1383, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .opinion-circle .registr-btn.close {
     background: #ff3824;
     border-color: #ff3824; }
-    /* line 1350, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1386, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .opinion-circle .registr-btn.close:hover {
       color: #ff3824;
       background: transparent; }
 
-/* line 1357, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1393, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .program {
   padding: 92px 0 62px; }
 
-/* line 1361, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1397, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .program-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -1328,14 +1362,14 @@ body {
   text-align: center;
   margin-bottom: 77px; }
 
-/* line 1371, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1407, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .program-list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 810px;
   position: relative; }
-  /* line 1377, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1413, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .program-list:before {
     content: "";
     width: 4px;
@@ -1345,17 +1379,17 @@ body {
     top: 0;
     left: 50%;
     margin-left: -2px; }
-  /* line 1387, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1423, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .program-list .program-item {
     display: block;
     min-height: 130px;
     position: relative;
     text-align: right; }
-    /* line 1393, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1429, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .program-list .program-item.full-visible:before {
       background-image: linear-gradient(to top, #ff641f 0%, #ff791f 100%);
       box-shadow: 0 7px 13px rgba(0, 0, 0, 0.2); }
-    /* line 1398, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1434, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .program-list .program-item:before {
       content: "";
       width: 35px;
@@ -1368,24 +1402,24 @@ body {
       top: 0;
       margin-left: -17.5px;
       border-radius: 50%; }
-    /* line 1412, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1448, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .program-list .program-item:nth-child(even) {
       margin-top: -40px; }
-      /* line 1414, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1450, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .program-list .program-item:nth-child(even) .program-box {
         text-align: left;
         float: right; }
 
-/* line 1422, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1458, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .program-box {
   max-width: 381px;
   width: 100%; }
-  /* line 1425, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1461, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .program-box .box-item {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 1429, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1465, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .program-box .box-item li {
       text-align: left;
       padding-left: 45px;
@@ -1395,7 +1429,7 @@ body {
       font-weight: 400;
       line-height: 30px;
       position: relative; }
-      /* line 1438, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1474, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .program-box .box-item li:before {
         content: "";
         background: url(../images/61343.png) no-repeat;
@@ -1405,7 +1439,7 @@ body {
         top: 50%;
         left: 0;
         margin: -19px 0 0; }
-  /* line 1450, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1486, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .program-box h4 {
     color: #3b6fa9;
     font-family: ProximaNova-B;
@@ -1413,16 +1447,16 @@ body {
     font-weight: 900;
     line-height: 1;
     position: relative; }
-    /* line 1458, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1494, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .program-box h4 span {
       color: #47bd77; }
 
-/* line 1464, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1500, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .result {
   padding: 115px 0 45px;
   text-align: center; }
 
-/* line 1469, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1505, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .result-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -1431,13 +1465,13 @@ body {
   line-height: 1;
   margin-bottom: 22px; }
 
-/* line 1478, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1514, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .result-box {
   text-align: left; }
-  /* line 1480, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1516, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .result-box.text-right {
     text-align: right; }
-  /* line 1483, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1519, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .result-box h4 {
     color: #3b6fa9;
     font-family: ProximaNova-B;
@@ -1445,7 +1479,7 @@ body {
     font-weight: 900;
     line-height: 1;
     margin-bottom: 20px; }
-  /* line 1491, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1527, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .result-box p {
     color: black;
     font-family: ProximaNova;
@@ -1453,7 +1487,7 @@ body {
     font-weight: 400;
     line-height: 1; }
 
-/* line 1500, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1536, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .result-info {
   margin-top: 81px;
   padding: 5px 62px 65px;
@@ -1471,7 +1505,7 @@ body {
   background-image: -moz-linear-gradient(left, #4acc6c 0%, #3d7ca1 100%), -moz-linear-gradient(left, #4acc6c 0%, #3d7ca1 100%);
   background-image: -o-linear-gradient(left, #4acc6c 0%, #3d7ca1 100%), -o-linear-gradient(left, #4acc6c 0%, #3d7ca1 100%);
   background-image: linear-gradient(to right, #4acc6c 0%, #3d7ca1 100%), linear-gradient(to right, #4acc6c 0%, #3d7ca1 100%); }
-  /* line 1517, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1553, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .result-info h4 {
     background: #f9fafb;
     max-width: 362px;
@@ -1481,13 +1515,13 @@ body {
     font-size: 42px;
     font-weight: 400;
     line-height: 1; }
-  /* line 1527, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1563, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .result-info ul {
     margin: 0;
     padding: 0;
     text-align: left;
     list-style: none; }
-    /* line 1532, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1568, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .result-info ul li {
       color: black;
       font-family: ProximaNova;
@@ -1497,7 +1531,7 @@ body {
       position: relative;
       padding-left: 55px;
       line-height: 1; }
-      /* line 1541, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1577, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .result-info ul li:before {
         content: "";
         background: url(../images/61343.png) no-repeat;
@@ -1507,18 +1541,18 @@ body {
         top: 0;
         left: 0; }
 
-/* line 1554, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1590, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker {
   padding: 45px 0; }
 
-/* line 1558, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1594, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-box {
   background-color: #4bd963;
   background-image: linear-gradient(to right, #4cd964 0%, #3b6fa9 100%);
   border-radius: 10px 10px 0 0;
   padding: 61px 34px 0; }
 
-/* line 1565, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1601, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-title {
   color: white;
   font-family: Souses;
@@ -1528,7 +1562,7 @@ body {
   text-align: center;
   margin-bottom: 41px; }
 
-/* line 1575, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1611, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-box-name {
   color: white;
   font-family: ProximaNova-B;
@@ -1537,12 +1571,12 @@ body {
   line-height: 1;
   margin-bottom: 44px; }
 
-/* line 1584, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1620, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-list {
   list-style: none;
   padding: 0;
   margin: 0; }
-  /* line 1588, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1624, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .speaker-list li {
     color: white;
     font-family: ProximaNova;
@@ -1551,7 +1585,7 @@ body {
     position: relative;
     padding-left: 55px;
     margin-bottom: 15px; }
-    /* line 1596, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1632, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .speaker-list li:before {
       content: "";
       background: url(../images/61343.png) no-repeat;
@@ -1561,14 +1595,14 @@ body {
       top: 0;
       left: 0; }
 
-/* line 1608, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1644, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-bottom-bg {
   background: url(../images/speaker-bg.png) no-repeat center;
   padding: 0 0 53px;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); }
 
-/* line 1615, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1651, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .speaker-info {
   max-width: 892px;
   margin: -31px auto 49px;
@@ -1577,17 +1611,17 @@ body {
   position: relative;
   padding: 30px 55px;
   text-align: center; }
-  /* line 1623, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1659, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .speaker-info p {
     font-family: ProximaNova;
     font-size: 24px;
     font-weight: 700;
     line-height: 1;
     color: #3b6fa9; }
-    /* line 1629, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1665, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .speaker-info p span {
       color: #ff7520; }
-  /* line 1633, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1669, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .speaker-info:after {
     bottom: 100%;
     left: 50%;
@@ -1602,11 +1636,11 @@ body {
     border-width: 20px;
     margin-left: -20px; }
 
-/* line 1649, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1685, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .reviews {
   padding: 0 0 70px; }
 
-/* line 1653, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1689, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .reviews-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -1616,10 +1650,10 @@ body {
   margin-bottom: 52px;
   text-align: center; }
 
-/* line 1663, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1699, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .reviews-box {
   text-align: center; }
-  /* line 1665, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1701, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .reviews-box p {
     color: #3b6fa9;
     font-family: ProximaNova;
@@ -1629,16 +1663,16 @@ body {
     margin-bottom: 18px;
     min-height: 55px; }
 
-/* line 1676, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1712, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .pt12 {
   padding-top: 12px; }
 
-/* line 1680, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1716, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .price {
   padding: 70px 0;
   text-align: center; }
 
-/* line 1685, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1721, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .price-title {
   line-height: 1;
   color: #3b6fa9;
@@ -1647,7 +1681,7 @@ body {
   font-weight: 400;
   margin-bottom: 42px; }
 
-/* line 1694, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1730, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .price-box {
   display: inline-block;
   max-width: 400px;
@@ -1659,19 +1693,19 @@ body {
   margin: 0 16px;
   padding: 44px 31px;
   vertical-align: top; }
-  /* line 1705, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1741, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .price-box h4 {
     color: #3b6fa9;
     font-family: ProximaNova-B;
     font-size: 30px;
     font-weight: 900;
     margin: 0 auto 49px; }
-  /* line 1712, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1748, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .price-box .info {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 1716, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1752, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .price-box .info li {
       position: relative;
       padding-left: 55px;
@@ -1681,7 +1715,7 @@ body {
       font-weight: 400;
       margin-bottom: 8px;
       text-align: left; }
-      /* line 1725, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+      /* line 1761, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
       .price-box .info li:before {
         content: "";
         background: url(../images/61343.png) no-repeat;
@@ -1691,7 +1725,7 @@ body {
         top: 0;
         left: 0; }
 
-/* line 1738, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1774, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .price-summ {
   color: #3b6fa9;
   font-family: ProximaNova-B;
@@ -1699,11 +1733,11 @@ body {
   font-weight: 900;
   display: none;
   margin-bottom: 29px; }
-  /* line 1745, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1781, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .price-summ.active {
     display: block; }
 
-/* line 1750, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1786, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .price-check {
   list-style: none;
   margin: 0 auto 19px;
@@ -1714,7 +1748,7 @@ body {
   max-width: 326px;
   min-height: 50px;
   display: block; }
-  /* line 1761, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1797, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .price-check li {
     color: #3b6fa9;
     font-family: ProximaNova;
@@ -1728,14 +1762,14 @@ body {
     border-radius: 25px;
     cursor: pointer;
     float: left; }
-    /* line 1774, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1810, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .price-check li.online {
       float: right;
       margin-right: -3px; }
-    /* line 1778, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1814, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .price-check li.offline {
       margin-left: -3px; }
-    /* line 1781, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1817, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .price-check li.offline.active {
       margin-top: -3px;
       height: 50px;
@@ -1744,7 +1778,7 @@ body {
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.04);
       color: #fff;
       padding-top: 6.5px; }
-    /* line 1790, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    /* line 1826, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
     .price-check li.online.active {
       margin-top: -3px;
       height: 50px;
@@ -1754,16 +1788,16 @@ body {
       color: #fff;
       padding-top: 6.5px; }
 
-/* line 1802, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1838, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .info.mar-bottom71 {
   margin-bottom: 71px; }
 
-/* line 1806, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1842, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .why {
   padding: 70px 0;
   text-align: center; }
 
-/* line 1811, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1847, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .why-title {
   color: #3b6fa9;
   font-family: Souses;
@@ -1772,23 +1806,23 @@ body {
   line-height: 1;
   margin: 0 auto 72px; }
 
-/* line 1821, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1857, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .why-img {
   min-height: 95px;
   margin-bottom: 53px; }
 
-/* line 1826, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1862, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .why-info {
   color: #3b6fa9;
   font-family: ProximaNova;
   font-size: 18px;
   font-weight: 700;
   line-height: 1; }
-  /* line 1832, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1868, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .why-info span {
     color: #ff7320; }
 
-/* line 1837, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1873, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .callback-box {
   height: 615px;
   background-color: #3b6fa9;
@@ -1796,7 +1830,7 @@ body {
   padding: 62px 0 0 44px;
   position: relative; }
 
-/* line 1845, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1881, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .callback-circle {
   width: 453px;
   height: 453px;
@@ -1805,7 +1839,7 @@ body {
   border-radius: 50%;
   padding: 120px 39px 0 44px;
   display: inline-block; }
-  /* line 1853, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1889, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .callback-circle h4 {
     color: white;
     font-family: Souses;
@@ -1813,7 +1847,7 @@ body {
     font-weight: 400;
     line-height: 1;
     margin: 0 auto 27px; }
-  /* line 1861, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1897, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .callback-circle p {
     color: white;
     font-family: ProximaNova-B;
@@ -1822,32 +1856,32 @@ body {
     margin-bottom: 33px;
     line-height: 1; }
 
-/* line 1871, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1907, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .callback-img {
   position: absolute;
   top: 62px;
   right: 0; }
 
-/* line 1877, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1913, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .callback {
   margin-bottom: 83px; }
 
-/* line 1882, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1918, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 footer .head-overlay:before {
   display: none; }
 
-/* line 1887, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1923, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 footer.head-bottom {
   position: relative; }
 
-/* line 1891, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1927, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .footer-logo {
   text-align: center;
   padding: 29px 0;
   position: relative;
   z-index: 6; }
 
-/* line 1897, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1933, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .modal {
   position: fixed;
   z-index: 1050;
@@ -1870,23 +1904,23 @@ footer.head-bottom {
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms; }
-  /* line 1919, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1955, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .modal .modal-content {
     overflow: hidden;
     padding: 20px;
     text-align: left;
     height: auto; }
 
-/* line 1927, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1963, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .modal-btn {
   cursor: pointer; }
 
-/* line 1931, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1967, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .modal-head {
   padding: 5px;
   position: relative; }
 
-/* line 1935, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1971, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .close-m {
   background: url(../images/close.png) no-repeat;
   background-size: 100%;
@@ -1896,18 +1930,18 @@ footer.head-bottom {
   right: 5px;
   top: 5px;
   cursor: pointer; }
-  /* line 1944, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  /* line 1980, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
   .close-m:hover {
     -webkit-filter: invert(80%);
     -moz-filter: invert(80%);
     -o-filter: invert(80%);
     -ms-filter: invert(80%); }
 
-/* line 1951, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1987, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .overl-h {
   overflow: hidden; }
 
-/* line 1955, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 1991, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .input-text, .textarea {
   display: block;
   min-height: 40px;
@@ -1918,16 +1952,39 @@ footer.head-bottom {
   width: 100%;
   margin-bottom: 15px; }
 
-/* line 1966, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 2002, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .registration {
   text-align: center; }
 
-/* line 1970, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 2006, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .logo-img {
   display: inline-block; }
 
-/* line 1976, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+/* line 2012, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
 .opinion {
   margin-top: 30px; }
+
+/* line 2016, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+.thx-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0; }
+  /* line 2021, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+  .thx-list li {
+    color: black;
+    font-family: ProximaNova;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left; }
+    /* line 2028, /home/andrii/web/home_web/andrii91.github.io/other/content-marketing/src/sass/info/main.scss */
+    .thx-list li span {
+      color: #49c770;
+      font-family: Souses;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 15px;
+      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

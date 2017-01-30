@@ -3,6 +3,138 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+     .head-text {
+			position: absolute;
+		}
+		.head-img:after, .head-img:before {
+			display: block;
+		}
+		.head-img:before {
+		    background: url(../images/head-before.png) no-repeat;
+		    width: 235px;
+		    background-size: 100%;
+		    left: 0;
+		}
+		.head-img:after {
+		    background: url(../images/head-after.png) no-repeat;
+		    width: 235px;
+		    background-size: 100%;
+		    right: 0;
+		}
+		.head-overlay {
+			display: block;
+		}
+		.head-date {
+			margin-top: -80px;
+			&.mar-top0 {
+				margin-top: 0;
+			}
+		}
+		.date-box h4, .date-box p, .registr-btn {
+			font-size: 15px;
+		}
+		.throne-list li:nth-child(1), .throne-list li:nth-child(2), .throne-list li:nth-child(3), .throne-list li:nth-child(4),
+			.throne-list li:nth-child(5) {
+				position: absolute;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+			.throne-list li:nth-child(4) {
+				right: 0;
+			}
+			.throne-list {
+			    padding: 0;
+			    margin: -35px 0 -60px;
+			    background: url(../images/line-list.png) center no-repeat;
+			    max-width: 740px;
+			    width: 100%;
+			    min-height: 559px;
+			    position: relative;
+			    background-size: 100%;
+			    z-index: 1;
+			}
+			.throne-title {
+		    max-width: 375px;
+		  }
+		  .throne-info {
+			    background: url(../images/tron-circle.png) center;
+			    padding: 85px 31px 0 38px;
+			    position: absolute;
+	        top: 0;
+			    right: 13%;
+			    z-index: 5;
+			        border-radius: 50%;
+			}
+			.wake-img {
+		    position: absolute;
+		    top: 0;
+		    right: -6%;
+		    display: inline-block;
+		    width: 92%;
+		}
+		.system-box, .system-list  {
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+		}
+		 .system-box.circle {
+		 	display: block;
+		 }
+		 .system-block {
+		 	text-align: center;
+		 }
+		 .lock-list {
+		 	text-align: center;
+		 }
+		 .lock-list li {
+		 	vertical-align: top;
+		 }
+		 .opinion-box {
+		 	    background: url(../images/opinion.png) center no-repeat;
+		 }
+		 .opinion-circle {
+			    width: 385px;
+			    height: 385px;
+			    background-color: #3b6fa9;
+			    background-image: linear-gradient(to left,#4cd964 0,#3b6fa9 100%);
+			    border-radius: 50%;
+			    padding: 119px 0 0 45px;
+			    margin-left: auto;
+			}
+			.speaker-list li {
+			    font-size: 15px;
+			    margin-bottom: 10px;
+			}
+			.callback-box {
+			    border-radius: 10px;
+			    padding: 62px 0 62px 44px;
+			    position: relative;
+			}
+			.callback-circle {
+			    width: 345px;
+			    height: 345px;
+			    background-image: linear-gradient(to right,#4cd964 0,#3b6fa9 100%);
+			    border-radius: 50%;
+			    padding: 120px 39px 0 44px;
+			    display: inline-block;
+			}
+			.callback-img {
+				position: absolute;
+		    width: 54%;
+			}
+			.head-info {
+			    font-size: 31px;
+			    max-width: 65%;
+			    margin: 0 auto;
+			}
+			.wake {
+				overflow: hidden;
+			}
+			.price-box {
+				max-width: 330px;
+			}
+
 	}
 }

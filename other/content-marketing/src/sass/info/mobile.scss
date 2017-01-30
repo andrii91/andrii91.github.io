@@ -244,6 +244,9 @@
 		margin: 0 auto 15px;
 		padding: 5px;
 	}
+	.price-check {
+		max-width: 265px;
+	}
 	.price-check li {
 		max-width: 130px;
 	}
@@ -285,5 +288,9 @@
 	
 	.menu-active .menu-trigger {
     right: 0;
+	}
+	.price-box {
+		min-height: auto;
+		padding-bottom: 20px;
 	}
 }

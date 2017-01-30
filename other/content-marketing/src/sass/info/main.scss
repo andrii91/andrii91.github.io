@@ -17,7 +17,7 @@ body {
 
 .head {
   padding: 26px 0;
-    position: absolute;
+    position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -68,6 +68,14 @@ body {
   }
 }
 
+.thx {
+  .head-overlay {
+    background: #000;
+    opacity: 0.6;
+    top: 0;
+    
+  }
+}
 .head-overlay {
     background-image: linear-gradient(to top, black 0%, transparent 100%);
   width: 100%;
@@ -108,6 +116,34 @@ body {
   line-height: 72px;
 }
 
+.thx {
+  .head-img {
+    &:before {
+      background: url('../images/263128thx.png') no-repeat center;
+      height: 100%;
+      width: 100%;
+      top: -135px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .head-text {
+    bottom: 30%;
+  }
+  .head-info {
+    max-width: 695px;
+    color: white;
+    font-family: ProximaNova;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+    font-style: normal;
+  }
+}
 .head-info {
   color: white;
 font-family: ProximaNova-L;
@@ -1975,4 +2011,27 @@ footer.head-bottom {
 
 .opinion {
   margin-top: 30px;
+}
+
+.thx-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0;
+  li {
+    color: black;
+    font-family: ProximaNova;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    span {
+      color: rgb(73, 199, 112);
+      font-family: Souses;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 15px;
+      display: inline-block;
+    }
+  }
 }

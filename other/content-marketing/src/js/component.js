@@ -299,7 +299,19 @@ $(document).ready(function() {
     $(this).addClass('active');
     $(this).parents('.price-box').find('.price-summ').removeClass('active');
     $(this).parents('.price-box').find('#'+$(this).data('check')).addClass('active');
+
+    $('.option').val($(this).parents('.price-box').find('h4').text() +', ' +$(this).text());
+    $('.price').val($(this).parents('.price-box').find('.price-summ.active').text());
+
   });
+  $('.price-box .modal-btn').click(function () {
+    $('.option').val($(this).parents('.price-box').find('h4').text() +', ' +$(this).parents('.price-box').find('.price-check li.active').text());
+    $('.price').val($(this).parents('.price-box').find('.price-summ.active').text());
+  });
+
+$('.option').val('Премиум, Онлайн трансляция');
+$('.price').val($('#online-pr').text());
+
   $('.js-lazyYT').lazyYT();
   
   $('.program-item').viewportChecker({
@@ -321,6 +333,26 @@ $(document).ready(function() {
     $('.modal').animate({
           opacity: 0,  });
   });
+
+  $('.registration').on('submit', function(e) {
+    e.preventDefault();
+    var $form = $(this);
+
+
+    $.ajax({
+        type: 'POST',
+        url: 'registration.php',
+        dataType: 'json',
+        data: $form.serialize(),
+        success: function(response) {
+            console.info(response);
+            if (response.status == 'success') {
+                window.location.href = "thx.html";
+            }
+        }
+    });
+  });
+
 });
 $(window).scroll(function() {
     return $('.head').toggleClass("header_fixed", $(window).scrollTop() > 0);

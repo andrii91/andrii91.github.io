@@ -54,7 +54,7 @@ $(document).ready(function() {
         };
 
         var script = document.createElement('script');
-        script.src = 'https://script.google.com/macros/s/AKfycbysLJ2emFQZZye6Qbld9kiAowaF7TtHMqZOTZABZI6_FwoVZw_9/exec?name=' + data.name + '&p2=' + data.mail + '&p3=' + data.phone + '&p4=' + data.option + '&p5=' + data.option_type + '&p6=' + data.option_price;
+        script.src = 'https://script.google.com/macros/s/AKfycbwZRUqOD7t3_8lFH-Jf2n43Y_E2XVqUdHfeXP7mcja97Vf-FiqE/exec?name=' + data.name + '&p2=' + data.mail + '&p3=' + data.phone + '&p4=' + data.option + '&p5=' + data.option_type + '&p6=' + data.option_price;
         script.type = 'text/javascript';
         $("body").append(script);
 
