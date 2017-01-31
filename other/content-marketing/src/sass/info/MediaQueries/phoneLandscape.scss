@@ -4,6 +4,41 @@
     @import '../mobile';
 
     & {
-      
+
+	.lock-list li:nth-child(1):after, .lock-list li:nth-child(2):after, .lock-list li:nth-child(3):after, .lock-list li:nth-child(4):after,
+	.lock-list li:nth-child(5):after, .lock-list li:nth-child(6):after, .lock-list li:nth-child(7):after{
+		display: block;
+		}
+		.lock-list li.active:nth-child(2):after, .lock-list li.active:nth-child(1):after,
+		 .lock-list li.active:nth-child(3):after,.lock-list li.active:nth-child(4):after, 
+		 .lock-list li.active:nth-child(5):after, .lock-list li.active:nth-child(6):after,
+		  .lock-list li.active:nth-child(7):after {
+		    background: url(../images/lock2.png) center no-repeat;
+		    width: 47px;
+		    height: 54px;
+		    top: 0;
+		    left: 100%;
+		    background-size: 100%;
+		}
+		.lock-list li:nth-child(2):after, .lock-list li:nth-child(1):after,
+		 .lock-list li:nth-child(3):after,.lock-list li:nth-child(4):after, 
+		 .lock-list li:nth-child(5):after, .lock-list li:nth-child(6):after,
+		  .lock-list li:nth-child(7):after {
+		    background: url(../images/lock-cl1.png) center no-repeat;
+		        width: 24px;
+		    height: 38px;
+		    top: 0;
+		    left: 108%;
+		    background-size: 100%;
+		}
+		.lock-list {
+			text-align: center;
+		}
+		.wake-none {
+			height: 480px;
+			iframe {
+				height: 480px;
+			}
+		}
     }
 }

@@ -353,6 +353,45 @@ $('.price').val($('#online-pr').text());
     });
   });
 
+  $('.acordion-link').click(function() {
+      var destination = $(".acordion").offset().top - 10;
+      $("body,html").animate({
+          scrollTop: destination
+      }, 500);
+  });
+
+  $('.program-link').click(function() {
+      var destination = $(".program").offset().top - 50;
+      $("body,html").animate({
+          scrollTop: destination
+      }, 500);
+  });
+
+  $('.result-link').click(function() {
+      var destination = $(".result").offset().top - 50;
+      $("body,html").animate({
+          scrollTop: destination
+      }, 500);
+  });
+
+  $('.speaker-link').click(function() {
+      var destination = $(".speaker").offset().top - 50;
+      $("body,html").animate({
+          scrollTop: destination
+      }, 500);
+  });
+
+  $('.price-link').click(function() {
+      var destination = $(".price").offset().top - 50;
+      $("body,html").animate({
+          scrollTop: destination
+      }, 500);
+  });
+
+  $('.head-menu li').click(function() {
+    $('body').removeClass('menu-active');
+  });
+
 });
 $(window).scroll(function() {
     return $('.head').toggleClass("header_fixed", $(window).scrollTop() > 0);
