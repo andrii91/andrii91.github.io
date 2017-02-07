@@ -334,7 +334,7 @@ $('.price').val($('#online-pr').text());
           opacity: 0,  });
   });
 
-  $('.registration').on('submit', function(e) {
+/*  $('.registration').on('submit', function(e) {
     e.preventDefault();
     var $form = $(this);
 
@@ -347,11 +347,10 @@ $('.price').val($('#online-pr').text());
         success: function(response) {
             console.info(response);
             if (response.status == 'success') {
-                window.location.href = "thx.html";
             }
         }
     });
-  });
+  });*/
 
   $('.acordion-link').click(function() {
       var destination = $(".acordion").offset().top - 10;

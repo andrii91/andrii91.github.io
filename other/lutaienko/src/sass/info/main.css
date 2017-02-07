@@ -1,0 +1,206 @@
+/* line 3, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+* {
+  outline: none; }
+
+/* line 6, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 10, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 15, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.head {
+  background: url(../images/bg.jpg) no-repeat right top;
+  background-color: #cacaca;
+  position: relative;
+  padding: 200px 0 60px; }
+  /* line 21, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .head .overl {
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  /* line 31, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .head img {
+    max-width: 150px;
+    border-radius: 50%; }
+
+/* line 37, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.head-title {
+  color: #fff;
+  max-width: 800px;
+  font-size: 48px;
+  margin: 10px auto 0;
+  text-align: center; }
+
+/* line 45, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  z-index: 25; }
+  /* line 55, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .top-menu.header_fixed {
+    padding: 5px;
+    background: #fff; }
+    /* line 59, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+    .top-menu.header_fixed .menu-item .menu-link {
+      color: #ccccba; }
+      /* line 61, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+      .top-menu.header_fixed .menu-item .menu-link:hover {
+        color: #000; }
+
+/* line 69, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.top-logo {
+  float: left; }
+  /* line 71, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .top-logo img {
+    max-width: 160px; }
+
+/* line 76, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.menu {
+  list-style: none;
+  padding: 12px 0 0;
+  margin: 0;
+  float: right; }
+
+/* line 84, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.menu-item {
+  display: inline-block;
+  margin: 0 10px; }
+  /* line 87, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .menu-item .menu-link {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ccc;
+    text-decoration: none;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
+    /* line 96, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+    .menu-item .menu-link:hover {
+      text-decoration: none;
+      color: #fff; }
+
+/* line 105, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.owl-carousel .itf-images {
+  text-align: center; }
+  /* line 107, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .owl-carousel .itf-images img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto; }
+
+/* line 113, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.owl-carousel .itf-box {
+  text-align: center;
+  max-width: 300px;
+  margin: 10px auto 0; }
+  /* line 117, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .owl-carousel .itf-box h4 {
+    font-size: 18px;
+    line-height: 1; }
+  /* line 121, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .owl-carousel .itf-box p {
+    font-size: 16px;
+    line-height: 1; }
+  /* line 125, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .owl-carousel .itf-box span {
+    font-size: 15px;
+    line-height: 1; }
+
+/* line 135, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.itf {
+  background: url("../images/IMG_42009.jpg") no-repeat left center;
+  padding: 60px 0;
+  background-size: 100%; }
+
+/* line 141, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.itf-title {
+  font-size: 24px;
+  line-height: 1; }
+
+/* line 146, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.video {
+  padding: 60px 0;
+  text-align: center;
+  background: url(../images/background.png) no-repeat top right; }
+  /* line 151, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .video .iframe-box {
+    max-width: 350px;
+    margin: 0 auto; }
+
+/* line 157, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.video-title {
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 30px; }
+
+/* line 163, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.footer {
+  background: #222;
+  padding: 30px 0; }
+
+/* line 168, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.footer-box {
+  color: #fff; }
+  /* line 170, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .footer-box h5 {
+    font-size: 18px;
+    line-height: 1; }
+  /* line 174, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .footer-box span {
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px; }
+    /* line 179, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+    .footer-box span a {
+      color: #fff;
+      display: inline-block; }
+
+/* line 186, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.footer-soc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right; }
+  /* line 191, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+  .footer-soc li {
+    display: inline-block;
+    margin: 0 5px; }
+    /* line 194, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+    .footer-soc li a {
+      display: block;
+      width: 30px;
+      height: 30px; }
+      /* line 199, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+      .footer-soc li a.vk {
+        background: url(../images/icon_vkk.png) no-repeat;
+        background-size: 100%; }
+      /* line 204, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+      .footer-soc li a.ok {
+        background: url(../images/ok.png) no-repeat;
+        background-size: 100%; }
+
+/* line 214, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.float-right {
+  float: right; }
+
+/* line 218, /home/andrii/web/home_web/andrii91.github.io/other/lutaienko/src/sass/info/main.scss */
+.text-right {
+  text-align: right; }
+
+/*# sourceMappingURL=main.css.map */
