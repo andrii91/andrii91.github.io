@@ -33,11 +33,11 @@
           <a href="index.html" class="top-logo"> <img src="images/logo.png" alt=""> </a>
           <ul class="menu">
             <li class="menu-item"><a href="index.html" class="menu-link">Головна сторінка</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Історія таеквон-до</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Принципи таеквон-до</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Наші заходи</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Навчально-тренерувальні збори</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Контакти</a></li>
+            <li class="menu-item"><a href="about.html" class="menu-link">Про Taekwon-do I.T.F.</a></li>
+            <li class="menu-item"><a href="measures.html" class="menu-link">Наші заходи</a></li>
+            <li class="menu-item"><a href="meeting.html" class="menu-link">Навчально-тренерувальні збори</a></li>
+            <li class="menu-item"><a href="contact.html" class="menu-link">Контакти</a></li>
+            <li class="menu-item"><a class="registr-link modal-btn" data-modal="modal">Записатись в секцію</a></li>
           </ul>
         </div>
       </div>
@@ -142,6 +142,24 @@
       </div>
     </div>
   </footer>
+   <div class="overlay"></div>
+  
+  <div id="modal" class="modal">
+    <div class="modal-head">
+     <div class="close-m"></div>
+    </div>
+    <div class="modal-content">
+      <form class="registration" action="javascript:void(null);" method="post">
+        <input type="text" class="input-text" name="name" placeholder="Ім'я" required >
+        <input type="tel" class="input-text" pattern="[0-9]{9,}" name="phone" placeholder="Телефон" required oninvalid="this.setCustomValidity('Введіть номер телефону (не менше 9 цифр)')" oninput="setCustomValidity('')" >
+        <input type="email" class="input-text" name="mail" placeholder="E-mail" required >
+        <input type="hidden" class="option" name="option" value="">
+        <input type="hidden" class="price" name="price" value="">
+        <button type="submit" class="registr-btn">Записатись в секцію</button>
+      </form>
+    </div>
+  </div>
+  
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
 </body>

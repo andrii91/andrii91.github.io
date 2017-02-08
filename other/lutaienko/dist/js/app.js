@@ -24,6 +24,27 @@ $(document).ready(function() {
             }
         }
     });
+      $(".photo-img").fancybox({
+    	helpers : {
+    		title : {
+    			type : 'over'
+    		}
+    	}
+    });
   
+  $('.modal-btn').click(function() {
+    $('#' + $(this).data('modal')).show();
+      $('#' + $(this).data('modal')).animate({
+          opacity: 1,  });
+    $('body').addClass('overl-h');
+    $('.overlay').show();
+  });
+  $('.overlay, .close-m').click(function() {
+    $('body').removeClass('overl-h');
+    $('.modal').hide();
+    $('.overlay').hide();
+    $('.modal').animate({
+          opacity: 0,  });
+  });
 
 });

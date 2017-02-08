@@ -35,7 +35,7 @@ gulp.task('js_v', function() {
     gulp.src([
             'src/js/vendor/jquery.js',
             'src/js/vendor/owl.carousel.min.js',
-            // 'src/js/vendor/inputmask.js',
+            'src/js/vendor/jquery.fancybox.pack.js',
             // 'src/js/vendor/jquery.inputmask.js',
             // 'src/js/vendor/jquery.animateNumber.min.js',
             // 'src/js/vendor/jquery.scrollTo.js',
