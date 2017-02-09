@@ -31,6 +31,13 @@ $(document).ready(function() {
     		}
     	}
     });
+      $(".gallery a").fancybox({
+    	helpers : {
+    		title : {
+    			type : 'over'
+    		}
+    	}
+    });
   
   $('.modal-btn').click(function() {
     $('#' + $(this).data('modal')).show();
@@ -45,6 +52,17 @@ $(document).ready(function() {
     $('.overlay').hide();
     $('.modal').animate({
           opacity: 0,  });
+  });
+  
+  $('.overlay-iframe').click(function() {
+    $(this).hide();
+  });
+  
+  $('.mob-btn').click(function() {
+    $('.menu').toggle();
+    $('.menu').css({
+      'background-color' : '#fff',
+    })
   });
 
 });

@@ -3,6 +3,21 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+         .masonry-video {
+              -moz-column-count: 2;
+              -webkit-column-count: 2;
+              column-count: 2;
+           iframe {
+             margin-bottom: 0;
+           }
+          }
+      .history {
+        .head-title.black {
+          color: #000;
+        }
+      }
+      .photo-img {
+        max-width: 320px;
+      }
 	}
 }
