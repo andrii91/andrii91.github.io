@@ -1,0 +1,384 @@
+/* line 3, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+* {
+  outline: none; }
+
+/* line 6, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 10, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 16, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 25, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  z-index: 30; }
+  /* line 37, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .navbar.menu-top .nav li {
+    position: relative; }
+    /* line 41, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    .navbar.menu-top .nav li.active:before, .navbar.menu-top .nav li:hover:before {
+      content: "";
+      height: 3px;
+      width: 100%;
+      border-radius: 1px;
+      background-color: #b02873;
+      opacity: 0.8;
+      position: absolute;
+      bottom: -11px;
+      left: 0; }
+    /* line 53, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    .navbar.menu-top .nav li a {
+      color: #ffffff;
+      font-family: "SFUI Display-B";
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out; }
+      /* line 63, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      .navbar.menu-top .nav li a:hover {
+        color: #b02873; }
+  /* line 71, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .navbar.header_fixed {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.19);
+    background-color: #e9e9e9;
+    padding: 20px 0px; }
+    /* line 75, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    .navbar.header_fixed .navbar-logo {
+      width: 50px;
+      height: 49px;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      background: url("../images/logo-fix.png") no-repeat center; }
+    /* line 83, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    .navbar.header_fixed .nav {
+      margin-top: 15px; }
+      /* line 87, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      .navbar.header_fixed .nav li.active a {
+        color: #b02873; }
+      /* line 91, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      .navbar.header_fixed .nav li a {
+        color: #222222;
+        font-family: "SFUI Display-B";
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out; }
+        /* line 101, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+        .navbar.header_fixed .nav li a:hover {
+          color: #b02873; }
+  /* line 108, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .navbar.right {
+    top: 50%;
+    right: 48px;
+    left: auto;
+    transform: translateX(0) translateY(-50%); }
+    /* line 113, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    .navbar.right .nav {
+      width: 200px; }
+      /* line 115, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      .navbar.right .nav li {
+        text-align: right;
+        display: block;
+        min-height: 28px;
+        position: relative; }
+        /* line 123, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+        .navbar.right .nav li.active a, .navbar.right .nav li:hover a {
+          border-radius: 12px;
+          background-color: rgba(255, 255, 255, 0.1);
+          position: relative; }
+          /* line 128, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+          .navbar.right .nav li.active a:before, .navbar.right .nav li:hover a:before {
+            background-color: #ea3977; }
+          /* line 131, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+          .navbar.right .nav li.active a span, .navbar.right .nav li:hover a span {
+            display: inline-block;
+            margin-right: 8px;
+            color: #ffffff;
+            font-family: "SFUI Display-B";
+            font-size: 11px;
+            font-weight: 900;
+            line-height: 1; }
+        /* line 143, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+        .navbar.right .nav li a {
+          position: relative;
+          display: inline-block;
+          padding: 0px 18px 4px 12px;
+          -moz-transition: all 0.5s ease-out;
+          -o-transition: all 0.5s ease-out;
+          -webkit-transition: all 0.5s ease-out; }
+          /* line 150, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+          .navbar.right .nav li a span {
+            display: none;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -webkit-transition: all 0.5s ease-out; }
+          /* line 156, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+          .navbar.right .nav li a:before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: #52545a;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateX(0) translateY(-50%);
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -webkit-transition: all 0.5s ease-out; }
+
+/* line 176, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.head {
+  background: url("../images/header.png") no-repeat center;
+  background-size: cover;
+  padding-bottom: 94px; }
+
+/* line 182, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+#header-carousel {
+  margin-top: 225px;
+  max-width: 1084px;
+  padding: 0 77px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  /* line 189, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  #header-carousel .owl-nav {
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+    transform: translateX(0) translateY(-50%); }
+    /* line 195, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    #header-carousel .owl-nav .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 15px solid transparent;
+      border-right: 15px solid #090910;
+      width: 18px;
+      height: 25px; }
+    /* line 204, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    #header-carousel .owl-nav .owl-next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 15px solid transparent;
+      border-left: 15px solid #090910;
+      width: 18px;
+      height: 25px; }
+
+/* line 215, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.align-items-center {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+
+/* line 223, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.head-img img {
+  max-width: 616px; }
+
+/* line 228, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.head-title {
+  color: #ffffff;
+  font-family: "SFUI Display-B";
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 29px; }
+
+/* line 238, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.head-info {
+  color: #78797a;
+  font-family: "SFUI Display-M";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 32px; }
+
+/* line 247, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.mar-left-72 {
+  margin-left: -72px; }
+
+/* line 251, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.app-btn {
+  position: relative;
+  max-width: 147px;
+  width: 100%;
+  border-radius: 22px;
+  border: 2px solid #ff006b;
+  display: inline-block;
+  padding: 17px 31px 15px 49px;
+  color: #ffffff;
+  font-family: "SFUI Display-B";
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out; }
+  /* line 271, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .app-btn:before {
+    content: "";
+    background: url("../images/apple.svg") no-repeat;
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    margin-top: -9px; }
+  /* line 281, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .app-btn:hover {
+    background: #ff006b;
+    color: #fff; }
+
+/* line 287, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.navbar-logo {
+  background: url("../images/logo.png");
+  width: 94px;
+  height: 94px;
+  float: left; }
+
+/* line 295, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.menu-top .nav {
+  float: right;
+  max-width: 440px;
+  width: 100%;
+  margin-top: 39px; }
+  /* line 300, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .menu-top .nav li {
+    display: inline-block;
+    margin: 0 19.5px; }
+
+/* line 307, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.testimotials {
+  padding: 0 0 56px;
+  background-color: #e9e9e9; }
+
+/* line 312, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.testimotials-title {
+  color: #222222;
+  font-family: "SFUI Display-B";
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 56px 0 18px; }
+
+/* line 323, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.testimotials-info {
+  color: #78797a;
+  font-family: "SFUI Display-M";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 auto;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 23px;
+  text-align: center; }
+  /* line 334, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .testimotials-info:before {
+    content: "";
+    width: 44px;
+    height: 2px;
+    background-color: #cabfa1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -22px; }
+
+/* line 346, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.item-name {
+  color: #2b2b2b;
+  font-family: "SFUI Display-M";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 11px; }
+
+/* line 355, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.item-info {
+  display: none; }
+
+/* line 358, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.item-post {
+  color: #bb4f8b;
+  font-family: "SFUI Display";
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase; }
+
+/* line 366, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+.testimotials-img {
+  margin-bottom: 33px; }
+  /* line 368, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  .testimotials-img img {
+    max-width: 137px;
+    margin: 0 auto; }
+
+/* line 373, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+#loop {
+  margin-top: 39px;
+  max-width: 848px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 378, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+  #loop .active {
+    text-align: center;
+    padding-top: 26px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
+    /* line 384, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+    #loop .active.center {
+      padding-top: 0; }
+      /* line 386, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      #loop .active.center .item-info {
+        display: block;
+        max-width: 266px;
+        color: #78797a;
+        font-family: "SFUI Display-M";
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 0 auto 17px; }
+      /* line 397, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+      #loop .active.center .testimotials-img {
+        margin-bottom: 23px; }
+        /* line 399, /home/andrii/web/home_web/andrii91.github.io/other/hoistr/src/sass/info/main.scss */
+        #loop .active.center .testimotials-img img {
+          max-width: 185px;
+          margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */

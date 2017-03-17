@@ -1,0 +1,698 @@
+@import 'variables';
+
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+
+.nav { 
+  list-style: none;
+  margin: 0 ; 
+  padding: 0;
+
+}
+
+.mob-btn {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 0;
+  -moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+  z-index: 30;
+  &.menu-top {
+    .nav {
+      li {
+        position: relative;
+        
+        &.active, &:hover {
+          &:before {
+            content: "";
+            height: 3px;
+            width: 100%;
+            border-radius: 1px;
+            background-color: #b02873;
+            opacity: 0.8;
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+          }
+        }
+        a {
+          color: #ffffff;
+          font-family: "SFUI Display-B";
+          font-size: 11px;
+          font-weight: 900;
+          line-height: 1;
+          text-transform: uppercase;
+          -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+          &:hover {
+            color: #b02873;
+          } 
+        }
+      }
+    }
+  }
+  
+  &.header_fixed {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.19);
+    background-color: #e9e9e9;
+    padding: 20px 0px;
+    .navbar-logo {
+      width: 50px;
+      height: 49px;
+      -moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+      background: url('../images/logo-fix.png') no-repeat center;
+    }
+     .nav {
+      margin-top: 15px;
+       li {
+         &.active {
+           a {
+             color: #b02873;
+           }
+         }
+         a {
+          color: #222222;
+          font-family: "SFUI Display-B";
+          font-size: 11px;
+          font-weight: 900;
+          line-height: 1;
+          text-transform: uppercase;
+          -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+          &:hover {
+            color: #b02873;
+          } 
+        }
+       }
+    }
+  }
+  &.right {
+    top: 50%;
+    right: 48px;
+    left: auto;
+    transform: translateX(0) translateY(-50%);
+    .nav {
+      width: 200px;
+      li {
+          text-align: right;
+        display: block;
+        min-height: 28px;
+              position: relative;
+        
+        &.dark-li.active {
+          a {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+          span {
+            color: #2b2b2b;
+          }
+        }
+      
+        &.active, &:hover {
+          
+          a {
+          border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            position:relative;
+              
+            &:before {
+              background-color: #ea3977;
+            }
+            span {
+              display: inline-block;
+              
+              margin-right: 8px;
+              color: #ffffff;
+              font-family: "SFUI Display-B";
+              font-size: 11px;
+              font-weight: 900;
+              line-height: 1;
+            }
+          }
+        }
+        a {
+          position:relative;
+          display: inline-block;
+          padding: 0px 18px 4px 12px;
+            -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+          span {
+            display: none;
+              -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+          }
+          &:before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: #52545a;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateX(0) translateY(-50%);
+            -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.head {
+  background: url('../images/header.png') no-repeat center;
+  background-size: cover;
+ 
+}
+
+#header-carousel {
+  margin-top: 225px;
+  max-width: 1084px;
+  padding:  0 77px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+   margin-bottom: 94px; 
+  .owl-nav {
+      position: absolute;
+      top: 41%;
+      left: 0;
+      right: 0;
+      transform: translateX(0) translateY(-50%);
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 15px solid transparent;	
+      border-right: 15px solid #090910;
+      width: 18px;
+      height: 25px;
+    }
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 15px solid transparent;	
+      border-left: 15px solid #090910;
+      width: 18px;
+      height: 25px;
+    }
+  }
+}
+.align-items-center {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.head-img {
+  img {
+    max-width: 616px;
+  }
+}
+
+.head-title {
+  color: #ffffff;
+  font-family: "SFUI Display-B";
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.head-info {
+  color: #78797a;
+  font-family: "SFUI Display-M";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 32px;
+}
+
+.mar-left-72 {
+  margin-left: -72px;
+}
+
+.app-btn {
+  position: relative;
+  max-width: 147px;
+  width: 100%;
+  border-radius: 22px;
+  border: 2px solid #ff006b;
+  display: inline-block;
+  padding: 17px 31px 15px 49px;
+  color: #ffffff;
+  font-family: "SFUI Display-B";
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+  
+  &:before {
+    content: "";
+    background: url('../images/apple.svg') no-repeat;
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    margin-top: -9px;
+  }
+  &:hover {
+    background: #ff006b;
+    color: #fff;
+  }
+}
+
+.navbar-logo {
+  background: url('../images/logo.png');
+  width: 94px;
+  height: 94px;
+  float: left;
+}
+
+.menu-top {
+  .nav {
+    float: right;
+    max-width: 440px;
+    width: 100%;
+    margin-top: 39px;
+    li {
+      display: inline-block;
+      margin: 0 19.5px;
+    }
+  }
+}
+
+.testimotials {
+  background-color: #e9e9e9;
+  min-height: 725px;
+}
+
+.testimotials-title {
+  color: #222222;
+  font-family: "SFUI Display-B";
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 156px 0 18px;
+}
+
+.testimotials-info {
+  color: #78797a;
+  font-family: "SFUI Display-M";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  margin:  0 auto;
+  position: relative;
+  padding-bottom: 23px;
+  text-align: center;
+  &:before {
+    content: "";
+    width: 44px;
+    height: 2px;
+    background-color: #cabfa1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -22px;
+  }
+}
+
+    .item-name {
+      color: #2b2b2b;
+      font-family: "SFUI Display-M";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: uppercase;
+      margin-bottom: 11px;
+    }
+    .item-info {
+      display: none;
+
+    }
+    .item-post {
+      color: #bb4f8b;
+      font-family: "SFUI Display";
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+    .testimotials-img {
+      margin-bottom: 33px;
+      img {
+        max-width: 137px;
+        margin: 0 auto;
+      }
+    }
+#loop {
+  margin-top: 39px;
+  max-width: 848px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 330px;
+  margin-bottom: 104px;
+  .item {
+    text-align: center;
+  }
+  .owl-nav {
+    position: absolute;
+    top: 29%;
+    left: 0;
+    width: 100%; 
+    .owl-prev, .owl-next {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+    }
+    .owl-prev {
+      left: 30%;
+      border-top: 1px solid #8c8c8c;
+      border-left: 1px solid #8c8c8c;
+      -moz-transform: rotate(-45deg);  /* Firefox */
+      -o-transform: rotate(-45deg);  /* Opera */
+      -webkit-transform: rotate(-45deg);  /* Safari y Chrome */
+      filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476); /* IE */
+      
+    }
+    .owl-next {
+      right: 30%;
+      border-top: 1px solid #8c8c8c;
+      border-right: 1px solid #8c8c8c;
+      -moz-transform: rotate(45deg);  /* Firefox */
+      -o-transform: rotate(45deg);  /* Opera */
+      -webkit-transform: rotate(45deg);  /* Safari y Chrome */
+      filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476); /* IE */
+    }
+  }
+  .active {
+    text-align: center;
+    padding-top: 26px;
+    &.center {
+      padding-top: 0;
+      .item-info {
+        display: block;
+        max-width: 266px;
+        color: #78797a;
+        font-family: "SFUI Display-M";
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 0 auto 17px;
+        
+      }
+      .testimotials-img {
+        margin-bottom: 23px;
+        img {
+          max-width: 185px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.feactures {
+  background-color: #582e82;
+  
+}
+
+.feactures-title {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-family: "SFUI Display-B";
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.feactures-info {
+  color: #78797a;
+  font-family: "SFUI Display-M";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 23px;
+  position: relative;
+  &:before {
+    content: "";
+    width: 44px;
+    height: 2px;
+    background-color: #b52461;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -22px;
+  }
+}
+
+.feactures-img {
+  margin-top: 78px;
+  text-align: center;
+  min-height: 75px;
+  margin-bottom: 44px;
+}
+
+.feactures-box {
+  text-align: center;
+  margin: 0 auto 150px;
+  max-width: 250px;
+  h4 {
+    color: #ffffff;
+    font-family: "SFUI Display-M";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0 auto 21px;
+  }
+  p {
+    margin: 0;
+    color: #78797a;
+    font-family: "SFUI Display-M";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+
+.contacts {
+  background: #e9e9e9;
+}
+
+.registration {
+  max-width: 510px;
+  margin: 31px auto;
+  label {
+    color: #1a1a1a;
+    font-family: "SFUI Display-B";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  span {
+    color: #b29f65;
+  }
+  .input, .textarea {
+    display: block;
+    margin: 12px 0 20px;
+    color: #78797a;
+    font-family: "SFUI Display-M";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    max-width: 248px;
+    min-height: 36px;
+    border-radius: 18px;
+    background-color: #efefef;
+    border: 2px solid #efefef;
+    padding: 9px 0 9px 20px;
+    width: 100%;
+    &:focus {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.19);
+      border: 2px solid #c6366d;
+      background-color: #ffffff;
+    }
+  }
+  .textarea {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+  }
+}
+
+.submit-btn {
+  color: #1a1a1a;
+  cursor: pointer;
+font-family: "SFUI Display-B";
+font-size: 10px;
+font-weight: 500;
+line-height: 16px;
+text-transform: uppercase;
+  text-align: center;
+  max-width: 109px;
+height: 36px;
+border-radius: 18px;
+border: 2px solid #c6366d;
+  background: transparent;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+      -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+  &:hover {
+    background: #c6366d;
+    color: #fefefe;
+  }
+}
+
+.footer-top {
+  background: #e9e9e9;
+  padding: 38px 0;
+}
+
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0px 20px;
+    a {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 20px;
+      height: 11px;
+      color: #2b2b2b;
+      font-family: "SFUI Display-B";
+      font-size: 11px;
+      font-weight: 900;
+        -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      &:hover {
+        color: #bc0d50;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        margin-top: -7.5px;
+      }
+      &.phone {
+        &:before {
+          background: url(../images/call-answer.svg) no-repeat center;
+        }
+      }
+      &.address {
+        &:before {
+          background: url(../images/location-pin.svg) no-repeat center;
+          
+        }
+      }
+      &.mail {
+        &:before {
+          background: url(../images/envelope.svg) no-repeat center;
+          
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: #181832;
+  padding: 28px 0 21px;
+  text-align: center;
+  .copyright {
+    margin: 0;
+    color: #ffffff;
+    font-family: "SFUI Display-B";
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+
+.map {
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+}

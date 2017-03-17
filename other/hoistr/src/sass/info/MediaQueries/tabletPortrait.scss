@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+     br {
+     	display: none;
+     }
+	}
+}

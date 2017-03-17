@@ -334,15 +334,8 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
-a:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none;
-}
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 a:not([href]):not([tabindex]):focus {
   outline: 0;
@@ -532,7 +525,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 960px;
     max-width: 100%;
   }
 }
