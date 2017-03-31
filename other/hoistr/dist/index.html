@@ -20,38 +20,39 @@
   <meta itemprop="description" content="" />
   <meta itemprop="image" content="" />
   <title></title>
-  <link type="text/css" rel="stylesheet" href="css/app.css" />
-  <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/app.css?v=1" />
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css?v=1" />
   <link rel="shortcut icon" href="images/favicon.png"> </head>
 
 <body>
-  <nav class="navbar menu-top">
+  <nav id="navbar" class="navbar menu-top">
     <div class="container">
       <div class="row">
         <div class="col">
           <a href="/" class="navbar-logo"></a>
-          <span class="mob-btn"></span>
+          <span class="mob-btn"><span></span></span>
           <ul class="nav">
-            <li data-target="PROMO"><a href="#PROMO">PROMO</a></li>
-            <li data-target="TESTIMOTIALS"><a href="#TESTIMOTIALS">TESTIMOTIALS</a></li>
-            <li data-target="FEATURES"><a href="#FEATURES">Feactures</a></li>
-            <li data-target="CONTACTS"><a href="#CONTACTS">CONTACTS</a></li>
+            <li ><a href="#promo">PROMO</a></li>
+            <li ><a href="#testimotials">TESTIMOTIALS</a></li>
+            <li ><a href="#feactures">Feactures</a></li>
+            <li ><a href="#contacts">CONTACTS</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  <div class="navbar right">
-    <ul class="nav">
-      <li data-target="PROMO"> <a href="#PROMO"><span>Promo</span></a></li>
-      <li class="dark-li" data-target="TESTIMOTIALS"> <a href="#TESTIMOTIALS"><span>Testimonials</span></a></li>
-      <li data-target="FEATURES"> <a href="#FEATURES"><span>Feactures</span></a></li>
-      <li class="dark-li" data-target="CONTACTS"> <a href="#CONTACTS"><span>CONTACTS</span></a></li>
-    </ul>
-  </div>
+
   <div class="body">
-    <section class="head">
-      <div class="container-fluid scrl" data-item="PROMO">
+    <section class="head" id="promo" data-offset="0">
+      <!-- <div class="navbar right">
+        <ul class="nav">
+          <li data-target="promo"> <a href="#promo"><span>Promo</span></a></li>
+          <li class="dark-li" data-target="testimotials"> <a href="#testimotials"><span>Testimonials</span></a></li>
+          <li data-target="feactures"> <a href="#feactures"><span>Feactures</span></a></li>
+          <li class="dark-li" data-target="contacts"> <a href="#contacts"><span>CONTACTS</span></a></li>
+        </ul>
+      </div> -->
+      <div class="container-fluid">
         <div class="row">
           <div class="col">
             <div id="header-carousel" class="owl-carousel owl-theme">
@@ -80,8 +81,8 @@
         </div>
       </div>
     </section>
-    <section class="testimotials">
-      <div class="container scrl" data-item="TESTIMOTIALS">
+    <section class="testimotials" id="testimotials" >
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="testimotials-title">WHAT CUSTOMERS ARE SAYING</h2>
@@ -90,34 +91,34 @@
               <div class="item">
                 <div class="testimotials-img"> <img src="images/lmk-03.png" alt=""> </div>
                 <p class="item-info">This little wandering journey, without settied place of
-                  <br>abode, had been so unpleasant to me, that my own
-                  <br>house, as i called it to myself.</p>
+                   abode, had been so unpleasant to me, that my own
+                   house, as i called it to myself.</p>
                 <h4 class="item-name">BRIAN WILLIAMSON</h4> <span class="item-post">PM JETLINKS</span> </div>
               <div class="item">
                 <div class="testimotials-img"> <img src="images/393493_fotoportrety-devushek.png" alt=""> </div>
                 <p class="item-info">This little wandering journey, without settied place of
-                  <br>abode, had been so unpleasant to me, that my own
-                  <br>house, as i called it to myself.</p>
+                   abode, had been so unpleasant to me, that my own
+                   house, as i called it to myself.</p>
                 <h4 class="item-name">HELEN FRENCH</h4> <span class="item-post">PM COGINIX.CO</span> </div>
               <div class="item">
                 <div class="testimotials-img"> <img src="images/2862921627b67d5ad0c97bafe6b676c6_RSZ_690.png" alt=""> </div>
                 <p class="item-info">This little wandering journey, without settied place of
-                  <br>abode, had been so unpleasant to me, that my own
-                  <br>house, as i called it to myself.</p>
+                   abode, had been so unpleasant to me, that my own
+                   house, as i called it to myself.</p>
                 <h4 class="item-name">MILDRED O’CONNOR</h4> <span class="item-post">PM EABOX</span> </div>
               <div class="item">
                 <div class="testimotials-img"> <img src="images/2862921627b67d5ad0c97bafe6b676c6_RSZ_690.png" alt=""> </div>
                 <p class="item-info">This little wandering journey, without settied place of
-                  <br>abode, had been so unpleasant to me, that my own
-                  <br>house, as i called it to myself.</p>
+                   abode, had been so unpleasant to me, that my own
+                   house, as i called it to myself.</p>
                 <h4 class="item-name">MILDRED O’CONNOR</h4> <span class="item-post">PM EABOX</span> </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="feactures">
-      <div class="container scrl" data-item="FEATURES">
+    <section class="feactures" id="feactures">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="feactures-title">SOME FEATURES</h2>
@@ -130,10 +131,10 @@
             <div class="feactures-box">
               <h4>QUALITY</h4>
               <p>As we passed, i remarked a beautiful
-                <br>church-spire rising above some old elms
-                <br>in the park; and before them, in the midst
-                <br>of a lawn, and some outhouses, an old red
-                <br>house with tall chimneys covered with ivy.</p>
+               church-spire rising above some old elms
+               in the park; and before them, in the midst
+               of a lawn, and some outhouses, an old red
+               house with tall chimneys covered with ivy.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
@@ -141,10 +142,10 @@
             <div class="feactures-box">
               <h4>BEST PRICE</h4>
               <p>Looking cautiously round, to ascertain that they
-                <br>were not overheard, the two hags cowered nearer
-                <br>to the fire, and chuckled heartily. Nancy stooped
-                <br>below the shutters, and Oliver heard
-                <br>the sound of a bell</p>
+               were not overheard, the two hags cowered nearer
+               to the fire, and chuckled heartily. Nancy stooped
+               below the shutters, and Oliver heard
+               the sound of a bell</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
@@ -152,40 +153,42 @@
             <div class="feactures-box">
               <h4>FLIGHT SHARING</h4>
               <p>Just then her head struck against the roof
-                <br>of the hailo; in fact she was now more
-                <br>than nime feet high, and she at once
-                <br>took up the little golden key and
-                <br>hurried off to the garden door.</p>
+               of the hailo; in fact she was now more
+               than nime feet high, and she at once
+               took up the little golden key and
+               hurried off to the garden door.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container scrl" data-item="CONTACTS">
+    <section class="contacts" id="contacts">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="testimotials-title">CONTACTS</h2>
             <p class="testimotials-info">As we passed. I remarked a beautiful church-spire rising about some <br>old elms in the park</p>
-            
-            <form class="registration" action="javascript:void(null);" method="post">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <label for="">NAME <span>*</span>
-                    <input type="text" name="name" required class="input rfield" placeholder="You name" >
-                  </label>
+            <div class="form-box">
+              <form class="registration" action="javascript:void(null);" method="post">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <label for="">NAME <span>*</span>
+                      <input type="text" name="name" required class="input rfield" placeholder="You name" >
+                    </label>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <label for="">EMAIL <span>*</span>
+                      <input type="email" name="email" required class="input rfield" placeholder="You email">
+                    </label>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <label for="">EMAIL <span>*</span>
-                    <input type="email" name="email" required class="input rfield" placeholder="You email">
-                  </label>
-                </div>
-              </div>
-              <label for="">MESSAGE
-                <textarea class="textarea" name="message" placeholder="Your Message" ></textarea>
-              </label>
-              <button class="submit-btn" type="submit">SUBMIT</button>
-            </form>
+                <label for="">MESSAGE
+                  <textarea class="textarea" name="message" placeholder="Your Message" ></textarea>
+                </label>
+                <button class="submit-btn" type="submit">SUBMIT</button>
+              </form>
+              
+            </div>
           </div>
         </div>
         </div>
@@ -218,8 +221,8 @@
      </section>
     </footer>
     
-  <script src="js/vendor.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/vendor.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
 </body>
 
 

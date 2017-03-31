@@ -20,22 +20,22 @@
   <meta itemprop="description" content="" />
   <meta itemprop="image" content="" />
   <title></title>
-  <link type="text/css" rel="stylesheet" href="css/app.css" />
-  <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/app.css?v=1" />
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css?v=1" />
   <link rel="shortcut icon" href="images/favicon.png"> </head>
 
 <body>
-  <nav class="navbar menu-top">
+  <nav id="navbar" class="navbar menu-top">
     <div class="container">
       <div class="row">
         <div class="col">
           <a href="/" class="navbar-logo"></a>
-          <span class="mob-btn"></span>
+          <span class="mob-btn"><span></span></span>
           <ul class="nav">
-            <li data-target="PROMO"><a href="#PROMO">PROMO</a></li>
-            <li data-target="TESTIMOTIALS"><a href="#TESTIMOTIALS">TESTIMOTIALS</a></li>
-            <li data-target="FEATURES"><a href="#FEATURES">Feactures</a></li>
-            <li data-target="CONTACTS"><a href="#CONTACTS">CONTACTS</a></li>
+            <li ><a href="#promo">PROMO</a></li>
+            <li ><a href="#testimotials">TESTIMOTIALS</a></li>
+            <li ><a href="#feactures">Feactures</a></li>
+            <li ><a href="#contacts">CONTACTS</a></li>
           </ul>
         </div>
       </div>
@@ -43,15 +43,15 @@
   </nav>
   <div class="navbar right">
     <ul class="nav">
-      <li data-target="PROMO"> <a href="#PROMO"><span>Promo</span></a></li>
-      <li class="dark-li" data-target="TESTIMOTIALS"> <a href="#TESTIMOTIALS"><span>Testimonials</span></a></li>
-      <li data-target="FEATURES"> <a href="#FEATURES"><span>Feactures</span></a></li>
-      <li class="dark-li" data-target="CONTACTS"> <a href="#CONTACTS"><span>CONTACTS</span></a></li>
+      <li data-target="promo"> <a href="#promo"><span>Promo</span></a></li>
+      <li class="dark-li" data-target="testimotials"> <a href="#testimotials"><span>Testimonials</span></a></li>
+      <li data-target="feactures"> <a href="#feactures"><span>Feactures</span></a></li>
+      <li class="dark-li" data-target="contacts"> <a href="#contacts"><span>CONTACTS</span></a></li>
     </ul>
   </div>
   <div class="body">
-    <section class="head">
-      <div class="container-fluid scrl" data-item="PROMO">
+    <section class="head" id="promo" data-offset="0">
+      <div class="container-fluid">
         <div class="row">
           <div class="col">
             <div id="header-carousel" class="owl-carousel owl-theme">
@@ -80,8 +80,8 @@
         </div>
       </div>
     </section>
-    <section class="testimotials">
-      <div class="container scrl" data-item="TESTIMOTIALS">
+    <section class="testimotials" id="testimotials" >
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="testimotials-title">WHAT CUSTOMERS ARE SAYING</h2>
@@ -116,8 +116,8 @@
         </div>
       </div>
     </section>
-    <section class="feactures">
-      <div class="container scrl" data-item="FEATURES">
+    <section class="feactures" id="feactures">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="feactures-title">SOME FEATURES</h2>
@@ -161,8 +161,8 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container scrl" data-item="CONTACTS">
+    <section class="contacts" id="contacts">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2 class="testimotials-title">CONTACTS</h2>
@@ -218,8 +218,8 @@
      </section>
     </footer>
     
-  <script src="js/vendor.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/vendor.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
 </body>
 
 

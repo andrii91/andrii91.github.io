@@ -3,6 +3,10 @@
 @media #{$desktopHD} {
     @import '../desktop';
     & {
-
+    	#navbar {
+    		.container {
+    			width: 80%; 
+    		}
+    	}
     }
 }

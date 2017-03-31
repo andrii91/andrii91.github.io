@@ -48,7 +48,29 @@
                     lightEmpty();
                     return false
                 } else {
-                    form.submit();
+                    $.ajax({
+                        type: 'POST',
+                        url: 'registration/registration.php',
+                        dataType: 'json',
+                        data: $(this).serialize(),
+                        success: function(response) {
+                            console.info(response);
+                            if (response.status == 'success') {
+                               
+                                setTimeout(function() {
+                                    var html = [
+                                        '<div>',
+                                        '<p style="color: #222; font-size: 25px; font-weight: 900; margin: 40px 0; line-height: 1; text-transform: uppercase; text-align: center;"> Cпасибо, с вами свяжутся!</p>',
+                                        '</div>'
+                                    ].join('');
+
+                                    $('.registration')
+                                        .parent()
+                                        .html(html);
+                                }, 2000);
+                            }
+                        }
+                    });
                 }
             });
 
@@ -94,9 +116,12 @@ $(document).ready(function() {
         nav: true,
         smartSpeed: 100,
         navText: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
         responsive: {
            0:{
             items:1,
+            autoplay: false,
             nav:false
             },
             600:{
@@ -106,62 +131,9 @@ $(document).ready(function() {
     });
 
 
-
-    $('.navbar').scroolly([{
-        to: 'con-top',
-        css: {
-            position: 'absolute',
-            top: ''
-        }
-    }, {
-        from: 'con-top',
-        css: {
-            position: 'fixed'
-        }
-    }], $('.body'));
-
-    $('section .scrl').scroolly([{
-        alias: 'before',
-        //                    from: 'doc-top',
-        to: 'con-top',
-        css: {
-            position: 'static',
-            top: '0px',
-            bottom: ''
-        }
-    }, {
-        alias: 'staging',
-        from: 'con-top',
-        to: 'con-bottom -6el = top',
-        //                    to: 'top bottom -100#',
-        css: {
-            position: 'static',
-            top: '0px',
-            bottom: ''
-        },
-
-        onCheckIn: function($el) {
-            $('.navbar li[data-target]').removeClass('active');
-            $('.navbar li[data-target="' + $el.data('item') + '"]').addClass('active');
-        },
-        onCheckOut: function($el) {
-            $('.navbar li[data-target]').removeClass('active');
-        }
-
-    }, {
-        alias: 'after',
-        from: 'con-bottom -6el = top',
-        //                    to: 'finish',
-        css: {
-            position: 'static',
-            top: '',
-            bottom: '0px'
-        }
-    }], $('section'));
-
-    $("li[data-target]").click(function(e) {
+    $("a[href]").click(function(e) {
         e.preventDefault();
-        var destination = $(".scrl[data-item= '" + $(this).data('target') + "']").offset().top + 10;
+        var destination = $("#" + $(this).attr('href').substring(1)).offset().top + 0;
         $("body,html").animate({
             scrollTop: destination
         }, 500);
@@ -170,45 +142,26 @@ $(document).ready(function() {
         $(this).removeClass('map');
     })
 
-    $('.registration').on('submit', function(e) {
-        e.preventDefault();
-        $('.submit').addClass('inactive');
-        $('.submit').prop('disabled', true);
-        var $form = $(this);
-
-
-        $.ajax({
-            type: 'POST',
-            url: 'registration.php',
-            dataType: 'json',
-            data: $form.serialize(),
-            success: function(response) {
-                console.info(response);
-                if (response.status == 'success') {
-                   
-                    setTimeout(function() {
-                        var html = [
-                            '<div class="success">',
-                            '<p> Cпасибо, с вами свяжутся!</p>',
-                            '</div>'
-                        ].join('');
-
-                        $('.registration')
-                            .parent()
-                            .html(html);
-                    }, 2000);
-                }
-            }
-        });
-    });
 
     $('.mob-btn').click(function() {
         $('.menu-top .nav').toggle();
+        $(this).parents('#navbar').addClass('header_fixed');
     });
     if ($(window).width() < 768) {
         $('.nav li').click(function() {
             $('.menu-top .nav').toggle();
         });
     }
+    $('.cbalink').hide();
+
+    $('body').scrollspy({ target: '#navbar', offset: 200 });
+    var currentItem = $("#navbar li.active > a").attr('href').substring(1);
+    $('.navbar li[data-target="' + currentItem + '"]').addClass('active');
+
+    $('#navbar').on('activate.bs.scrollspy', function () {
+        currentItem = $("#navbar li.active > a").attr('href').substring(1);
+        $('.navbar li[data-target]').removeClass('active');
+        $('.navbar li[data-target="' + currentItem + '"]').addClass('active');
+   })
 
 });

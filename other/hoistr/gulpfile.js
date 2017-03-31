@@ -29,7 +29,6 @@ gulp.task('js', function() {
             'src/js/component.js'
         ])
         .pipe(concat('app.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 gulp.task('js_v', function() {

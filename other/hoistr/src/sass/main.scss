@@ -11,9 +11,9 @@
 	src: local('☺'), url('../fonts/SFUIDisplay-Bold.woff') format('woff'), url('../fonts/SFUIDisplay-Bold.ttf') format('truetype'), url('../fonts/SFUIDisplay-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
+} 
 @font-face {
-	font-family: 'SFUI Display-M';
+	font-family: 'SFUI Display-M'; 
 	src: url('../fonts/SFUIDisplay-Medium.eot');
 	src: local('☺'), url('../fonts/SFUIDisplay-Medium.woff') format('woff'), url('../fonts/SFUIDisplay-Medium.ttf') format('truetype'), url('../fonts/SFUIDisplay-Medium.svg') format('svg');
 	font-weight: normal;
@@ -28,7 +28,7 @@
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar{ 
   width:10px;
   height: 10px;
 }
