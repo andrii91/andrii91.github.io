@@ -1,3 +1,246 @@
 & {
-  
+  .head-title {
+  	font-size: 55px;
+  }
+  .head-title span {
+  	right: 0;
+  }
+  .img-box {
+  	text-align: center;
+  }
+  .head-info {
+  	font-size: 30px;
+  }
+  .head-list li {
+  	font-size: 15px;
+  	line-height: 1.2;
+  }
+  .reg-btn {
+	padding: 15px 20px;
+    font-size: 23px;
+  }
+  .speaker-info {
+  	font-size: 15px;
+  	margin-top: 20px;
+  }
+  .course-box {
+    padding: 20px;
+  }
+  .box-title {
+    font-size: 24px;
+    margin: 25px 0 20px;
+	}
+	.box-title:before {
+		display: none;
+	}
+	.course-bottom .box-title {
+		margin: 20px 0;
+	}
+	.course-bottom .course-box_img {
+		position: static;
+	}
+	.course-bottom .box-info {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	.course-bottom .course-box_img:before {
+		display: none;
+	}
+	.course-bottom .course-box_img .box_img {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.course-bottom .course-box_img .box_img-info {
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		float: none;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.socials-img {
+		float: none;
+		position: static;
+		width: 100%;
+	}
+	.socials-title {
+    margin: 10px 0 0px;
+    font-size: 24px;
+    &:before {
+    	display: none;
+    }
+	} 
+	.smm_spec-title, .online-title {
+		font-size: 36px;
+	}
+	.smm_spec-info {
+		margin-bottom: 0;
+	}
+	.smm_spec .js-lazyYT {
+		margin-bottom: 35px;
+	}
+	.socials .reg-btn {
+		margin-bottom: 30px;
+	}
+	.smm_spec, .online, .course_info, .program, .socials {
+		padding: 30px 0;
+	}
+	br, .program-box .program-img:before {
+		display: none;
+	}
+	.online-info, .course_info-content {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.course_info-title, .program-title {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.owl-carousel .owl-nav .owl-prev {
+		left: 0;
+	}
+	.owl-carousel .owl-nav .owl-next {
+		right: 0;
+	}
+	.course_info-img {
+		margin-left: 0;
+		width: 100%;
+	}
+	.program-box .program-img {
+		img {
+			width: 100%;
+		}
+	}
+	.program-box .program-list li {
+	    padding-right: 0;
+	    padding-left: 31px;
+	    text-align: left;
+	}
+	.program-box .program-list li:before {
+		right: auto;
+		left: 0;
+	}
+	.program-list li {
+		font-size: 15px;
+	}
+	.program-box {
+		margin-bottom: 30px;
+	}
+	.program-box:last-child .program-img {
+		margin-bottom: 0px;
+	}
+	.socials.mod .socials-title {
+		font-size: 24px;
+	}
+	.tools-img {
+		width: 100%;
+	}
+	.tools{
+		padding: 30px 0;
+	}
+	.speaker-photo {
+		position: static;
+		width: 100%;
+	}
+	.speaker {
+		padding: 30px 0;
+	}
+	.speaker-title {
+		font-size: 36px;
+	}
+	.speaker-box {
+		padding: 20px;
+	}
+	.speaker-box h4 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.speaker-and {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.program_info-title {
+		font-size: 36px;
+		margin: 20px 0;
+	}
+	.program_info-title span.white {
+		color: #000;
+	}
+	.info-img img {
+		width: 100%;
+	}
+	.info-img {
+		margin-right: 0;
+		margin-top: 25px;
+	}
+	.row-info {
+		line-height: 1;
+	}
+	.lock {
+		padding: 80px 0 30px;
+	}
+	.lock-title, .bonus-title {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.lock-title:before, .bonus-box.diagonal:before, .bonus-box.horizontal:after {
+		display: none;
+	}
+	.bonus {
+		padding: 30px 0;
+	}
+	.warranty-list {
+		background: #fff;
+		padding: 5px;
+		margin: -30px auto;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=0, Color=#000000)";/*IE 8*/
+-moz-box-shadow: 0 0 13px 5px rgba(0,0,0,0.6);/*FF 3.5+*/
+-webkit-box-shadow: 0 0 13px 5px rgba(0,0,0,0.6);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 0 13px 5px rgba(0,0,0,0.6);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Color=#000000); /*IE 5.5-7*/
+	}
+	.mt65 {
+		margin-top: 0;
+	}
+	.offset-54 {
+		margin-left: 0;
+	}
+	.mar-auto {
+		margin-bottom: 15px;
+	}
+	.stamp {
+		position: static;
+		width: 100%;
+		max-width: 342px;
+	}
+	.xs-center {
+		text-align: center;
+	}
+	.packages {
+		padding: 60px 0 30px;
+	}
+	.packages-title, .question h3 {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.packages-box {
+		margin-right: 0;
+		padding: 15px 10px;
+		margin-bottom: 20px;
+		min-height: 420px;
+	}
+	.question {
+		margin-top: 0;
+	}
+	.question p {
+		font-size: 18px
+	}
+	.question .reg-btn {
+		min-width: auto;
+		margin-top: 15px;
+	}
+	footer .head-logo {
+		margin-top: 30px;
+	}
 }

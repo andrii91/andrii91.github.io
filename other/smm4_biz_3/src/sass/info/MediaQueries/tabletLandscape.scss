@@ -2,4 +2,23 @@
 
 @media #{$tabletLandscape} {
     @import '../desktop';
+    &{
+		.info-img img {
+		    max-width: auto;
+		}
+		.info-box {
+		    vertical-align: middle;
+		    display: inline-block;
+		    max-width: 455px;
+		}
+		.speaker-photo { 
+			position: absolute;
+			max-width: 80%;
+			top: 0;
+		}
+		.speaker {
+			overflow: hidden;
+			min-height: auto;
+		}
+    }
 }

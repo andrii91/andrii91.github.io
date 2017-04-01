@@ -3,6 +3,72 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+	     .head-title span {
+	     	right: -55px;
+	     }
+	     .course-bottom .box-title {
+		    margin: 59px 0 20px;
+		}
+		.course-bottom .course-box_img {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.course-bottom .course-block_img {
+			text-align: center;
+		}
+		.socials-img  {
+			position: absolute;
+			max-width: 280px;
+			bottom: 0;
+		}
+		.socials {
+			position: relative;
+			padding: 30px 0 0;
+		}
+		.socials-title {
+			font-size: 36px;
+		}
+		.owl-carousel .owl-nav .owl-prev {
+		    left: -25px;
+		}
+		.owl-carousel .owl-nav .owl-next {
+		    right: -25px;
+		}
+		.item-top, .item-bottom {
+			padding: 30px;
+		}
+		.program-list {
+			max-width: 350px;
+		}
+		.program-img {
+			img {
+				max-width: 300px;
+			}
+		}
+		 .program-box.right .program-list li {
+		    padding-right: 31px;
+		    padding-left: 0;
+		    text-align: right;
+		}
+		.program-box.right .program-list li:before {
+		    right: 0;
+		    left: auto;
+		}
+		.info-img img {
+			max-width: 370px;
+		}
+		.info-box {
+			max-width: 310px;
+		}
+		.info-img {
+			margin-top: 0;
+		}
+		.packages-box {
+			margin-right: 10px;
+		}
+		.question .reg-btn {
+			min-width: 100%;
+		}
+
 	}
 }
