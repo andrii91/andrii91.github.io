@@ -1,0 +1,589 @@
+/* line 3, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+* {
+  outline: none; }
+
+/* line 6, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 10, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 15, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.menu-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  padding: 27px 0;
+  z-index: 999; }
+  /* line 25, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .menu-top.header_fixed {
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); }
+
+/* line 34, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.menu-top-logo {
+  max-width: 103px;
+  float: left;
+  margin-right: 35px; }
+  /* line 38, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .menu-top-logo img {
+    width: 100%; }
+
+/* line 43, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.menu-list {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 1023px;
+  width: 100%; }
+
+/* line 52, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.menu-item {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 300;
+  float: left;
+  margin: 0 8px;
+  margin-top: 6px;
+  cursor: pointer; }
+  /* line 62, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .menu-item:hover {
+    color: #0dbc61;
+    font-weight: 900; }
+  /* line 66, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .menu-item.phone {
+    margin-top: 0;
+    position: relative;
+    float: right; }
+    /* line 70, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .menu-item.phone:before {
+      content: "";
+      background: url("../images/smartphone66.png") no-repeat;
+      width: 16px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -12px; }
+    /* line 80, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .menu-item.phone a {
+      color: #181818;
+      font-family: "Proxima Nova";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 32px;
+      padding-left: 25px; }
+
+/* line 91, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head {
+  background: url("../images/05.png") no-repeat center;
+  background-size: cover;
+  padding: 158px 0 30px;
+  position: relative;
+  z-index: 1; }
+  /* line 97, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .head:before {
+    bottom: -95px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #cbc9d3;
+    border-width: 50px;
+    margin-left: -50px; }
+
+/* line 112, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.align-items-center {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+
+/* line 118, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head-img {
+  text-align: center;
+  position: relative;
+  z-index: 5; }
+
+/* line 124, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head-title {
+  color: #0cbf64;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-bottom: 32px; }
+  /* line 131, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .head-title span {
+    display: block;
+    color: #0cbf64;
+    font-family: "Proxima Nova";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 43px;
+    text-transform: uppercase;
+    margin-top: 23px; }
+
+/* line 143, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head-info {
+  max-width: 500px;
+  color: #181818;
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 400; }
+
+/* line 151, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.reg-btn {
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 25px 28px;
+  border: 2px solid transparent;
+  background: linear-gradient(to top, #07a856 0%, #0cbf64 100%);
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out; }
+  /* line 165, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .reg-btn.line {
+    position: relative;
+    z-index: 2; }
+    /* line 168, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .reg-btn.line:before {
+      content: "";
+      background: url("../images/line.png") no-repeat;
+      width: 121px;
+      height: 65px;
+      position: absolute;
+      left: -112px;
+      top: 50%;
+      margin-top: -44.5px;
+      z-index: -1; }
+  /* line 180, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .reg-btn:hover {
+    border: 2px solid #0cbf64;
+    background: 0 0;
+    color: #0cbf64;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out; }
+
+/* line 191, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head-date {
+  color: #0cbf64;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px; }
+  /* line 197, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .head-date span {
+    display: block;
+    font-size: 36px;
+    line-height: 36px; }
+
+/* line 204, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.text-center {
+  text-align: center; }
+
+/* line 208, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.head-bottom {
+  margin-top: 68px;
+  color: #181818;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 53px; }
+
+/* line 218, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.info-box {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1028px;
+  text-align: center;
+  border: 1px solid #0cbf64;
+  padding: 45px 5px; }
+  /* line 225, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .info-box:after, .info-box:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  /* line 236, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .info-box:after {
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 45px;
+    margin-left: -45px; }
+  /* line 242, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .info-box:before {
+    border-color: transparent;
+    border-top-color: #0cbf64;
+    border-width: 47px;
+    margin-left: -47px; }
+  /* line 248, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .info-box h2 {
+    max-width: 715px;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0 auto 25px; }
+    /* line 255, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .info-box h2 span {
+      color: #0cbf64; }
+  /* line 259, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .info-box p {
+    max-width: 656px;
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto; }
+
+/* line 269, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.info {
+  padding: 58px 0; }
+
+/* line 273, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.understand {
+  padding: 42px 0; }
+
+/* line 277, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.understand-title {
+  text-align: center;
+  margin: 0 auto 59px;
+  max-width: 920px;
+  color: #0cbf64;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400; }
+
+/* line 287, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why-box {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  max-width: 1213px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding-bottom: 56px;
+  text-align: center; }
+  /* line 295, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .why-box .why-head {
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #e2e2e2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    position: relative; }
+    /* line 304, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .why-box .why-head span {
+      border-radius: 50%;
+      width: 19px;
+      height: 18px;
+      box-shadow: 0 1px 0 #ffffff;
+      background-color: #c9ae19;
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      margin-top: -9px; }
+      /* line 314, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .why-box .why-head span:before {
+        content: "";
+        border-radius: 50%;
+        width: 19px;
+        height: 18px;
+        box-shadow: 0 1px 0 #ffffff;
+        background-color: #9f2a2a;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        margin-top: -9px; }
+      /* line 326, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .why-box .why-head span:after {
+        content: "";
+        border-radius: 50%;
+        width: 19px;
+        height: 18px;
+        box-shadow: 0 1px 0 #ffffff;
+        background-color: #289548;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        margin-top: -9px; }
+
+/* line 342, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.understand-info {
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1; }
+
+/* line 352, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why-title {
+  margin-top: 30px;
+  text-align: center;
+  color: #0dbc61;
+  margin-bottom: 24px;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1; }
+
+/* line 363, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why-info {
+  max-width: 610px;
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto 68px; }
+
+/* line 374, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why-title_small {
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 20px; }
+
+/* line 383, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why-info_small {
+  max-width: 387px;
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  font-style: italic;
+  margin: 20px auto 0; }
+
+/* line 394, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.why {
+  padding-bottom: 38px; }
+
+/* line 398, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.condition {
+  padding: 38px 0;
+  text-align: center; }
+
+/* line 403, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.condition-title {
+  color: #0dbc61;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 69px;
+  margin-top: 0;
+  line-height: 1; }
+
+/* line 413, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.condition-info {
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  display: block; }
+  /* line 421, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .condition-info span {
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 16px;
+    display: block; }
+
+/* line 432, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.engineer {
+  padding: 40px 0; }
+
+/* line 436, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.engineer-title {
+  color: #0dbc61;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto 53px; }
+
+/* line 446, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.engineer-img {
+  text-align: center; }
+  /* line 449, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .engineer-img img {
+    width: 100%;
+    max-width: 279px; }
+
+/* line 455, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.engineer-info {
+  color: #000000;
+  max-width: 503px;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 30px; }
+
+/* line 465, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.engineer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 469, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .engineer-list li {
+    position: relative;
+    padding-left: 33px;
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; }
+    /* line 477, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .engineer-list li:before {
+      content: "";
+      background: url("../images/check.png") no-repeat;
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      margin-top: -9.5px;
+      left: 0; }
+
+/* line 490, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.who_is {
+  padding: 40px 0; }
+
+/* line 494, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.who_is-title {
+  text-align: center;
+  margin: 0 auto 43px;
+  max-width: 550px;
+  color: #0dbc61;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 20px 27px 16px;
+  border: 3px solid #27bf72;
+  position: relative; }
+  /* line 506, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .who_is-title:before {
+    content: "";
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    background: #27bf72;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -9px; }
+
+/* line 518, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+.who_is-list {
+  max-width: 1068px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  position: relative; }
+  /* line 524, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .who_is-list:before {
+    content: "";
+    height: 175px;
+    width: 3px;
+    background: #27bf72;
+    position: absolute;
+    top: -43px;
+    left: 50%;
+    margin-left: -1.5px; }
+  /* line 535, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+  .who_is-list li {
+    width: 50%;
+    float: left;
+    line-height: 3;
+    min-height: 60px;
+    margin-bottom: 40px;
+    position: relative; }
+    /* line 542, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li span {
+      display: inline-block;
+      max-width: 300px;
+      color: #000000;
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
+      vertical-align: middle; }
+    /* line 552, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li:nth-child(1), .who_is-list li:nth-child(3) {
+      padding-right: 60px;
+      text-align: right; }
+      /* line 555, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .who_is-list li:nth-child(1):before, .who_is-list li:nth-child(3):before {
+        content: "";
+        height: 3px;
+        width: 80px;
+        background: #27bf72;
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        margin: -1.5px 0 0 0; }
+      /* line 565, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .who_is-list li:nth-child(1) span, .who_is-list li:nth-child(3) span {
+        margin-right: 24px; }
+      /* line 568, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .who_is-list li:nth-child(1) img, .who_is-list li:nth-child(3) img {
+        float: right; }
+    /* line 573, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li:nth-child(3):before {
+      right: -100px;
+      width: 200px; }
+    /* line 578, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li:nth-child(3) img {
+      margin-right: 75px;
+      display: inline-block; }
+    /* line 584, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li:nth-child(4) img {
+      margin-left: 75px;
+      display: inline-block; }
+    /* line 589, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+    .who_is-list li:nth-child(2), .who_is-list li:nth-child(4) {
+      padding-left: 60px; }
+      /* line 591, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .who_is-list li:nth-child(2) span, .who_is-list li:nth-child(4) span {
+        margin-left: 24px; }
+      /* line 594, /home/andrii/web/home_web/andrii91.github.io/other/qa/src/sass/info/main.scss */
+      .who_is-list li:nth-child(2) img, .who_is-list li:nth-child(4) img {
+        float: left; }
+
+/*# sourceMappingURL=main.css.map */
