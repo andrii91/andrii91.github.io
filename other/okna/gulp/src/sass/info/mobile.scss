@@ -1,0 +1,143 @@
+& {
+  .gift-block:before {
+    display: none;
+  }
+  .head-img {
+    img {
+      width: 100%;
+    }
+  }
+  .head-title span {
+    font-size: 30px;
+  }
+  .description {
+    max-width: 362px;
+    width: 100%;
+  }
+  .col2 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 3px;
+}
+  .head.balcony-bg .head-title span {
+    font-size: 26px;
+    line-height: 1;
+  }
+  .head.balcony-bg .head-title {
+    font-size: 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .head.balcony-bg .head-price {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .head-price span {
+    font-size: 20px;
+  }
+  .head.balcony-bg .head-img {
+    margin-left: 0;
+  }
+  .old-price {
+    line-height: 1;
+  }
+  .b-bonus-img {
+    margin-bottom: 10px;
+  }
+  .choice-img {
+    img {
+      width: 100%;
+    }
+  }
+  .choice-box .choice-color li {
+    margin-right: 0;
+  }
+  .repair-box {
+    overflow-x: scroll;
+  }
+  .repair-tbl td {
+    width: 33.333333%;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: left;
+}
+  .schet-block > p {
+    color: #ffffff;
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0
+}
+  .schet-block {
+    height: auto;
+  }
+  .our-img {
+    img {
+      width: 100%;
+    }
+  }
+  .installment-title h2 {
+    font-size: 31px;
+  }
+  .installment-info {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    li  {
+      float: none;
+    }
+  }
+  .window-title {
+    font-size: 64px;
+    line-height: 1;
+  }
+  .old_price-img, .shape-img {
+    img {
+      width: 100%;
+    }
+  }
+  .order-btn.old_price-btn {
+    line-height: 1;
+  }
+  .preview-carousel {
+    padding: 0 10px;
+  }
+  .color-title {
+    float: none;
+    text-align: center;
+  }
+  .xs-center {
+    text-align: center;
+  }
+  .registration-box {
+    padding: 5px;
+    background-size: 100%;
+  }
+  .top-header  .social-icons {
+    display: none;
+  }
+  .window, .head, .installment-bg {
+    text-align: center;
+  }
+  .prestigious-title {
+    font-size: 30px;
+  }
+  .head-inbox li {
+    float: none;
+    margin: 0 auto;
+  }
+  .head.family-bg {
+    background-position: left center;
+  }
+  .balcony-box .balcony-price {
+    font-size: 35px;
+  }
+}

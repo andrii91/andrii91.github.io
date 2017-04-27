@@ -243,4 +243,28 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Col
 	footer .head-logo {
 		margin-top: 30px;
 	}
+	.course_info {
+		min-height: auto;
+	}
+	.head-title span {
+		position: static;
+	}
+  .program-box .program-list {
+    margin-top: 10px;
+    min-height: auto;
+  }
+  .footer_thx-box {
+    min-height: 100%;
+    padding: 10px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    h4 {
+      margin: 20px 0;
+    }
+  }
+  .video-thx {
+    padding: 20px 43px;
+    height: 200px;
+}
 }

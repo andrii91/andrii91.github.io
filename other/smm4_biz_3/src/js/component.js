@@ -1,13 +1,3 @@
-/*!
- * lazyYT (lazy load YouTube videos)
- * v1.0.1 - 2014-12-30
- * (CC) This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
- * http://creativecommons.org/licenses/by-sa/4.0/
- * Contributors: https://github.com/tylerpearson/lazyYT/graphs/contributors || https://github.com/daugilas/lazyYT/graphs/contributors
- * 
- * Usage: <div class="lazyYT" data-youtube-id="laknj093n" data-parameters="rel=0">loading...</div>
- */
-
 ;
 (function ($) {
   'use strict';
@@ -138,11 +128,13 @@ $(document).ready(function () {
     stagePadding: 0,
     loop: true,
     navText: false,
+    autoplay: true,
+    autoplayHoverPause: true,
     smartSpeed: 450,
     responsive: {
       0: {
         items: 1,
-        // nav: false
+        dots: false
       },
       600: {
         items: 1,
@@ -166,4 +158,16 @@ $(document).ready(function () {
     });
   });
   $('.cbalink').hide();
+  $('.modal-btn').click(function(){
+    $('button[type="submit"]').text($(this).text());
+    $('.option').val($('.blue h4').text());
+    $('.price').val($('.blue p').text());
+  });
+  $('.modal-btn.packages-btn').click(function() {
+    $('.option').val($(this).parent('.packages-box').find('h4').text());
+    $('.price').val($(this).parent('.packages-box').find('p').text());
+  })
+  if ($(window).width() < 650) {
+    $('.head-title span').text('2017');
+  }
 });

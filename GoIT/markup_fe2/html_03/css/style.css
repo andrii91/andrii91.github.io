@@ -75,6 +75,8 @@ header {
 
 .sidebar-menu-item a {
   color: #656363;
+  display: block;
+  cursor: pointer;
   font: 400 13.33px / 37.333px OpenSans;
   text-decoration: none;
   -o-transition: all 0.4s linear 0s;

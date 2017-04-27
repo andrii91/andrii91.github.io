@@ -1,0 +1,27 @@
+& {
+  .experts-item img {
+    width: 100%;
+  }
+  .head-title h2{
+    font-size: 18px;
+  }
+  .head-title h1{
+    font-size: 24px;
+  }
+  .box {
+    padding: 10px;
+  }
+  .experts-list li {
+    position: static;
+    img {
+      width: 100%;
+    }
+    margin-bottom: 15px;
+  }
+  section {
+    min-height: auto !important;
+  }
+  .experts-item {
+    padding: 10px;
+  }
+}

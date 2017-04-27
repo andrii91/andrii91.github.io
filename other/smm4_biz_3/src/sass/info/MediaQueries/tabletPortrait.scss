@@ -69,6 +69,21 @@
 		.question .reg-btn {
 			min-width: 100%;
 		}
+		.course_info {
+			padding-top: 100px;
+		}
+		.owl-dots {
+		    top: -185px;
+		}
+		.owl-dot:nth-child(1), .owl-dot:nth-child(2), .owl-dot:nth-child(3), .owl-dot:nth-child(4) {
+			right: -100px;
+		}
+		.course_info {
+			min-height: 768px;
+		}
+		.head-title span {
+			position: absolute;
+		}
 
 	}
 }

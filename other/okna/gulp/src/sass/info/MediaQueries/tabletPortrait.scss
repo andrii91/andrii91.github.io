@@ -1,0 +1,63 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+     .col2 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 3px;
+}
+      .choice-box h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    padding: 0 0 8px;
+    margin-bottom: 31px;
+    border-bottom: 1px solid #bfbfbf;
+    color: #111010;
+    position: relative;
+}
+        .schet-block > p {
+    color: #ffffff;
+    font-family: Roboto-Bold;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0
+}
+  .schet-block {
+    height: 120px;
+  }
+      .installment-info {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+        text-align: center;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    
+  }
+      .preview-carousel {
+        padding: 0 20px;
+      }
+      .registration-box {
+          padding: 173px 148px 44px 155px;
+      }
+      .xs-center {
+        text-align: left;
+      }
+      .head-inbox li {
+        float: left;
+        margin: 0 auto;
+      }
+      .window, .head, .installment-bg {
+        text-align: left;
+      }
+      .head.family-bg {
+        background-position: center;
+      }
+	}
+}

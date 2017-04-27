@@ -518,8 +518,9 @@ font-weight: 700;
 }
 
 .course_info {
-  padding: 69px 0 58px;
+  padding: 100px 0 58px;
   background-color: #f7f7f7;
+  min-height: 768px;
 }
 
 .course_info-title {
@@ -572,7 +573,7 @@ font-weight: 400;
   }
 }
 .item-bottom {
-  background-color: #5478b5;
+  background-color: #dd4b39;
   padding: 20px 45px 34px 49px;
   color: #ffffff;
 font-family: "Proxima Nova";
@@ -587,7 +588,7 @@ font-weight: 700;
 }
 
 .program {
-  padding: 64px 0 0;
+  padding: 64px 0 49px;
 }
 
 .program-title {
@@ -600,12 +601,16 @@ color: #19212b;
   margin-bottom: 79px;
   margin-top: 0;
   span {
+    &.gray {
+      color: #838383;
+    }
     color: #dd4b39;
   }
 }
 
 .program-box {
-  margin-bottom: 67px;
+  margin-bottom: 40px;
+
   &.right {
     .program-img {
       &:before {
@@ -619,7 +624,7 @@ color: #19212b;
   &:nth-child(3) {
     .program-img  {
       &:before {
-        top: 137px;
+//        top: 137px;
       }
     }
   }
@@ -639,14 +644,28 @@ color: #19212b;
   &:last-child {
     margin-bottom: 0;
     .program-img {
-      margin-bottom: -35px;
+//      margin-bottom: -35px;
       &:before {
         display: none;
       }
     }
   }  
   .program-list {
+    min-height: 260px;
       li {
+        &:first-child {
+          padding: 0;
+              color: #3b5999;
+          font-family: AA;
+          font-size: 30px;
+          line-height: 1;
+          font-weight: 100;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          &:before {
+            display: none;
+          }
+        }
         &:before {
           right: 0;
         }
@@ -659,6 +678,9 @@ color: #19212b;
       li {
         padding-right: 0px;
         padding-left: 31px;
+        &:first-child {
+          padding: 0;
+        }
         &:before {
           left: 0;
         }
@@ -680,7 +702,7 @@ color: #19212b;
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 534px;
+  max-width: 625px;
   text-align: right;
   li {
     position: relative;
@@ -691,7 +713,7 @@ color: #19212b;
     line-height: 30px;
     padding-right: 31px;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       font-weight: 700;
     }
     &:before {
@@ -716,7 +738,7 @@ color: #19212b;
 }
 
 .speaker {
-  background-color: #070707;
+  background-color: #030303;
   padding: 78px 0 214px;
   min-height: 1234px;
 }
@@ -801,6 +823,31 @@ color: #19212b;
 
 .and-box {
   text-align: center;
+  .box-img {
+    position: relative;
+    margin-bottom: 23px;
+        -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    &:hover {
+      span {
+          transform: translateX(-50%) translateY(-50%);
+          height: auto;
+          width: 100%;
+      }
+      h5 {
+        padding: 0;
+        bottom: -30px;
+        left: 50%;
+          transform: translateX(-50%) translateY(30%);
+          height: 90px;
+          width: 100%;
+        -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+      }
+    }
+  }
   img {
     max-width: 160px;
     border-radius: 50%;
@@ -809,20 +856,40 @@ color: #19212b;
     color: #ffffff;
     font-family: AA;
     font-size: 24px;
-    max-width: 141px;
-    margin: 32px auto 9px;
     text-transform: uppercase;
     font-weight: lighter;
     line-height: 1;
     letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    background-color:  rgba(59, 89, 153, 0.5);
+    width: 160px;
+    height: 160px;
+        -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
   }
-  a {
-    display: inline-block;
-    color: #82a1e2;
+  p {
+    color: #ffffff;
     font-family: "Proxima Nova";
     font-size: 18px;
     font-weight: 400;
-    text-decoration: underline;
+    line-height: 4;
+    min-height: 60px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
   }
 }
 
@@ -1210,5 +1277,142 @@ footer {
   .head-logo {
     float: none;
     margin: 133px auto 0;
+  }
+}
+
+.head_thx {
+  background-color: #ebebeb;
+  padding: 80px 0 232px;
+  img {
+    width: 100%;
+  }
+  h4 {
+    font-family: AA;
+    font-size: 38px;
+    color: #3b5999;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 30px;
+    span {
+      color: #dd4b39;
+      
+    }
+  }
+  p {
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.footer_thx {
+  background-color: #191919;
+  padding: 0 0 33px;
+  text-align: center;
+}
+
+.footer_thx-block {
+  box-shadow: 0 5px 8px rgba(1, 0, 0, 0.18);
+  border-radius: 6px;
+  background-color: #ffffff;
+  max-width: 1140px;
+  margin: -196px auto 35px; 
+}
+
+.footer_thx-box {
+  min-height: 487px;
+  max-width: 294px;
+box-shadow: 0 5px 8px rgba(1, 0, 0, 0.18);
+background-color: #ffffff;
+  padding: 44px;
+  display: inline-block;
+  vertical-align: top;
+  h4 {
+    margin-top: 57px;
+    color: #3b5999;
+    font-family: AA;
+    font-size: 38px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 198px;
+  }
+  &:last-child {
+    h4 {
+      color: #838383;
+    }
+  }
+  &.large {
+    max-width: 550px;
+    box-shadow: 0 0px 0px rgba(1, 0, 0, 0.18);
+    h4 {
+      margin-bottom: 70px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      li {
+        font-family: "Proxima Nova";
+        font-size: 21px;
+        color: #19212b;
+        font-weight: 400;
+        padding-left: 48px;
+        position: relative;
+        margin-bottom: 10px;
+        line-height: 1;
+        span {
+          color: #dd4b39;
+          font-weight: 700;
+          font-size: 30px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          &.small {
+            font-size: 21px;
+            position: static;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-thx {
+    background: url(../images/video-mac.png) no-repeat top;
+    padding: 33px 65px;
+    background-size: 100%;
+    height: 320px;
+  .lazyYT-container {
+    border-radius: 0;
+  }
+}
+
+
+
+p.thx-info {
+  padding: 0 0 0 73px;
+  position: relative;
+  color: #39579c;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  &:before {
+    content: "";
+    background: url('../images/thxarr.png') no-repeat;
+    width: 59px;
+    height: 37px;
+    position: absolute;
+    top: -25px;
+    left: 0;
   }
 }
