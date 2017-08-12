@@ -134,6 +134,7 @@ $(document).ready(function() {
     $("a[href]").click(function(e) {
         e.preventDefault();
         var destination = $("#" + $(this).attr('href').substring(1)).offset().top + 0;
+        console.log(destination);
         $("body,html").animate({
             scrollTop: destination
         }, 500);
@@ -158,10 +159,10 @@ $(document).ready(function() {
     var currentItem = $("#navbar li.active > a").attr('href').substring(1);
     $('.navbar li[data-target="' + currentItem + '"]').addClass('active');
 
-    $('#navbar').on('activate.bs.scrollspy', function () {
+    /*$('#navbar').on('activate.bs.scrollspy', function () {
         currentItem = $("#navbar li.active > a").attr('href').substring(1);
         $('.navbar li[data-target]').removeClass('active');
         $('.navbar li[data-target="' + currentItem + '"]').addClass('active');
-   })
+   })*/
 
 });
