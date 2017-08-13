@@ -110,5 +110,23 @@ $(document).ready(function () {
   
   $('.more').click(function(){
     $(this).parents().find('.more-content').slideToggle(500);
-  })
+  });
+  $('.scroll-btn').click(function () {
+    var destination = $("#contacts").offset().top - 0;
+    $("body,html").animate({
+      scrollTop: destination
+    }, 500);
+  });
+
+
+  $('.mob-btn').click(function() {
+        $('.menu').slideToggle();
+  });
+  if ($(window).width() < 1200) {
+      $('.menu li').click(function() {
+          $('.menu').hide();
+      });
+
+  }
+
 });

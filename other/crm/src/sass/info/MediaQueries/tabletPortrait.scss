@@ -3,6 +3,82 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+     .head {
+		text-align: left; 
+		}
+		.worth-crm li:nth-child(5) {
+			top: 160px;
+		}
+		.worth-crm:before {
+			display: block;
+		}
+		.client-list {
+		    list-style: none;
+		    padding: 0;
+		    margin: 0 auto;
+		    text-align: center;
+		    width: 654px;
+		}
+		.client-list li:nth-child(5) {
+		    margin: -33px 30px;
+		}
+		.mh562 {
+			min-height: 562px;
+		}
+		.integration {
+			text-align: left;
+		}
+		.integration-logo {
+			text-align: left;
+		}
+		.recommendation {
+		    background-image: url(../images/recommendation-img.png),linear-gradient(-45deg,#ff7f00 0,#ffbf00 100%);
+		    position: relative;
+		    padding: 90px 0;
+		    background-repeat: no-repeat;
+		    background-position: 100% center;
+		}
+		.recommendation-form button {
+		    width: 236px;
+		}
+		.recommendation-form {
+			height: 60px;
+		}
+		.recommendation-info {
+			background: rgba(255, 127, 0, 0.8);
+			border-radius: 5px;
+			padding: 5px;
+			color: #fff;
+		}
+		.review .item, .review .owl-item.active.center {
+			max-width: 80%;
+		}
+		.owl-nav {
+			display: block;
+		}
+		.owl-nav .owl-next {
+			margin-right: 65px;
+		}
+		.author-box {
+			max-width: 330px;
+			margin-left: 10px;
+		}
+		.contacts-box .item a {
+			font-size: 18px;
+		}
+		.for_whom-box h4 { 
+			min-height: 50px;
+		}
+		.author {
+			text-align: center;
+		}
+		.automation-week {
+		    float: left;
+		    max-width: 225px;
+		    width: 100%;
+		}
+		.automation-week ul li {
+		    padding: 0 5px 0 20px;
+		}
 	}
 }

@@ -1,3 +1,181 @@
 & {
-  
+  .menu {
+  	display: none;
+  	float: none;
+  	li {
+  		display: block;
+  		margin: 0 0 10px;
+  		text-align: left;
+  		a {
+  			text-align: left;
+  		}
+  	}
+  }
+  .mob-btn {
+  	display: block;
+  }
+  .head {
+  	padding-top: 100px;
+  	text-align: center;
+  }
+  br {
+  	display: none;
+  }
+  .head-title, .for_whom-title, .worth-title, .zoho_crm-title, 
+  .automation-title, .integration-title, .clients-title, .review-title,
+  .author-title {
+    font-size: 30px;
+    line-height: 1;
+	}
+	.integration-title {
+		margin-bottom: 10px;
+	}
+	.head-img img {
+		position: static;
+		width: 100%;
+	}
+	.head-img {
+		height: auto;
+	}
+	.for_whom, .worth {
+		padding: 30px 0;
+	}
+	.for_whom-info, .zoho_crm-info {
+		font-size: 18px;
+		line-height: 1;
+	}
+	.for_whom-box {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.worth-box h4 {
+		font-size: 20px;
+		line-height: 1;
+		margin-bottom: 15px;
+	}
+	.worth-crm:before {
+		display: none;
+	}
+	.worth-crm li:nth-child(5) {
+		top: 74px;
+	}
+	.worth-img img {
+		position: static;
+		width: 100%;
+		margin-left: -30px;
+	}
+	.worth-img {
+		min-height: 100%;
+	}
+	.crm-info li:nth-child(1) {
+		background: none;
+		width: 100%;
+		height: 100%;
+		line-height: 1;
+		text-align: center;
+	}
+	.crm-info li {
+		position: static;
+	}
+	.worth-img.min-h557 {
+		min-height: 100%;
+	}
+	.img-left {
+		margin-top: 30px;
+	}
+	.img-left img {
+		margin-right: -30px;
+		width: 100%;
+	}
+	.worth {
+		overflow-x: hidden;
+	}
+	.client-list {
+		width: 100%;
+		text-align: center;
+	}
+	.client-list li:nth-child(2), .client-list li:nth-child(7), 
+	.client-list li:nth-child(3), .client-list li:nth-child(8), 
+	.client-list li:nth-child(4), .client-list li:nth-child(6) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.client-list li:nth-child(5):before {
+		display: none;
+	}
+	.client-list li:nth-child(5) {
+		margin: 0 0 40px;
+
+	}
+	.client-list li:first-child, .client-list li:last-child {
+		max-width: 300px;
+		width: 100%;
+	}
+	.client, .img-right {
+		margin-top: 30px;
+	}
+	.img-right img {
+		margin-left: -30px;
+		width: 100%;
+	}
+	.worth {
+		margin-bottom: 0;
+	}
+	.free_crm, .zoho_crm, .review {
+		padding: 30px 0;
+	}
+	.free_crm-form {
+		padding: 20px;
+		min-height: 100%;
+	}
+	.row {
+		.row {
+			margin: 0;
+			[class*="col-"] {
+				padding: 0;
+			}
+		}
+	}
+	.integration, .clients {
+		text-align: center;
+		padding: 30px 0;
+	}
+
+	.integration-info {
+		text-align: left;
+	}
+	.recommendation {
+		background-image:linear-gradient(-45deg,#ff7f00 0,#ffbf00 100%);
+		padding: 30px 0;
+	}
+	.recommendation-form {
+		height: auto;
+		button {
+			width: 100%;
+		}
+	}
+	.clients-list li:nth-child(1), .clients-list li:nth-child(5), .clients-list li:nth-child(9) {
+	    margin-left: 41px;
+	} 
+	.clients-list li:nth-child(12), .clients-list li:nth-child(4), .clients-list li:nth-child(8) {
+		margin-right: 41px;
+	}
+	.review .item {
+		padding: 9px;
+	}
+	.owl-nav {
+		display: none;
+	}
+	.author-box {
+		padding: 15px;
+		margin-left: auto;
+		margin-left: auto;
+	}
+	.author-img {
+		padding-right: 15px;
+	}
+	.author, .contacts {
+		padding: 30px 0;
+	}
 }
